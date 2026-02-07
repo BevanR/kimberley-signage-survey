@@ -53,8 +53,8 @@ Paths and constants live in `config.ts` or at top of each script:
 | Key | Value |
 |-----|-------|
 | `photos_path` | `photos/` |
-| `clusters_path` | `clusters.json` |
-| `trails_path` | `trails.json` |
+| `clusters_path` | `data/clusters.json` |
+| `trails_path` | `data/trails.json` |
 | `cluster_threshold_m` | 10 |
 | `intersection_buffer_m` | 15 (added to `radius_m`) |
 | `region_id` | 3023 (Kimberley on Trailforks) |
@@ -73,7 +73,7 @@ Paths and constants live in `config.ts` or at top of each script:
 - Cluster radius = max distance from center to any photo
 - Cluster ID = geohash of center (e.g. `cluster_c2x8b`)
 
-**Output:** `clusters.json`
+**Output:** `data/clusters.json`
 
 ```json
 {
@@ -105,9 +105,9 @@ Paths and constants live in `config.ts` or at top of each script:
 **Strategy:**
 1. Try Trailforks API (requires API access). Region ID 3023. Sequential requests, configurable delay between (e.g. 1–2s).
 2. If no API access: Playwright path. Script launches browser, navigates to https://www.trailforks.com/region/kimberley-3023/, injects extraction script via `page.evaluate()`, captures trail data from the map.
-3. Fallback: Provide `extract.js` (plain JS) for manual run in browser console. User saves output to `trails.json`.
+3. Fallback: Provide `extract.js` (plain JS) for manual run in browser console. User saves output to `data/trails.json`.
 
-**Output:** `trails.json` – GeoJSON FeatureCollection or equivalent:
+**Output:** `data/trails.json` – GeoJSON FeatureCollection or equivalent:
 - Each trail = LineString geometry + properties: `name`, `winter` (fat bike), `ski_trails`
 
 **Rate limiting:** 1 request at a time, delay between requests.
@@ -116,7 +116,7 @@ Paths and constants live in `config.ts` or at top of each script:
 
 ## 3. enrich.ts
 
-**Input:** `clusters.json`, `trails.json`
+**Input:** `data/clusters.json`, `data/trails.json`
 
 **Processing:**
 - For each cluster, find trails where cluster center is within `radius_m + 15` metres of trail line (Turf `pointToLineDistance`)
@@ -124,8 +124,8 @@ Paths and constants live in `config.ts` or at top of each script:
 - Include clusters with no intersecting trails; log them as warnings
 
 **Output:**
-- `intersections.geojson` – Point features, properties: `cluster_id`, `trail_count`, `trail_names`, `winter`, `ski_trails`, `lat`, `lon`, `radius_m`, `photos`
-- `intersections.csv` – same columns; arrays as comma-separated strings
+- `data/intersections.geojson` – Point features, properties: `cluster_id`, `trail_count`, `trail_names`, `winter`, `ski_trails`, `lat`, `lon`, `radius_m`, `photos`
+- `data/intersections.csv` – same columns; arrays as comma-separated strings
 
 GeoJSON example (Kimberley BC coords):
 
@@ -161,15 +161,17 @@ CSV column order: `cluster_id`, `trail_count`, `trail_names`, `winter`, `ski_tra
 ```
 project/
   photos/
-  config.ts          # or inline in scripts
-  cluster.ts
-  fetch_trails.ts
-  extract.js         # optional: manual browser console snippet
-  enrich.ts
-  clusters.json      # output of cluster
-  trails.json        # output of fetch_trails
-  intersections.geojson
-  intersections.csv
+  src/
+    config.ts
+    cluster.ts
+    fetch_trails.ts
+    enrich.ts
+    extract.js       # manual browser console snippet
+  data/
+    clusters.json    # output of cluster
+    trails.json      # output of fetch_trails
+    intersections.geojson
+    intersections.csv
   package.json
 ```
 
@@ -178,7 +180,7 @@ project/
 ## Run Order
 
 - `cluster` and `fetch_trails` are independent (can run in any order, or parallel)
-- `enrich` requires both `clusters.json` and `trails.json`
+- `enrich` requires both `data/clusters.json` and `data/trails.json`
 - If enrich runs before either exists, fail with clear error
 
 ---
@@ -187,7 +189,27 @@ project/
 
 | Scenario | Behaviour |
 |----------|-----------|
-| Photo without GPS | Error and exit |
+| Photo without GPS | Skip and log warning |
 | Cluster with no intersecting trails | Include in output, log warning |
 | Trailforks API access | Use API; fallback to Playwright or manual extract.js |
 | Cluster ID | Geohash of center |
+
+---
+
+## Implementation Progress
+
+| Component | Status |
+|-----------|--------|
+| package.json + config.ts | Done |
+| cluster.ts | Done – 92 clusters from 274 photos |
+| fetch_trails.ts | Done – Playwright (may need `all` perms in sandbox); use `--print-snippet` for manual extract.js |
+| enrich.ts | Done |
+| extract.js | Done – manual browser console fallback |
+
+**Run order:**
+```bash
+bun install
+bun run cluster
+bun run fetch_trails      # or run extract.js manually, save to data/trails.json
+bun run enrich
+```
