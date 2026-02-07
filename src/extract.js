@@ -32,14 +32,17 @@
   }
 
   if (result.features.length === 0) {
+    const seen = new Set();
     document.querySelectorAll('a[href*="/trails/"]').forEach((a) => {
       const href = a.getAttribute("href");
       const name = a.textContent?.trim();
-      if (href && name) {
+      const path = href?.match(/\/trails\/([^/?#]+)/)?.[1];
+      if (href && name && path && !seen.has(path)) {
+        seen.add(path);
         result.features.push({
           type: "Feature",
           geometry: { type: "LineString", coordinates: [] },
-          properties: { name, winter: false, ski_trails: false },
+          properties: { name, winter: false, ski_trails: false, trailPath: path },
         });
       }
     });

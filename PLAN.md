@@ -210,6 +210,8 @@ project/
 ```bash
 bun install
 bun run cluster
-bun run fetch_trails      # or run extract.js manually, save to data/trails.json
+# Get trail data: Export HAR from Trailforks region page (DevTools > Network > Save as HAR),
+# save as data/www.trailforks.com.har, then:
+bun run har_to_trails
 bun run enrich
 ```

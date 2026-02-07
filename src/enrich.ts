@@ -36,6 +36,13 @@ async function main() {
     (f): f is TrailFeature => f.type === "Feature" && f.geometry?.type === "LineString"
   );
 
+  const trailsWithCoords = trails.filter((t) => (t.geometry.coordinates?.length ?? 0) >= 2);
+  if (trailsWithCoords.length === 0) {
+    console.error("No trail geometry found. All trails have empty coordinates.");
+    console.error("Export a HAR from the Trailforks region page, save as data/www.trailforks.com.har, then run: bun run har_to_trails");
+    process.exit(1);
+  }
+
   const features: Feature[] = [];
   const csvRows: string[][] = [["cluster_id", "trail_count", "trail_names", "winter", "ski_trails", "lat", "lon", "radius_m", "photos"]];
 

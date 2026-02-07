@@ -13,6 +13,28 @@ import { dirname } from "path";
 import { config } from "./config";
 
 const REGION_URL = `https://www.trailforks.com/region/kimberley-${config.region_id}/`;
+const TRAIL_BASE = "https://www.trailforks.com/trails/";
+
+const EXTRACT_GEOMETRY_SCRIPT = `
+() => {
+  const nextData = document.getElementById('__NEXT_DATA__');
+  if (!nextData?.textContent) return null;
+  try {
+    const data = JSON.parse(nextData.textContent);
+    const t = data.props?.pageProps?.trail || data.props?.pageProps?.trailData;
+    if (!t) return null;
+    const coords = t.shape || t.track || t.geometry?.coordinates || t.coordinates || t.line || t.polyline;
+    if (Array.isArray(coords) && coords.length >= 2) {
+      const flat = coords.every(c => typeof c === 'number') ? null : coords;
+      const nested = coords[0] && Array.isArray(coords[0]) ? coords : null;
+      const arr = nested || (flat ? [coords] : null);
+      if (arr) return arr;
+    }
+    if (t.lat != null && t.lon != null) return [[t.lon, t.lat]];
+  } catch (e) {}
+  return null;
+}
+`;
 
 const EXTRACT_SCRIPT = `
 () => {
@@ -54,9 +76,10 @@ const EXTRACT_SCRIPT = `
     links.forEach((a) => {
       const href = a.getAttribute('href');
       const name = a.textContent?.trim();
-      if (href && name && !seen.has(href)) {
-        seen.add(href);
-        result.trails.push({ name, url: href.startsWith('http') ? href : 'https://www.trailforks.com' + href, geometry: null });
+      const path = href?.match(/\/trails\/([^/?#]+)/)?.[1];
+      if (href && name && path && !seen.has(path)) {
+        seen.add(path);
+        result.trails.push({ name, trailPath: path, geometry: null });
       }
     });
     if (result.trails.length > 0) result.source = 'dom_links';
@@ -112,28 +135,66 @@ async function main() {
 
   console.log(`Extracted ${trails.length} trails (source: ${source})`);
 
-  const output = {
-    type: "FeatureCollection",
-    features: Array.isArray(trails)
-      ? trails.map((t: unknown) => {
-          const tr = t as Record<string, unknown>;
-          if (tr.type === "Feature" && tr.geometry) {
-            return tr;
-          }
-          return {
-            type: "Feature",
-            geometry: tr.geometry || { type: "Point", coordinates: [0, 0] },
-            properties: {
-              name: tr.name || "Unknown",
-              winter: tr.winter ?? false,
-              ski_trails: tr.ski_trails ?? false,
-              ...(typeof tr.properties === "object" && tr.properties ? (tr.properties as object) : {}),
-            },
-          };
-        })
-      : [],
-  };
+  let features = Array.isArray(trails)
+    ? trails.map((t: unknown) => {
+        const tr = t as Record<string, unknown>;
+        if (tr.type === "Feature" && tr.geometry && (tr.geometry as { coordinates?: unknown[] })?.coordinates?.length) {
+          return tr as { type: string; geometry: { type: string; coordinates: number[][] }; properties: Record<string, unknown> };
+        }
+        const coords = tr.geometry && typeof tr.geometry === "object" && "coordinates" in tr.geometry
+          ? (tr.geometry as { coordinates: number[][] }).coordinates
+          : [];
+        return {
+          type: "Feature",
+          geometry: { type: "LineString" as const, coordinates: coords },
+          properties: {
+            name: tr.name || "Unknown",
+            winter: tr.winter ?? false,
+            ski_trails: tr.ski_trails ?? false,
+            trailPath: tr.trailPath,
+            ...(typeof tr.properties === "object" && tr.properties ? (tr.properties as object) : {}),
+          },
+        };
+      })
+    : [];
 
+  if (source === "dom_links" && features.some((f) => f.properties?.trailPath && !(f.geometry.coordinates?.length >= 2))) {
+    console.log("Region page has no geometry. Fetching from individual trail pages...");
+    const browser = await chromium.launch({ headless: true });
+    try {
+      const page = await browser.newPage();
+      for (let i = 0; i < features.length; i++) {
+        const f = features[i];
+        const path = f.properties?.trailPath as string | undefined;
+        if (!path || (f.geometry.coordinates?.length ?? 0) >= 2) continue;
+        process.stdout.write(`  ${i + 1}/${features.length} ${path}...`);
+        try {
+          await page.goto(`${TRAIL_BASE}${path}/`, { waitUntil: "domcontentloaded", timeout: 15000 });
+          await page.waitForTimeout(config.fetch_delay_ms);
+          const raw = await page.evaluate(EXTRACT_GEOMETRY_SCRIPT);
+          if (raw && Array.isArray(raw) && raw.length >= 2) {
+            const lineCoords: [number, number][] = raw
+              .filter((c: unknown): c is number[] => Array.isArray(c) && c.length >= 2)
+              .map((c: number[]) => {
+                const a = c[0], b = c[1];
+                if (a >= -90 && a <= 90 && (b < -90 || b > 90)) return [b, a] as [number, number];
+                return [a, b] as [number, number];
+              });
+            if (lineCoords.length >= 2) {
+              f.geometry = { type: "LineString", coordinates: lineCoords };
+              console.log(" ok");
+            } else console.log(" bad format");
+          } else console.log(" no geom");
+        } catch {
+          console.log(" fail");
+        }
+      }
+    } finally {
+      await browser.close();
+    }
+  }
+
+  const output = { type: "FeatureCollection" as const, features };
   await mkdir(dirname(config.trails_path), { recursive: true });
   await writeFile(config.trails_path, JSON.stringify(output, null, 2));
   console.log("Wrote", config.trails_path);

@@ -5,9 +5,11 @@
   "scripts": {
     "cluster": "bun run src/cluster.ts",
     "fetch_trails": "bun run src/fetch_trails.ts",
+    "har_to_trails": "bun run src/har_to_trails.ts",
     "enrich": "bun run src/enrich.ts"
   },
   "dependencies": {
+    "@googlemaps/polyline-codec": "^1.0.28",
     "@turf/distance": "^7.0.0",
     "@turf/helpers": "^7.0.0",
     "@turf/point-to-line-distance": "^7.0.0",
