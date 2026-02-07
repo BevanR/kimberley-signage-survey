@@ -96,17 +96,31 @@
     {
       "cluster_id": "cluster_c2vd8k",
       "center": {
-        "lat": 49.68219722222222,
-        "lon": -115.99671111111111
+        "lat": 49.68229907407408,
+        "lon": -115.99648796296295
       },
-      "radius_m": 0,
+      "radius_m": 19.65,
       "photos": [
         {
           "filename": "PXL_20260206_211201703.jpg",
           "lat": 49.68219722222222,
           "lon": -115.99671111111111,
           "timestamp": "2026-02-06T14:12:01",
-          "distance_from_center_m": 0
+          "distance_from_center_m": 19.65
+        },
+        {
+          "filename": "PXL_20260206_211122206.jpg",
+          "lat": 49.68235,
+          "lon": -115.996375,
+          "timestamp": "2026-02-06T14:11:22",
+          "distance_from_center_m": 9.91
+        },
+        {
+          "filename": "PXL_20260206_211124831.jpg",
+          "lat": 49.68235,
+          "lon": -115.99637777777778,
+          "timestamp": "2026-02-06T14:11:24",
+          "distance_from_center_m": 9.74
         }
       ]
     },
@@ -362,62 +376,160 @@
     {
       "cluster_id": "cluster_c2vd86",
       "center": {
-        "lat": 49.67392013888889,
-        "lon": -115.99489097222222
+        "lat": 49.673858796296294,
+        "lon": -115.99489953703704
       },
-      "radius_m": 6.14,
+      "radius_m": 15.07,
       "photos": [
         {
           "filename": "PXL_20260206_212949759.jpg",
           "lat": 49.67387222222222,
           "lon": -115.99493333333334,
           "timestamp": "2026-02-06T14:29:49",
-          "distance_from_center_m": 6.14
+          "distance_from_center_m": 2.85
         },
         {
           "filename": "PXL_20260206_212932539.jpg",
           "lat": 49.67395,
           "lon": -115.99486388888889,
           "timestamp": "2026-02-06T14:29:32",
-          "distance_from_center_m": 3.85
+          "distance_from_center_m": 10.46
         },
         {
           "filename": "PXL_20260206_213001945.jpg",
           "lat": 49.67394722222222,
           "lon": -115.9948888888889,
           "timestamp": "2026-02-06T14:30:01",
-          "distance_from_center_m": 3.02
+          "distance_from_center_m": 9.86
+        },
+        {
+          "filename": "PXL_20260206_213129340.jpg",
+          "lat": 49.673725,
+          "lon": -115.99493333333334,
+          "timestamp": "2026-02-06T14:31:29",
+          "distance_from_center_m": 15.07
         },
         {
           "filename": "PXL_20260206_212942886.jpg",
           "lat": 49.67391111111111,
           "lon": -115.99487777777777,
           "timestamp": "2026-02-06T14:29:42",
-          "distance_from_center_m": 1.38
+          "distance_from_center_m": 6.02
+        },
+        {
+          "filename": "PXL_20260206_213139722.jpg",
+          "lat": 49.67374722222222,
+          "lon": -115.9949,
+          "timestamp": "2026-02-06T14:31:39",
+          "distance_from_center_m": 12.41
         }
       ]
     },
     {
       "cluster_id": "cluster_c2vd82",
       "center": {
-        "lat": 49.66229027777778,
-        "lon": -115.99905555555556
+        "lat": 49.66232837301586,
+        "lon": -115.9988474206349
       },
-      "radius_m": 0.43,
+      "radius_m": 26.1,
       "photos": [
         {
           "filename": "PXL_20260206_191530493.jpg",
           "lat": 49.66228888888889,
           "lon": -115.99905,
           "timestamp": "2026-02-06T12:15:30",
-          "distance_from_center_m": 0.43
+          "distance_from_center_m": 15.23
+        },
+        {
+          "filename": "PXL_20260206_191428393.jpg",
+          "lat": 49.66237777777778,
+          "lon": -115.99872777777777,
+          "timestamp": "2026-02-06T12:14:28",
+          "distance_from_center_m": 10.21
+        },
+        {
+          "filename": "PXL_20260206_191816344.jpg",
+          "lat": 49.66236111111111,
+          "lon": -115.9987388888889,
+          "timestamp": "2026-02-06T12:18:16",
+          "distance_from_center_m": 8.62
+        },
+        {
+          "filename": "PXL_20260206_191819789.jpg",
+          "lat": 49.662366666666664,
+          "lon": -115.99876111111111,
+          "timestamp": "2026-02-06T12:18:19",
+          "distance_from_center_m": 7.53
+        },
+        {
+          "filename": "PXL_20260206_191510902.jpg",
+          "lat": 49.66229444444444,
+          "lon": -115.99890555555555,
+          "timestamp": "2026-02-06T12:15:10",
+          "distance_from_center_m": 5.63
+        },
+        {
+          "filename": "PXL_20260206_191411596.jpg",
+          "lat": 49.662394444444445,
+          "lon": -115.99875277777778,
+          "timestamp": "2026-02-06T12:14:11",
+          "distance_from_center_m": 10.02
+        },
+        {
+          "filename": "PXL_20260206_191359758.jpg",
+          "lat": 49.66238333333333,
+          "lon": -115.99876111111111,
+          "timestamp": "2026-02-06T12:13:59",
+          "distance_from_center_m": 8.71
+        },
+        {
+          "filename": "PXL_20260206_191501436.jpg",
+          "lat": 49.66229444444444,
+          "lon": -115.99886944444445,
+          "timestamp": "2026-02-06T12:15:01",
+          "distance_from_center_m": 4.09
+        },
+        {
+          "filename": "PXL_20260206_191324215.jpg",
+          "lat": 49.662369444444444,
+          "lon": -115.99857222222222,
+          "timestamp": "2026-02-06T12:13:24",
+          "distance_from_center_m": 20.33
+        },
+        {
+          "filename": "PXL_20260206_191438616.jpg",
+          "lat": 49.662305555555555,
+          "lon": -115.99875555555556,
+          "timestamp": "2026-02-06T12:14:38",
+          "distance_from_center_m": 7.08
+        },
+        {
+          "filename": "PXL_20260206_191446525.jpg",
+          "lat": 49.66225,
+          "lon": -115.99884722222222,
+          "timestamp": "2026-02-06T12:14:46",
+          "distance_from_center_m": 8.71
         },
         {
           "filename": "PXL_20260206_191539086.jpg",
           "lat": 49.66229166666667,
           "lon": -115.99906111111112,
           "timestamp": "2026-02-06T12:15:39",
-          "distance_from_center_m": 0.43
+          "distance_from_center_m": 15.91
+        },
+        {
+          "filename": "PXL_20260206_191607262.jpg",
+          "lat": 49.66222777777778,
+          "lon": -115.999175,
+          "timestamp": "2026-02-06T12:16:07",
+          "distance_from_center_m": 26.1
+        },
+        {
+          "filename": "PXL_20260206_191709067.jpg",
+          "lat": 49.662391666666664,
+          "lon": -115.99888611111112,
+          "timestamp": "2026-02-06T12:17:09",
+          "distance_from_center_m": 7.57
         }
       ]
     },
@@ -569,87 +681,94 @@
     {
       "cluster_id": "cluster_c2vd83",
       "center": {
-        "lat": 49.66871919191919,
-        "lon": -115.9962744949495
+        "lat": 49.66873796296296,
+        "lon": -115.99627361111112
       },
-      "radius_m": 16.66,
+      "radius_m": 22.97,
       "photos": [
         {
           "filename": "PXL_20260206_192629990.jpg",
           "lat": 49.66863333333333,
           "lon": -115.99625,
           "timestamp": "2026-02-06T12:26:29",
-          "distance_from_center_m": 9.71
+          "distance_from_center_m": 11.76
         },
         {
           "filename": "PXL_20260206_192635000.jpg",
           "lat": 49.66863333333333,
           "lon": -115.99624722222222,
           "timestamp": "2026-02-06T12:26:34",
-          "distance_from_center_m": 9.75
+          "distance_from_center_m": 11.79
         },
         {
           "filename": "PXL_20260206_192651958.jpg",
           "lat": 49.66871944444444,
           "lon": -115.99627777777778,
           "timestamp": "2026-02-06T12:26:51",
-          "distance_from_center_m": 0.24
+          "distance_from_center_m": 2.08
         },
         {
           "filename": "PXL_20260206_192606800.jpg",
           "lat": 49.668569444444444,
           "lon": -115.99626944444445,
           "timestamp": "2026-02-06T12:26:06",
-          "distance_from_center_m": 16.66
+          "distance_from_center_m": 18.74
         },
         {
           "filename": "PXL_20260206_192649253.jpg",
           "lat": 49.66871944444444,
           "lon": -115.996275,
           "timestamp": "2026-02-06T12:26:49",
-          "distance_from_center_m": 0.05
+          "distance_from_center_m": 2.06
         },
         {
           "filename": "PXL_20260206_192725360.jpg",
           "lat": 49.66883333333333,
           "lon": -115.99627222222222,
           "timestamp": "2026-02-06T12:27:25",
-          "distance_from_center_m": 12.69
+          "distance_from_center_m": 10.61
         },
         {
           "filename": "PXL_20260206_192701085.jpg",
           "lat": 49.66874166666666,
           "lon": -115.99627222222222,
           "timestamp": "2026-02-06T12:27:01",
-          "distance_from_center_m": 2.5
+          "distance_from_center_m": 0.42
         },
         {
           "filename": "PXL_20260206_192621393.jpg",
           "lat": 49.66858611111111,
           "lon": -115.99626111111111,
           "timestamp": "2026-02-06T12:26:21",
-          "distance_from_center_m": 14.83
+          "distance_from_center_m": 16.91
         },
         {
           "filename": "PXL_20260206_192827771.jpg",
           "lat": 49.66883055555555,
           "lon": -115.99631666666667,
           "timestamp": "2026-02-06T12:28:27",
-          "distance_from_center_m": 12.75
+          "distance_from_center_m": 10.75
         },
         {
           "filename": "PXL_20260206_192717254.jpg",
           "lat": 49.668819444444445,
           "lon": -115.99628333333334,
           "timestamp": "2026-02-06T12:27:17",
-          "distance_from_center_m": 11.17
+          "distance_from_center_m": 9.09
+        },
+        {
+          "filename": "PXL_20260206_193104612.jpg",
+          "lat": 49.66894444444444,
+          "lon": -115.99626388888889,
+          "timestamp": "2026-02-06T12:31:04",
+          "distance_from_center_m": 22.97
         },
         {
           "filename": "PXL_20260206_192712857.jpg",
           "lat": 49.668825,
           "lon": -115.99629444444444,
           "timestamp": "2026-02-06T12:27:12",
-          "distance_from_center_m": 11.85
+          "distance_from_center_m": 9.79
         }
       ]
     },
@@ -763,45 +882,59 @@
     {
       "cluster_id": "cluster_c2vd2x",
       "center": {
-        "lat": 49.65375888888888,
-        "lon": -115.98810166666667
+        "lat": 49.65380674603174,
+        "lon": -115.98806269841269
       },
-      "radius_m": 6.12,
+      "radius_m": 15.5,
       "photos": [
         {
           "filename": "PXL_20260206_230008372.jpg",
           "lat": 49.653755555555556,
           "lon": -115.98811944444445,
           "timestamp": "2026-02-06T16:00:08",
-          "distance_from_center_m": 1.33
+          "distance_from_center_m": 7.01
         },
         {
           "filename": "PXL_20260206_230051160.jpg",
           "lat": 49.65376111111111,
           "lon": -115.98801666666667,
           "timestamp": "2026-02-06T16:00:51",
-          "distance_from_center_m": 6.12
+          "distance_from_center_m": 6.06
         },
         {
           "filename": "PXL_20260206_230110315.jpg",
           "lat": 49.653730555555555,
           "lon": -115.98807222222223,
           "timestamp": "2026-02-06T16:01:10",
-          "distance_from_center_m": 3.8
+          "distance_from_center_m": 8.5
         },
         {
           "filename": "PXL_20260206_230015191.jpg",
           "lat": 49.65376388888889,
           "lon": -115.98816666666667,
           "timestamp": "2026-02-06T16:00:15",
-          "distance_from_center_m": 4.71
+          "distance_from_center_m": 8.87
+        },
+        {
+          "filename": "PXL_20260206_225825669.jpg",
+          "lat": 49.653930555555554,
+          "lon": -115.98796388888888,
+          "timestamp": "2026-02-06T15:58:25",
+          "distance_from_center_m": 15.5
         },
         {
           "filename": "PXL_20260206_225957102.jpg",
           "lat": 49.65378333333333,
           "lon": -115.98813333333334,
           "timestamp": "2026-02-06T15:59:57",
-          "distance_from_center_m": 3.55
+          "distance_from_center_m": 5.71
+        },
+        {
+          "filename": "PXL_20260206_225832600.jpg",
+          "lat": 49.65392222222222,
+          "lon": -115.98796666666667,
+          "timestamp": "2026-02-06T15:58:32",
+          "distance_from_center_m": 14.58
         }
       ]
     },
@@ -860,97 +993,132 @@
     {
       "cluster_id": "cluster_c2vd8k",
       "center": {
-        "lat": 49.68349398148147,
-        "lon": -116.00167500000002
+        "lat": 49.6834524691358,
+        "lon": -116.00154228395064
       },
-      "radius_m": 5.23,
+      "radius_m": 27.04,
       "photos": [
         {
           "filename": "PXL_20260206_205702968.jpg",
           "lat": 49.683502777777775,
           "lon": -116.00168888888889,
           "timestamp": "2026-02-06T13:57:02",
-          "distance_from_center_m": 1.4
+          "distance_from_center_m": 11.94
         },
         {
           "filename": "PXL_20260206_205606689.jpg",
           "lat": 49.68349722222222,
           "lon": -116.00168055555555,
           "timestamp": "2026-02-06T13:56:06",
-          "distance_from_center_m": 0.54
+          "distance_from_center_m": 11.12
         },
         {
           "filename": "PXL_20260206_205724836.jpg",
           "lat": 49.68348888888889,
           "lon": -116.00160277777778,
           "timestamp": "2026-02-06T13:57:24",
-          "distance_from_center_m": 5.23
+          "distance_from_center_m": 5.94
         },
         {
           "filename": "PXL_20260206_205659259.jpg",
           "lat": 49.683499999999995,
           "lon": -116.00169444444444,
           "timestamp": "2026-02-06T13:56:59",
-          "distance_from_center_m": 1.55
+          "distance_from_center_m": 12.16
         },
         {
           "filename": "PXL_20260206_205555391.jpg",
           "lat": 49.683477777777775,
           "lon": -116.00170277777778,
           "timestamp": "2026-02-06T13:55:55",
-          "distance_from_center_m": 2.69
+          "distance_from_center_m": 11.88
+        },
+        {
+          "filename": "PXL_20260206_205814801.jpg",
+          "lat": 49.68328333333333,
+          "lon": -116.00127222222223,
+          "timestamp": "2026-02-06T13:58:14",
+          "distance_from_center_m": 27.04
         },
         {
           "filename": "PXL_20260206_205612243.jpg",
           "lat": 49.68349722222222,
           "lon": -116.00168055555555,
           "timestamp": "2026-02-06T13:56:12",
-          "distance_from_center_m": 0.54
+          "distance_from_center_m": 11.12
+        },
+        {
+          "filename": "PXL_20260206_205838566.jpg",
+          "lat": 49.68343055555555,
+          "lon": -116.0012888888889,
+          "timestamp": "2026-02-06T13:58:38",
+          "distance_from_center_m": 18.39
+        },
+        {
+          "filename": "PXL_20260206_205826205.jpg",
+          "lat": 49.68339444444444,
+          "lon": -116.00126944444445,
+          "timestamp": "2026-02-06T13:58:26",
+          "distance_from_center_m": 20.66
         }
       ]
     },
     {
       "cluster_id": "cluster_c2vd8d",
       "center": {
-        "lat": 49.66970388888889,
-        "lon": -115.98799833333332
+        "lat": 49.669740476190476,
+        "lon": -115.98810793650793
       },
-      "radius_m": 6.44,
+      "radius_m": 23.77,
       "photos": [
         {
           "filename": "PXL_20260206_221318459.jpg",
           "lat": 49.669755555555554,
           "lon": -115.9880388888889,
           "timestamp": "2026-02-06T15:13:18",
-          "distance_from_center_m": 6.44
+          "distance_from_center_m": 5.24
         },
         {
           "filename": "PXL_20260206_221347560.jpg",
           "lat": 49.66970555555555,
           "lon": -115.9880111111111,
           "timestamp": "2026-02-06T15:13:47",
-          "distance_from_center_m": 0.94
+          "distance_from_center_m": 7.98
         },
         {
           "filename": "PXL_20260206_221341013.jpg",
           "lat": 49.669688888888885,
           "lon": -115.98800555555556,
           "timestamp": "2026-02-06T15:13:41",
-          "distance_from_center_m": 1.75
+          "distance_from_center_m": 9.34
+        },
+        {
+          "filename": "PXL_20260206_222727749.jpg",
+          "lat": 49.66981388888889,
+          "lon": -115.98837222222222,
+          "timestamp": "2026-02-06T15:27:27",
+          "distance_from_center_m": 20.7
+        },
+        {
+          "filename": "PXL_20260206_222734915.jpg",
+          "lat": 49.66985,
+          "lon": -115.98839166666667,
+          "timestamp": "2026-02-06T15:27:34",
+          "distance_from_center_m": 23.77
         },
         {
           "filename": "PXL_20260206_221329300.jpg",
           "lat": 49.669691666666665,
           "lon": -115.987975,
           "timestamp": "2026-02-06T15:13:29",
-          "distance_from_center_m": 2.16
+          "distance_from_center_m": 11
         },
         {
           "filename": "PXL_20260206_221359959.jpg",
           "lat": 49.66967777777778,
           "lon": -115.98796111111112,
           "timestamp": "2026-02-06T15:13:59",
-          "distance_from_center_m": 3.95
+          "distance_from_center_m": 12.66
         }
       ]
     },
@@ -1200,86 +1368,6 @@
       ]
     },
     {
-      "cluster_id": "cluster_c2vd82",
-      "center": {
-        "lat": 49.66234194444444,
-        "lon": -115.99880055555555
-      },
-      "radius_m": 10.76,
-      "photos": [
-        {
-          "filename": "PXL_20260206_191428393.jpg",
-          "lat": 49.66237777777778,
-          "lon": -115.99872777777777,
-          "timestamp": "2026-02-06T12:14:28",
-          "distance_from_center_m": 6.58
-        },
-        {
-          "filename": "PXL_20260206_191816344.jpg",
-          "lat": 49.66236111111111,
-          "lon": -115.9987388888889,
-          "timestamp": "2026-02-06T12:18:16",
-          "distance_from_center_m": 4.92
-        },
-        {
-          "filename": "PXL_20260206_191819789.jpg",
-          "lat": 49.662366666666664,
-          "lon": -115.99876111111111,
-          "timestamp": "2026-02-06T12:18:19",
-          "distance_from_center_m": 3.95
-        },
-        {
-          "filename": "PXL_20260206_191510902.jpg",
-          "lat": 49.66229444444444,
-          "lon": -115.99890555555555,
-          "timestamp": "2026-02-06T12:15:10",
-          "distance_from_center_m": 9.22
-        },
-        {
-          "filename": "PXL_20260206_191411596.jpg",
-          "lat": 49.662394444444445,
-          "lon": -115.99875277777778,
-          "timestamp": "2026-02-06T12:14:11",
-          "distance_from_center_m": 6.78
-        },
-        {
-          "filename": "PXL_20260206_191359758.jpg",
-          "lat": 49.66238333333333,
-          "lon": -115.99876111111111,
-          "timestamp": "2026-02-06T12:13:59",
-          "distance_from_center_m": 5.41
-        },
-        {
-          "filename": "PXL_20260206_191501436.jpg",
-          "lat": 49.66229444444444,
-          "lon": -115.99886944444445,
-          "timestamp": "2026-02-06T12:15:01",
-          "distance_from_center_m": 7.24
-        },
-        {
-          "filename": "PXL_20260206_191438616.jpg",
-          "lat": 49.662305555555555,
-          "lon": -115.99875555555556,
-          "timestamp": "2026-02-06T12:14:38",
-          "distance_from_center_m": 5.18
-        },
-        {
-          "filename": "PXL_20260206_191446525.jpg",
-          "lat": 49.66225,
-          "lon": -115.99884722222222,
-          "timestamp": "2026-02-06T12:14:46",
-          "distance_from_center_m": 10.76
-        },
-        {
-          "filename": "PXL_20260206_191709067.jpg",
-          "lat": 49.662391666666664,
-          "lon": -115.99888611111112,
-          "timestamp": "2026-02-06T12:17:09",
-          "distance_from_center_m": 8.28
-        }
-      ]
-    },
-    {
       "cluster_id": "cluster_c2vd2x",
       "center": {
         "lat": 49.65323888888889,
@@ -1359,30 +1447,6 @@
       ]
     },
     {
-      "cluster_id": "cluster_c2vd8k",
-      "center": {
-        "lat": 49.68235,
-        "lon": -115.99637638888889
-      },
-      "radius_m": 0.1,
-      "photos": [
-        {
-          "filename": "PXL_20260206_211122206.jpg",
-          "lat": 49.68235,
-          "lon": -115.996375,
-          "timestamp": "2026-02-06T14:11:22",
-          "distance_from_center_m": 0.1
-        },
-        {
-          "filename": "PXL_20260206_211124831.jpg",
-          "lat": 49.68235,
-          "lon": -115.99637777777778,
-          "timestamp": "2026-02-06T14:11:24",
-          "distance_from_center_m": 0.1
-        }
-      ]
-    },
-    {
       "cluster_id": "cluster_c2vd86",
       "center": {
         "lat": 49.66945833333333,
@@ -1433,17 +1497,31 @@
     {
       "cluster_id": "cluster_c2vd8d",
       "center": {
-        "lat": 49.669999999999995,
-        "lon": -115.98732777777778
+        "lat": 49.669946296296295,
+        "lon": -115.98739814814815
       },
-      "radius_m": 0,
+      "radius_m": 7.83,
       "photos": [
         {
           "filename": "PXL_20260206_221514982.jpg",
           "lat": 49.669999999999995,
           "lon": -115.98732777777778,
           "timestamp": "2026-02-06T15:15:14",
-          "distance_from_center_m": 0
+          "distance_from_center_m": 7.83
+        },
+        {
+          "filename": "PXL_20260206_221549540.jpg",
+          "lat": 49.66991944444444,
+          "lon": -115.98743333333333,
+          "timestamp": "2026-02-06T15:15:49",
+          "distance_from_center_m": 3.91
+        },
+        {
+          "filename": "PXL_20260206_221546176.jpg",
+          "lat": 49.66991944444444,
+          "lon": -115.98743333333333,
+          "timestamp": "2026-02-06T15:15:46",
+          "distance_from_center_m": 3.91
         }
       ]
     },
@@ -1481,45 +1559,52 @@
     {
       "cluster_id": "cluster_c2vd89",
       "center": {
-        "lat": 49.668033888888885,
-        "lon": -115.98832055555553
+        "lat": 49.66803518518518,
+        "lon": -115.9882875
       },
-      "radius_m": 6.42,
+      "radius_m": 11.92,
       "photos": [
         {
           "filename": "PXL_20260206_223155808.jpg",
           "lat": 49.66800833333333,
           "lon": -115.988375,
           "timestamp": "2026-02-06T15:31:55",
-          "distance_from_center_m": 4.84
+          "distance_from_center_m": 6.97
         },
         {
           "filename": "PXL_20260206_223049857.jpg",
           "lat": 49.66808333333333,
           "lon": -115.98836666666666,
           "timestamp": "2026-02-06T15:30:49",
-          "distance_from_center_m": 6.42
+          "distance_from_center_m": 7.82
         },
         {
           "filename": "PXL_20260206_223106636.jpg",
           "lat": 49.66806666666666,
           "lon": -115.98829444444445,
           "timestamp": "2026-02-06T15:31:06",
-          "distance_from_center_m": 4.1
+          "distance_from_center_m": 3.54
         },
         {
           "filename": "PXL_20260206_223124635.jpg",
           "lat": 49.66800277777777,
           "lon": -115.988275,
           "timestamp": "2026-02-06T15:31:24",
-          "distance_from_center_m": 4.77
+          "distance_from_center_m": 3.71
         },
         {
           "filename": "PXL_20260206_223114481.jpg",
           "lat": 49.66800833333333,
           "lon": -115.98829166666667,
           "timestamp": "2026-02-06T15:31:14",
-          "distance_from_center_m": 3.52
+          "distance_from_center_m": 3
+        },
+        {
+          "filename": "PXL_20260206_223138785.jpg",
+          "lat": 49.66804166666667,
+          "lon": -115.98812222222222,
+          "timestamp": "2026-02-06T15:31:38",
+          "distance_from_center_m": 11.92
         }
       ]
     },
@@ -1550,31 +1635,59 @@
     {
       "cluster_id": "cluster_c2vd89",
       "center": {
-        "lat": 49.66427407407408,
-        "lon": -115.98499537037037
+        "lat": 49.66438452380952,
+        "lon": -115.98497896825397
       },
-      "radius_m": 4.22,
+      "radius_m": 14.96,
       "photos": [
         {
           "filename": "PXL_20260206_223932355.jpg",
           "lat": 49.664249999999996,
           "lon": -115.98498333333333,
           "timestamp": "2026-02-06T15:39:32",
-          "distance_from_center_m": 2.81
+          "distance_from_center_m": 14.96
+        },
+        {
+          "filename": "PXL_20260206_223720893.jpg",
+          "lat": 49.66446111111111,
+          "lon": -115.984975,
+          "timestamp": "2026-02-06T15:37:20",
+          "distance_from_center_m": 8.52
+        },
+        {
+          "filename": "PXL_20260206_223715596.jpg",
+          "lat": 49.66449444444444,
+          "lon": -115.98496666666666,
+          "timestamp": "2026-02-06T15:37:15",
+          "distance_from_center_m": 12.25
         },
         {
           "filename": "PXL_20260206_223937294.jpg",
           "lat": 49.66426111111111,
           "lon": -115.98499444444444,
           "timestamp": "2026-02-06T15:39:37",
-          "distance_from_center_m": 1.44
+          "distance_from_center_m": 13.77
+        },
+        {
+          "filename": "PXL_20260206_223704169.jpg",
+          "lat": 49.66448611111111,
+          "lon": -115.98495277777778,
+          "timestamp": "2026-02-06T15:37:04",
+          "distance_from_center_m": 11.45
         },
         {
           "filename": "PXL_20260206_223903552.jpg",
           "lat": 49.66431111111111,
           "lon": -115.98500833333334,
           "timestamp": "2026-02-06T15:39:03",
-          "distance_from_center_m": 4.22
+          "distance_from_center_m": 8.43
+        },
+        {
+          "filename": "PXL_20260206_223725628.jpg",
+          "lat": 49.664427777777775,
+          "lon": -115.98497222222223,
+          "timestamp": "2026-02-06T15:37:25",
+          "distance_from_center_m": 4.83
         }
       ]
     },
@@ -1626,17 +1739,24 @@
     {
       "cluster_id": "cluster_c2vd2u",
       "center": {
-        "lat": 49.640363888888885,
-        "lon": -115.98195
+        "lat": 49.64042638888888,
+        "lon": -115.98191666666666
       },
-      "radius_m": 0,
+      "radius_m": 7.35,
       "photos": [
         {
           "filename": "PXL_20260206_233422574.jpg",
           "lat": 49.640363888888885,
           "lon": -115.98195,
           "timestamp": "2026-02-06T16:34:22",
-          "distance_from_center_m": 0
+          "distance_from_center_m": 7.35
+        },
+        {
+          "filename": "PXL_20260206_233436345.jpg",
+          "lat": 49.64048888888889,
+          "lon": -115.98188333333333,
+          "timestamp": "2026-02-06T16:34:36",
+          "distance_from_center_m": 7.35
         }
       ]
     },
@@ -1681,52 +1801,101 @@
     {
       "cluster_id": "cluster_c2vd8k",
       "center": {
-        "lat": 49.685452777777776,
-        "lon": -116.00034814814815
+        "lat": 49.68530277777778,
+        "lon": -116.00069358974359
       },
-      "radius_m": 3.52,
+      "radius_m": 33.21,
       "photos": [
         {
           "filename": "PXL_20260206_210406293.jpg",
           "lat": 49.68546111111111,
           "lon": -116.00034166666667,
           "timestamp": "2026-02-06T14:04:06",
-          "distance_from_center_m": 1.04
+          "distance_from_center_m": 30.84
         },
         {
           "filename": "PXL_20260206_210353142.jpg",
           "lat": 49.68542222222222,
           "lon": -116.0003611111111,
           "timestamp": "2026-02-06T14:03:53",
-          "distance_from_center_m": 3.52
+          "distance_from_center_m": 27.36
+        },
+        {
+          "filename": "PXL_20260206_210320684.jpg",
+          "lat": 49.685291666666664,
+          "lon": -116.00067222222222,
+          "timestamp": "2026-02-06T14:03:20",
+          "distance_from_center_m": 1.97
+        },
+        {
+          "filename": "PXL_20260206_210143951.jpg",
+          "lat": 49.685180555555554,
+          "lon": -116.00109722222223,
+          "timestamp": "2026-02-06T14:01:43",
+          "distance_from_center_m": 32.06
         },
         {
           "filename": "PXL_20260206_210400650.jpg",
           "lat": 49.68546388888888,
           "lon": -116.00035,
           "timestamp": "2026-02-06T14:04:00",
-          "distance_from_center_m": 1.24
+          "distance_from_center_m": 30.53
         },
         {
           "filename": "PXL_20260206_210426708.jpg",
           "lat": 49.685447222222216,
           "lon": -116.00034166666667,
           "timestamp": "2026-02-06T14:04:26",
-          "distance_from_center_m": 0.77
+          "distance_from_center_m": 29.98
+        },
+        {
+          "filename": "PXL_20260206_210206531.jpg",
+          "lat": 49.685125,
+          "lon": -116.00099444444444,
+          "timestamp": "2026-02-06T14:02:06",
+          "distance_from_center_m": 29.31
+        },
+        {
+          "filename": "PXL_20260206_210215404.jpg",
+          "lat": 49.68515,
+          "lon": -116.00094166666666,
+          "timestamp": "2026-02-06T14:02:15",
+          "distance_from_center_m": 24.64
         },
         {
           "filename": "PXL_20260206_210413030.jpg",
           "lat": 49.685475,
           "lon": -116.00034722222222,
           "timestamp": "2026-02-06T14:04:13",
-          "distance_from_center_m": 2.47
+          "distance_from_center_m": 31.43
+        },
+        {
+          "filename": "PXL_20260206_210124245.jpg",
+          "lat": 49.68507777777778,
+          "lon": -116.00099722222222,
+          "timestamp": "2026-02-06T14:01:24",
+          "distance_from_center_m": 33.21
         },
         {
           "filename": "PXL_20260206_210409849.jpg",
           "lat": 49.685447222222216,
           "lon": -116.00034722222222,
           "timestamp": "2026-02-06T14:04:09",
-          "distance_from_center_m": 0.62
+          "distance_from_center_m": 29.65
+        },
+        {
+          "filename": "PXL_20260206_210154317.jpg",
+          "lat": 49.68519444444444,
+          "lon": -116.00111666666666,
+          "timestamp": "2026-02-06T14:01:54",
+          "distance_from_center_m": 32.73
+        },
+        {
+          "filename": "PXL_20260206_210150229.jpg",
+          "lat": 49.685199999999995,
+          "lon": -116.00110833333333,
+          "timestamp": "2026-02-06T14:01:50",
+          "distance_from_center_m": 31.95
         }
       ]
     },
@@ -1774,31 +1943,52 @@
     {
       "cluster_id": "cluster_c2vd89",
       "center": {
-        "lat": 49.665693518518516,
-        "lon": -115.98464074074074
+        "lat": 49.665668518518515,
+        "lon": -115.98482361111111
       },
-      "radius_m": 6.73,
+      "radius_m": 17.09,
       "photos": [
         {
           "filename": "PXL_20260206_223525276.jpg",
           "lat": 49.665663888888886,
           "lon": -115.98472222222222,
           "timestamp": "2026-02-06T15:35:25",
-          "distance_from_center_m": 6.73
+          "distance_from_center_m": 7.32
         },
         {
           "filename": "PXL_20260206_223545656.jpg",
           "lat": 49.665708333333335,
           "lon": -115.98459722222222,
           "timestamp": "2026-02-06T15:35:45",
-          "distance_from_center_m": 3.54
+          "distance_from_center_m": 16.88
+        },
+        {
+          "filename": "PXL_20260206_223444344.jpg",
+          "lat": 49.66563055555555,
+          "lon": -115.98503055555555,
+          "timestamp": "2026-02-06T15:34:44",
+          "distance_from_center_m": 15.48
+        },
+        {
+          "filename": "PXL_20260206_223456185.jpg",
+          "lat": 49.66567777777777,
+          "lon": -115.98493888888889,
+          "timestamp": "2026-02-06T15:34:56",
+          "distance_from_center_m": 8.36
+        },
+        {
+          "filename": "PXL_20260206_223440434.jpg",
+          "lat": 49.66562222222222,
+          "lon": -115.98505,
+          "timestamp": "2026-02-06T15:34:40",
+          "distance_from_center_m": 17.09
         },
         {
           "filename": "PXL_20260206_223552394.jpg",
           "lat": 49.665708333333335,
           "lon": -115.98460277777778,
           "timestamp": "2026-02-06T15:35:52",
-          "distance_from_center_m": 3.19
+          "distance_from_center_m": 16.5
         }
       ]
     },
@@ -1920,61 +2110,6 @@
       ]
     },
     {
-      "cluster_id": "cluster_c2vd89",
-      "center": {
-        "lat": 49.66446736111111,
-        "lon": -115.98496666666666
-      },
-      "radius_m": 4.42,
-      "photos": [
-        {
-          "filename": "PXL_20260206_223720893.jpg",
-          "lat": 49.66446111111111,
-          "lon": -115.984975,
-          "timestamp": "2026-02-06T15:37:20",
-          "distance_from_center_m": 0.92
-        },
-        {
-          "filename": "PXL_20260206_223715596.jpg",
-          "lat": 49.66449444444444,
-          "lon": -115.98496666666666,
-          "timestamp": "2026-02-06T15:37:15",
-          "distance_from_center_m": 3.01
-        },
-        {
-          "filename": "PXL_20260206_223704169.jpg",
-          "lat": 49.66448611111111,
-          "lon": -115.98495277777778,
-          "timestamp": "2026-02-06T15:37:04",
-          "distance_from_center_m": 2.31
-        },
-        {
-          "filename": "PXL_20260206_223725628.jpg",
-          "lat": 49.664427777777775,
-          "lon": -115.98497222222223,
-          "timestamp": "2026-02-06T15:37:25",
-          "distance_from_center_m": 4.42
-        }
-      ]
-    },
-    {
-      "cluster_id": "cluster_c2vd8k",
-      "center": {
-        "lat": 49.685291666666664,
-        "lon": -116.00067222222222
-      },
-      "radius_m": 0,
-      "photos": [
-        {
-          "filename": "PXL_20260206_210320684.jpg",
-          "lat": 49.685291666666664,
-          "lon": -116.00067222222222,
-          "timestamp": "2026-02-06T14:03:20",
-          "distance_from_center_m": 0
-        }
-      ]
-    },
-    {
       "cluster_id": "cluster_c2vd8e",
       "center": {
         "lat": 49.67498055555555,
@@ -1999,102 +2134,92 @@
       ]
     },
     {
-      "cluster_id": "cluster_c2vd8k",
-      "center": {
-        "lat": 49.68515462962963,
-        "lon": -116.00104259259261
-      },
-      "radius_m": 9.15,
-      "photos": [
-        {
-          "filename": "PXL_20260206_210143951.jpg",
-          "lat": 49.685180555555554,
-          "lon": -116.00109722222223,
-          "timestamp": "2026-02-06T14:01:43",
-          "distance_from_center_m": 4.87
-        },
-        {
-          "filename": "PXL_20260206_210206531.jpg",
-          "lat": 49.685125,
-          "lon": -116.00099444444444,
-          "timestamp": "2026-02-06T14:02:06",
-          "distance_from_center_m": 4.78
-        },
-        {
-          "filename": "PXL_20260206_210215404.jpg",
-          "lat": 49.68515,
-          "lon": -116.00094166666666,
-          "timestamp": "2026-02-06T14:02:15",
-          "distance_from_center_m": 7.28
-        },
-        {
-          "filename": "PXL_20260206_210124245.jpg",
-          "lat": 49.68507777777778,
-          "lon": -116.00099722222222,
-          "timestamp": "2026-02-06T14:01:24",
-          "distance_from_center_m": 9.15
-        },
-        {
-          "filename": "PXL_20260206_210154317.jpg",
-          "lat": 49.68519444444444,
-          "lon": -116.00111666666666,
-          "timestamp": "2026-02-06T14:01:54",
-          "distance_from_center_m": 6.93
-        },
-        {
-          "filename": "PXL_20260206_210150229.jpg",
-          "lat": 49.685199999999995,
-          "lon": -116.00110833333333,
-          "timestamp": "2026-02-06T14:01:50",
-          "distance_from_center_m": 6.92
-        }
-      ]
-    },
-    {
       "cluster_id": "cluster_c2vd88",
       "center": {
-        "lat": 49.661072222222224,
-        "lon": -115.98672037037038
+        "lat": 49.66113388888889,
+        "lon": -115.98673222222222
       },
-      "radius_m": 6.32,
+      "radius_m": 13.02,
       "photos": [
         {
           "filename": "PXL_20260206_224848228.jpg",
           "lat": 49.66111111111111,
           "lon": -115.98666944444444,
           "timestamp": "2026-02-06T15:48:48",
-          "distance_from_center_m": 5.67
+          "distance_from_center_m": 5.18
         },
         {
           "filename": "PXL_20260206_224859850.jpg",
           "lat": 49.66106388888889,
           "lon": -115.98669722222222,
           "timestamp": "2026-02-06T15:48:59",
-          "distance_from_center_m": 1.91
+          "distance_from_center_m": 8.18
+        },
+        {
+          "filename": "PXL_20260206_224831454.jpg",
+          "lat": 49.661249999999995,
+          "lon": -115.98675555555556,
+          "timestamp": "2026-02-06T15:48:31",
+          "distance_from_center_m": 13.02
+        },
+        {
+          "filename": "PXL_20260206_224820666.jpg",
+          "lat": 49.661202777777774,
+          "lon": -115.98674444444444,
+          "timestamp": "2026-02-06T15:48:20",
+          "distance_from_center_m": 7.71
         },
         {
           "filename": "PXL_20260206_224912942.jpg",
           "lat": 49.66104166666666,
           "lon": -115.98679444444444,
           "timestamp": "2026-02-06T15:49:12",
-          "distance_from_center_m": 6.32
+          "distance_from_center_m": 11.19
         }
       ]
     },
     {
       "cluster_id": "cluster_c2vd86",
       "center": {
-        "lat": 49.66980833333333,
-        "lon": -115.9962388888889
+        "lat": 49.6698961111111,
+        "lon": -115.99623555555556
       },
-      "radius_m": 0,
+      "radius_m": 9.76,
       "photos": [
         {
           "filename": "PXL_20260206_193526952.jpg",
           "lat": 49.66980833333333,
           "lon": -115.9962388888889,
           "timestamp": "2026-02-06T12:35:26",
-          "distance_from_center_m": 0
+          "distance_from_center_m": 9.76
+        },
+        {
+          "filename": "PXL_20260206_193507173.jpg",
+          "lat": 49.669941666666666,
+          "lon": -115.99622777777778,
+          "timestamp": "2026-02-06T12:35:07",
+          "distance_from_center_m": 5.1
+        },
+        {
+          "filename": "PXL_20260206_193338285.jpg",
+          "lat": 49.669925,
+          "lon": -115.996275,
+          "timestamp": "2026-02-06T12:33:38",
+          "distance_from_center_m": 4.29
+        },
+        {
+          "filename": "PXL_20260206_193329983.jpg",
+          "lat": 49.66989722222222,
+          "lon": -115.99626944444445,
+          "timestamp": "2026-02-06T12:33:29",
+          "distance_from_center_m": 2.44
+        },
+        {
+          "filename": "PXL_20260206_193358922.jpg",
+          "lat": 49.66990833333333,
+          "lon": -115.99616666666667,
+          "timestamp": "2026-02-06T12:33:58",
+          "distance_from_center_m": 5.14
         }
       ]
     },
@@ -2180,89 +2305,52 @@
     {
       "cluster_id": "cluster_c2vd8k",
       "center": {
-        "lat": 49.68232916666666,
-        "lon": -115.99902777777777
+        "lat": 49.68224305555555,
+        "lon": -115.9991625
       },
-      "radius_m": 1.66,
+      "radius_m": 14.51,
       "photos": [
         {
           "filename": "PXL_20260206_211740453.jpg",
           "lat": 49.68233333333333,
           "lon": -115.99905,
           "timestamp": "2026-02-06T14:17:40",
-          "distance_from_center_m": 1.66
+          "distance_from_center_m": 12.9
+        },
+        {
+          "filename": "PXL_20260206_211841373.jpg",
+          "lat": 49.682205555555555,
+          "lon": -115.99921111111111,
+          "timestamp": "2026-02-06T14:18:41",
+          "distance_from_center_m": 5.44
+        },
+        {
+          "filename": "PXL_20260206_211846181.jpg",
+          "lat": 49.68220833333333,
+          "lon": -115.99920833333333,
+          "timestamp": "2026-02-06T14:18:46",
+          "distance_from_center_m": 5.08
+        },
+        {
+          "filename": "PXL_20260206_211807491.jpg",
+          "lat": 49.68218888888889,
+          "lon": -115.99925555555555,
+          "timestamp": "2026-02-06T14:18:07",
+          "distance_from_center_m": 9.01
         },
         {
           "filename": "PXL_20260206_211735699.jpg",
           "lat": 49.682325,
           "lon": -115.99900555555556,
           "timestamp": "2026-02-06T14:17:35",
-          "distance_from_center_m": 1.66
-        }
-      ]
-    },
-    {
-      "cluster_id": "cluster_c2vd8k",
-      "center": {
-        "lat": 49.68328333333333,
-        "lon": -116.00127222222223
-      },
-      "radius_m": 0,
-      "photos": [
-        {
-          "filename": "PXL_20260206_205814801.jpg",
-          "lat": 49.68328333333333,
-          "lon": -116.00127222222223,
-          "timestamp": "2026-02-06T13:58:14",
-          "distance_from_center_m": 0
-        }
-      ]
-    },
-    {
-      "cluster_id": "cluster_c2vd86",
-      "center": {
-        "lat": 49.67373611111111,
-        "lon": -115.99491666666667
-      },
-      "radius_m": 1.72,
-      "photos": [
-        {
-          "filename": "PXL_20260206_213129340.jpg",
-          "lat": 49.673725,
-          "lon": -115.99493333333334,
-          "timestamp": "2026-02-06T14:31:29",
-          "distance_from_center_m": 1.72
+          "distance_from_center_m": 14.51
         },
         {
-          "filename": "PXL_20260206_213139722.jpg",
-          "lat": 49.67374722222222,
-          "lon": -115.9949,
-          "timestamp": "2026-02-06T14:31:39",
-          "distance_from_center_m": 1.72
-        }
-      ]
-    },
-    {
-      "cluster_id": "cluster_c2vd8d",
-      "center": {
-        "lat": 49.66983194444444,
-        "lon": -115.98838194444446
-      },
-      "radius_m": 2.13,
-      "photos": [
-        {
-          "filename": "PXL_20260206_222727749.jpg",
-          "lat": 49.66981388888889,
-          "lon": -115.98837222222222,
-          "timestamp": "2026-02-06T15:27:27",
-          "distance_from_center_m": 2.13
-        },
-        {
-          "filename": "PXL_20260206_222734915.jpg",
-          "lat": 49.66985,
-          "lon": -115.98839166666667,
-          "timestamp": "2026-02-06T15:27:34",
-          "distance_from_center_m": 2.13
+          "filename": "PXL_20260206_211819142.jpg",
+          "lat": 49.68219722222222,
+          "lon": -115.99924444444444,
+          "timestamp": "2026-02-06T14:18:19",
+          "distance_from_center_m": 7.79
         }
       ]
     },
@@ -2287,30 +2375,6 @@
           "lon": -115.99337777777778,
           "timestamp": "2026-02-06T10:51:34",
           "distance_from_center_m": 0.1
-        }
-      ]
-    },
-    {
-      "cluster_id": "cluster_c2vd2x",
-      "center": {
-        "lat": 49.65392638888889,
-        "lon": -115.98796527777777
-      },
-      "radius_m": 0.47,
-      "photos": [
-        {
-          "filename": "PXL_20260206_225825669.jpg",
-          "lat": 49.653930555555554,
-          "lon": -115.98796388888888,
-          "timestamp": "2026-02-06T15:58:25",
-          "distance_from_center_m": 0.47
-        },
-        {
-          "filename": "PXL_20260206_225832600.jpg",
-          "lat": 49.65392222222222,
-          "lon": -115.98796666666667,
-          "timestamp": "2026-02-06T15:58:32",
-          "distance_from_center_m": 0.47
         }
       ]
     },
@@ -2346,44 +2410,6 @@
       ]
     },
     {
-      "cluster_id": "cluster_c2vd8k",
-      "center": {
-        "lat": 49.682199999999995,
-        "lon": -115.9992298611111
-      },
-      "radius_m": 2.22,
-      "photos": [
-        {
-          "filename": "PXL_20260206_211841373.jpg",
-          "lat": 49.682205555555555,
-          "lon": -115.99921111111111,
-          "timestamp": "2026-02-06T14:18:41",
-          "distance_from_center_m": 1.48
-        },
-        {
-          "filename": "PXL_20260206_211846181.jpg",
-          "lat": 49.68220833333333,
-          "lon": -115.99920833333333,
-          "timestamp": "2026-02-06T14:18:46",
-          "distance_from_center_m": 1.8
-        },
-        {
-          "filename": "PXL_20260206_211807491.jpg",
-          "lat": 49.68218888888889,
-          "lon": -115.99925555555555,
-          "timestamp": "2026-02-06T14:18:07",
-          "distance_from_center_m": 2.22
-        },
-        {
-          "filename": "PXL_20260206_211819142.jpg",
-          "lat": 49.68219722222222,
-          "lon": -115.99924444444444,
-          "timestamp": "2026-02-06T14:18:19",
-          "distance_from_center_m": 1.09
-        }
-      ]
-    },
-    {
       "cluster_id": "cluster_c2vd89",
       "center": {
         "lat": 49.66640833333333,
@@ -2408,30 +2434,6 @@
       ]
     },
     {
-      "cluster_id": "cluster_c2vd88",
-      "center": {
-        "lat": 49.661226388888885,
-        "lon": -115.98675
-      },
-      "radius_m": 2.66,
-      "photos": [
-        {
-          "filename": "PXL_20260206_224831454.jpg",
-          "lat": 49.661249999999995,
-          "lon": -115.98675555555556,
-          "timestamp": "2026-02-06T15:48:31",
-          "distance_from_center_m": 2.66
-        },
-        {
-          "filename": "PXL_20260206_224820666.jpg",
-          "lat": 49.661202777777774,
-          "lon": -115.98674444444444,
-          "timestamp": "2026-02-06T15:48:20",
-          "distance_from_center_m": 2.66
-        }
-      ]
-    },
-    {
       "cluster_id": "cluster_c2vd2s",
       "center": {
         "lat": 49.63837777777778,
@@ -2452,44 +2454,6 @@
           "lon": -115.98290555555556,
           "timestamp": "2026-02-06T16:32:08",
           "distance_from_center_m": 2.29
-        }
-      ]
-    },
-    {
-      "cluster_id": "cluster_c2vd86",
-      "center": {
-        "lat": 49.66991805555555,
-        "lon": -115.99623472222223
-      },
-      "radius_m": 5.02,
-      "photos": [
-        {
-          "filename": "PXL_20260206_193507173.jpg",
-          "lat": 49.669941666666666,
-          "lon": -115.99622777777778,
-          "timestamp": "2026-02-06T12:35:07",
-          "distance_from_center_m": 2.67
-        },
-        {
-          "filename": "PXL_20260206_193338285.jpg",
-          "lat": 49.669925,
-          "lon": -115.996275,
-          "timestamp": "2026-02-06T12:33:38",
-          "distance_from_center_m": 3
-        },
-        {
-          "filename": "PXL_20260206_193329983.jpg",
-          "lat": 49.66989722222222,
-          "lon": -115.99626944444445,
-          "timestamp": "2026-02-06T12:33:29",
-          "distance_from_center_m": 3.41
-        },
-        {
-          "filename": "PXL_20260206_193358922.jpg",
-          "lat": 49.66990833333333,
-          "lon": -115.99616666666667,
-          "timestamp": "2026-02-06T12:33:58",
-          "distance_from_center_m": 5.02
         }
       ]
     },
@@ -2535,122 +2499,40 @@
       ]
     },
     {
-      "cluster_id": "cluster_c2vd2u",
-      "center": {
-        "lat": 49.64048888888889,
-        "lon": -115.98188333333333
-      },
-      "radius_m": 0,
-      "photos": [
-        {
-          "filename": "PXL_20260206_233436345.jpg",
-          "lat": 49.64048888888889,
-          "lon": -115.98188333333333,
-          "timestamp": "2026-02-06T16:34:36",
-          "distance_from_center_m": 0
-        }
-      ]
-    },
-    {
-      "cluster_id": "cluster_c2vd89",
-      "center": {
-        "lat": 49.665643518518515,
-        "lon": -115.98500648148149
-      },
-      "radius_m": 6.18,
-      "photos": [
-        {
-          "filename": "PXL_20260206_223444344.jpg",
-          "lat": 49.66563055555555,
-          "lon": -115.98503055555555,
-          "timestamp": "2026-02-06T15:34:44",
-          "distance_from_center_m": 2.25
-        },
-        {
-          "filename": "PXL_20260206_223456185.jpg",
-          "lat": 49.66567777777777,
-          "lon": -115.98493888888889,
-          "timestamp": "2026-02-06T15:34:56",
-          "distance_from_center_m": 6.18
-        },
-        {
-          "filename": "PXL_20260206_223440434.jpg",
-          "lat": 49.66562222222222,
-          "lon": -115.98505,
-          "timestamp": "2026-02-06T15:34:40",
-          "distance_from_center_m": 3.93
-        }
-      ]
-    },
-    {
       "cluster_id": "cluster_c2vd2m",
       "center": {
-        "lat": 49.643852777777774,
-        "lon": -115.998825
+        "lat": 49.64389305555555,
+        "lon": -115.99879166666668
       },
-      "radius_m": 0,
+      "radius_m": 15.24,
       "photos": [
         {
           "filename": "PXL_20260206_181007183.jpg",
           "lat": 49.64385277777778,
           "lon": -115.998825,
           "timestamp": "2026-02-06T11:10:07",
-          "distance_from_center_m": 0
+          "distance_from_center_m": 5.08
         },
         {
           "filename": "PXL_20260206_181016820.jpg",
           "lat": 49.64385277777778,
           "lon": -115.998825,
           "timestamp": "2026-02-06T11:10:16",
-          "distance_from_center_m": 0
+          "distance_from_center_m": 5.08
+        },
+        {
+          "filename": "PXL_20260206_180852857.jpg",
+          "lat": 49.644013888888885,
+          "lon": -115.99869166666667,
+          "timestamp": "2026-02-06T11:08:52",
+          "distance_from_center_m": 15.24
         },
         {
           "filename": "PXL_20260206_181022767.jpg",
           "lat": 49.64385277777778,
           "lon": -115.998825,
           "timestamp": "2026-02-06T11:10:22",
-          "distance_from_center_m": 0
-        }
-      ]
-    },
-    {
-      "cluster_id": "cluster_c2vd82",
-      "center": {
-        "lat": 49.662369444444444,
-        "lon": -115.99857222222222
-      },
-      "radius_m": 0,
-      "photos": [
-        {
-          "filename": "PXL_20260206_191324215.jpg",
-          "lat": 49.662369444444444,
-          "lon": -115.99857222222222,
-          "timestamp": "2026-02-06T12:13:24",
-          "distance_from_center_m": 0
-        }
-      ]
-    },
-    {
-      "cluster_id": "cluster_c2vd8d",
-      "center": {
-        "lat": 49.66991944444444,
-        "lon": -115.98743333333333
-      },
-      "radius_m": 0,
-      "photos": [
-        {
-          "filename": "PXL_20260206_221549540.jpg",
-          "lat": 49.66991944444444,
-          "lon": -115.98743333333333,
-          "timestamp": "2026-02-06T15:15:49",
-          "distance_from_center_m": 0
-        },
-        {
-          "filename": "PXL_20260206_221546176.jpg",
-          "lat": 49.66991944444444,
-          "lon": -115.98743333333333,
-          "timestamp": "2026-02-06T15:15:46",
-          "distance_from_center_m": 0
+          "distance_from_center_m": 5.08
         }
       ]
     },
@@ -2701,98 +2583,6 @@
           "lat": 49.640908333333336,
           "lon": -115.98111111111112,
           "timestamp": "2026-02-06T10:28:56",
-          "distance_from_center_m": 0
-        }
-      ]
-    },
-    {
-      "cluster_id": "cluster_c2vd8k",
-      "center": {
-        "lat": 49.683412499999996,
-        "lon": -116.00127916666668
-      },
-      "radius_m": 2.13,
-      "photos": [
-        {
-          "filename": "PXL_20260206_205838566.jpg",
-          "lat": 49.68343055555555,
-          "lon": -116.0012888888889,
-          "timestamp": "2026-02-06T13:58:38",
-          "distance_from_center_m": 2.13
-        },
-        {
-          "filename": "PXL_20260206_205826205.jpg",
-          "lat": 49.68339444444444,
-          "lon": -116.00126944444445,
-          "timestamp": "2026-02-06T13:58:26",
-          "distance_from_center_m": 2.13
-        }
-      ]
-    },
-    {
-      "cluster_id": "cluster_c2vd2m",
-      "center": {
-        "lat": 49.644013888888885,
-        "lon": -115.99869166666667
-      },
-      "radius_m": 0,
-      "photos": [
-        {
-          "filename": "PXL_20260206_180852857.jpg",
-          "lat": 49.644013888888885,
-          "lon": -115.99869166666667,
-          "timestamp": "2026-02-06T11:08:52",
-          "distance_from_center_m": 0
-        }
-      ]
-    },
-    {
-      "cluster_id": "cluster_c2vd89",
-      "center": {
-        "lat": 49.66804166666667,
-        "lon": -115.98812222222222
-      },
-      "radius_m": 0,
-      "photos": [
-        {
-          "filename": "PXL_20260206_223138785.jpg",
-          "lat": 49.66804166666667,
-          "lon": -115.98812222222222,
-          "timestamp": "2026-02-06T15:31:38",
-          "distance_from_center_m": 0
-        }
-      ]
-    },
-    {
-      "cluster_id": "cluster_c2vd82",
-      "center": {
-        "lat": 49.66222777777778,
-        "lon": -115.999175
-      },
-      "radius_m": 0,
-      "photos": [
-        {
-          "filename": "PXL_20260206_191607262.jpg",
-          "lat": 49.66222777777778,
-          "lon": -115.999175,
-          "timestamp": "2026-02-06T12:16:07",
-          "distance_from_center_m": 0
-        }
-      ]
-    },
-    {
-      "cluster_id": "cluster_c2vd83",
-      "center": {
-        "lat": 49.66894444444444,
-        "lon": -115.99626388888889
-      },
-      "radius_m": 0,
-      "photos": [
-        {
-          "filename": "PXL_20260206_193104612.jpg",
-          "lat": 49.66894444444444,
-          "lon": -115.99626388888889,
-          "timestamp": "2026-02-06T12:31:04",
           "distance_from_center_m": 0
         }
       ]

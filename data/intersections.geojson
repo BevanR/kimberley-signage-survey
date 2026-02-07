@@ -91,8 +91,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -115.99671111111111,
-          49.68219722222222
+          -115.99648796296295,
+          49.68229907407408
         ]
       },
       "properties": {
@@ -101,11 +101,13 @@
         "trail_names": [],
         "winter": false,
         "ski_trails": false,
-        "lat": 49.68219722222222,
-        "lon": -115.99671111111111,
-        "radius_m": 0,
+        "lat": 49.68229907407408,
+        "lon": -115.99648796296295,
+        "radius_m": 19.65,
         "photos": [
-          "PXL_20260206_211201703.jpg"
+          "PXL_20260206_211201703.jpg",
+          "PXL_20260206_211122206.jpg",
+          "PXL_20260206_211124831.jpg"
         ]
       }
     },
@@ -147,12 +149,13 @@
       },
       "properties": {
         "cluster_id": "cluster_c2vd2t",
-        "trail_count": 1,
+        "trail_count": 2,
         "trail_names": [
+          "Forest Crowne Through Road",
           "Home Run"
         ],
         "winter": true,
-        "ski_trails": false,
+        "ski_trails": true,
         "lat": 49.64434166666667,
         "lon": -115.99260277777778,
         "radius_m": 0,
@@ -262,13 +265,14 @@
       },
       "properties": {
         "cluster_id": "cluster_c2vd8e",
-        "trail_count": 2,
+        "trail_count": 3,
         "trail_names": [
           "Levirs In a Dangerous time",
+          "Lower Army Road (Trans Canada Trail)",
           "Residents' Choice"
         ],
         "winter": true,
-        "ski_trails": false,
+        "ski_trails": true,
         "lat": 49.675028125,
         "lon": -115.98611180555557,
         "radius_m": 10.89,
@@ -289,8 +293,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -115.99489097222222,
-          49.67392013888889
+          -115.99489953703704,
+          49.673858796296294
         ]
       },
       "properties": {
@@ -301,14 +305,16 @@
         ],
         "winter": true,
         "ski_trails": true,
-        "lat": 49.67392013888889,
-        "lon": -115.99489097222222,
-        "radius_m": 6.14,
+        "lat": 49.673858796296294,
+        "lon": -115.99489953703704,
+        "radius_m": 15.07,
         "photos": [
           "PXL_20260206_212949759.jpg",
           "PXL_20260206_212932539.jpg",
           "PXL_20260206_213001945.jpg",
-          "PXL_20260206_212942886.jpg"
+          "PXL_20260206_213129340.jpg",
+          "PXL_20260206_212942886.jpg",
+          "PXL_20260206_213139722.jpg"
         ]
       }
     },
@@ -317,25 +323,40 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -115.99905555555556,
-          49.66229027777778
+          -115.9988474206349,
+          49.66232837301586
         ]
       },
       "properties": {
         "cluster_id": "cluster_c2vd82",
-        "trail_count": 2,
+        "trail_count": 5,
         "trail_names": [
           "Army Road (Trans Canada Trail)",
-          "Duck Pond"
+          "Duck Pond",
+          "Lower Army Road (Trans Canada Trail)",
+          "Richardsons",
+          "Upper Army Road"
         ],
         "winter": true,
         "ski_trails": true,
-        "lat": 49.66229027777778,
-        "lon": -115.99905555555556,
-        "radius_m": 0.43,
+        "lat": 49.66232837301586,
+        "lon": -115.9988474206349,
+        "radius_m": 26.1,
         "photos": [
           "PXL_20260206_191530493.jpg",
-          "PXL_20260206_191539086.jpg"
+          "PXL_20260206_191428393.jpg",
+          "PXL_20260206_191816344.jpg",
+          "PXL_20260206_191819789.jpg",
+          "PXL_20260206_191510902.jpg",
+          "PXL_20260206_191411596.jpg",
+          "PXL_20260206_191359758.jpg",
+          "PXL_20260206_191501436.jpg",
+          "PXL_20260206_191324215.jpg",
+          "PXL_20260206_191438616.jpg",
+          "PXL_20260206_191446525.jpg",
+          "PXL_20260206_191539086.jpg",
+          "PXL_20260206_191607262.jpg",
+          "PXL_20260206_191709067.jpg"
         ]
       }
     },
@@ -350,8 +371,9 @@
       },
       "properties": {
         "cluster_id": "cluster_c2vd2m",
-        "trail_count": 1,
+        "trail_count": 2,
         "trail_names": [
+          "Duck Pond",
           "Skid Road"
         ],
         "winter": true,
@@ -437,12 +459,13 @@
       },
       "properties": {
         "cluster_id": "cluster_c2vd2w",
-        "trail_count": 1,
+        "trail_count": 2,
         "trail_names": [
+          "Not Keiver's Way",
           "Skinku¢ / Coyote"
         ],
         "winter": true,
-        "ski_trails": false,
+        "ski_trails": true,
         "lat": 49.65116111111111,
         "lon": -115.99124027777779,
         "radius_m": 2.51,
@@ -457,25 +480,26 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -115.9962744949495,
-          49.66871919191919
+          -115.99627361111112,
+          49.66873796296296
         ]
       },
       "properties": {
         "cluster_id": "cluster_c2vd83",
-        "trail_count": 5,
+        "trail_count": 6,
         "trail_names": [
           "Cabin Trail",
           "Electric Avenue",
           "Sidecut",
+          "Trickle Creek Outer Fatbike Loop",
           "Trickledown",
           "Upper Army Road"
         ],
         "winter": true,
         "ski_trails": true,
-        "lat": 49.66871919191919,
-        "lon": -115.9962744949495,
-        "radius_m": 16.66,
+        "lat": 49.66873796296296,
+        "lon": -115.99627361111112,
+        "radius_m": 22.97,
         "photos": [
           "PXL_20260206_192629990.jpg",
           "PXL_20260206_192635000.jpg",
@@ -487,6 +511,7 @@
           "PXL_20260206_192621393.jpg",
           "PXL_20260206_192827771.jpg",
           "PXL_20260206_192717254.jpg",
+          "PXL_20260206_193104612.jpg",
           "PXL_20260206_192712857.jpg"
         ]
       }
@@ -579,28 +604,32 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -115.98810166666667,
-          49.65375888888888
+          -115.98806269841269,
+          49.65380674603174
         ]
       },
       "properties": {
         "cluster_id": "cluster_c2vd2x",
-        "trail_count": 2,
+        "trail_count": 4,
         "trail_names": [
+          "Keivers Way",
           "Run Home",
-          "Skinku¢ / Coyote"
+          "Skinku¢ / Coyote",
+          "Skinku¢ / Coyote Road"
         ],
         "winter": true,
         "ski_trails": false,
-        "lat": 49.65375888888888,
-        "lon": -115.98810166666667,
-        "radius_m": 6.12,
+        "lat": 49.65380674603174,
+        "lon": -115.98806269841269,
+        "radius_m": 15.5,
         "photos": [
           "PXL_20260206_230008372.jpg",
           "PXL_20260206_230051160.jpg",
           "PXL_20260206_230110315.jpg",
           "PXL_20260206_230015191.jpg",
-          "PXL_20260206_225957102.jpg"
+          "PXL_20260206_225825669.jpg",
+          "PXL_20260206_225957102.jpg",
+          "PXL_20260206_225832600.jpg"
         ]
       }
     },
@@ -641,28 +670,32 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -116.00167500000002,
-          49.68349398148147
+          -116.00154228395064,
+          49.6834524691358
         ]
       },
       "properties": {
         "cluster_id": "cluster_c2vd8k",
-        "trail_count": 1,
+        "trail_count": 2,
         "trail_names": [
-          "Trickle Charge"
+          "Trickle Charge",
+          "Trickle Creek Outer Fatbike Loop"
         ],
         "winter": true,
-        "ski_trails": false,
-        "lat": 49.68349398148147,
-        "lon": -116.00167500000002,
-        "radius_m": 5.23,
+        "ski_trails": true,
+        "lat": 49.6834524691358,
+        "lon": -116.00154228395064,
+        "radius_m": 27.04,
         "photos": [
           "PXL_20260206_205702968.jpg",
           "PXL_20260206_205606689.jpg",
           "PXL_20260206_205724836.jpg",
           "PXL_20260206_205659259.jpg",
           "PXL_20260206_205555391.jpg",
-          "PXL_20260206_205612243.jpg"
+          "PXL_20260206_205814801.jpg",
+          "PXL_20260206_205612243.jpg",
+          "PXL_20260206_205838566.jpg",
+          "PXL_20260206_205826205.jpg"
         ]
       }
     },
@@ -671,8 +704,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -115.98799833333332,
-          49.66970388888889
+          -115.98810793650793,
+          49.669740476190476
         ]
       },
       "properties": {
@@ -686,13 +719,15 @@
         ],
         "winter": true,
         "ski_trails": true,
-        "lat": 49.66970388888889,
-        "lon": -115.98799833333332,
-        "radius_m": 6.44,
+        "lat": 49.669740476190476,
+        "lon": -115.98810793650793,
+        "radius_m": 23.77,
         "photos": [
           "PXL_20260206_221318459.jpg",
           "PXL_20260206_221347560.jpg",
           "PXL_20260206_221341013.jpg",
+          "PXL_20260206_222727749.jpg",
+          "PXL_20260206_222734915.jpg",
           "PXL_20260206_221329300.jpg",
           "PXL_20260206_221359959.jpg"
         ]
@@ -900,43 +935,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -115.99880055555555,
-          49.66234194444444
-        ]
-      },
-      "properties": {
-        "cluster_id": "cluster_c2vd82",
-        "trail_count": 4,
-        "trail_names": [
-          "Army Road (Trans Canada Trail)",
-          "Lower Army Road (Trans Canada Trail)",
-          "Richardsons",
-          "Upper Army Road"
-        ],
-        "winter": true,
-        "ski_trails": true,
-        "lat": 49.66234194444444,
-        "lon": -115.99880055555555,
-        "radius_m": 10.76,
-        "photos": [
-          "PXL_20260206_191428393.jpg",
-          "PXL_20260206_191816344.jpg",
-          "PXL_20260206_191819789.jpg",
-          "PXL_20260206_191510902.jpg",
-          "PXL_20260206_191411596.jpg",
-          "PXL_20260206_191359758.jpg",
-          "PXL_20260206_191501436.jpg",
-          "PXL_20260206_191438616.jpg",
-          "PXL_20260206_191446525.jpg",
-          "PXL_20260206_191709067.jpg"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -115.98664305555556,
           49.65323888888889
         ]
@@ -1015,38 +1013,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -115.99637638888889,
-          49.68235
-        ]
-      },
-      "properties": {
-        "cluster_id": "cluster_c2vd8k",
-        "trail_count": 0,
-        "trail_names": [],
-        "winter": false,
-        "ski_trails": false,
-        "lat": 49.68235,
-        "lon": -115.99637638888889,
-        "radius_m": 0.1,
-        "photos": [
-          "PXL_20260206_211122206.jpg",
-          "PXL_20260206_211124831.jpg"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -115.99626944444445,
           49.66945833333333
         ]
       },
       "properties": {
         "cluster_id": "cluster_c2vd86",
-        "trail_count": 2,
+        "trail_count": 3,
         "trail_names": [
+          "Electric Avenue",
           "Trickle Creek Outer Fatbike Loop",
           "Upper Army Road"
         ],
@@ -1093,8 +1068,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -115.98732777777778,
-          49.669999999999995
+          -115.98739814814815,
+          49.669946296296295
         ]
       },
       "properties": {
@@ -1106,11 +1081,13 @@
         ],
         "winter": true,
         "ski_trails": false,
-        "lat": 49.669999999999995,
-        "lon": -115.98732777777778,
-        "radius_m": 0,
+        "lat": 49.669946296296295,
+        "lon": -115.98739814814815,
+        "radius_m": 7.83,
         "photos": [
-          "PXL_20260206_221514982.jpg"
+          "PXL_20260206_221514982.jpg",
+          "PXL_20260206_221549540.jpg",
+          "PXL_20260206_221546176.jpg"
         ]
       }
     },
@@ -1125,10 +1102,11 @@
       },
       "properties": {
         "cluster_id": "cluster_c2vd2m",
-        "trail_count": 2,
+        "trail_count": 3,
         "trail_names": [
           "Border Line",
-          "Skinku¢ / Coyote"
+          "Skinku¢ / Coyote",
+          "Skinku¢ / Coyote Spur"
         ],
         "winter": true,
         "ski_trails": false,
@@ -1147,28 +1125,30 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -115.98832055555553,
-          49.668033888888885
+          -115.9882875,
+          49.66803518518518
         ]
       },
       "properties": {
         "cluster_id": "cluster_c2vd89",
-        "trail_count": 2,
+        "trail_count": 3,
         "trail_names": [
           "Eimer's Road",
+          "Fall Line",
           "Lower Army Road (Trans Canada Trail)"
         ],
         "winter": true,
         "ski_trails": true,
-        "lat": 49.668033888888885,
-        "lon": -115.98832055555553,
-        "radius_m": 6.42,
+        "lat": 49.66803518518518,
+        "lon": -115.9882875,
+        "radius_m": 11.92,
         "photos": [
           "PXL_20260206_223155808.jpg",
           "PXL_20260206_223049857.jpg",
           "PXL_20260206_223106636.jpg",
           "PXL_20260206_223124635.jpg",
-          "PXL_20260206_223114481.jpg"
+          "PXL_20260206_223114481.jpg",
+          "PXL_20260206_223138785.jpg"
         ]
       }
     },
@@ -1204,25 +1184,30 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -115.98499537037037,
-          49.66427407407408
+          -115.98497896825397,
+          49.66438452380952
         ]
       },
       "properties": {
         "cluster_id": "cluster_c2vd89",
-        "trail_count": 1,
+        "trail_count": 2,
         "trail_names": [
+          "Edge Trail",
           "Elbow"
         ],
         "winter": true,
         "ski_trails": true,
-        "lat": 49.66427407407408,
-        "lon": -115.98499537037037,
-        "radius_m": 4.22,
+        "lat": 49.66438452380952,
+        "lon": -115.98497896825397,
+        "radius_m": 14.96,
         "photos": [
           "PXL_20260206_223932355.jpg",
+          "PXL_20260206_223720893.jpg",
+          "PXL_20260206_223715596.jpg",
           "PXL_20260206_223937294.jpg",
-          "PXL_20260206_223903552.jpg"
+          "PXL_20260206_223704169.jpg",
+          "PXL_20260206_223903552.jpg",
+          "PXL_20260206_223725628.jpg"
         ]
       }
     },
@@ -1237,9 +1222,13 @@
       },
       "properties": {
         "cluster_id": "cluster_c2vd2m",
-        "trail_count": 0,
-        "trail_names": [],
-        "winter": false,
+        "trail_count": 3,
+        "trail_names": [
+          "Duck Pond",
+          "Duck Pond",
+          "Skinku¢ / Coyote"
+        ],
+        "winter": true,
         "ski_trails": false,
         "lat": 49.64468055555555,
         "lon": -115.99910555555557,
@@ -1258,8 +1247,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -115.98195,
-          49.640363888888885
+          -115.98191666666666,
+          49.64042638888888
         ]
       },
       "properties": {
@@ -1270,11 +1259,12 @@
         ],
         "winter": true,
         "ski_trails": false,
-        "lat": 49.640363888888885,
-        "lon": -115.98195,
-        "radius_m": 0,
+        "lat": 49.64042638888888,
+        "lon": -115.98191666666666,
+        "radius_m": 7.35,
         "photos": [
-          "PXL_20260206_233422574.jpg"
+          "PXL_20260206_233422574.jpg",
+          "PXL_20260206_233436345.jpg"
         ]
       }
     },
@@ -1289,9 +1279,10 @@
       },
       "properties": {
         "cluster_id": "cluster_c2vd2w",
-        "trail_count": 1,
+        "trail_count": 2,
         "trail_names": [
-          "Not Keiver's Way"
+          "Not Keiver's Way",
+          "Skinku¢ / Coyote"
         ],
         "winter": true,
         "ski_trails": true,
@@ -1311,8 +1302,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -116.00034814814815,
-          49.685452777777776
+          -116.00069358974359,
+          49.68530277777778
         ]
       },
       "properties": {
@@ -1324,16 +1315,23 @@
         ],
         "winter": true,
         "ski_trails": true,
-        "lat": 49.685452777777776,
-        "lon": -116.00034814814815,
-        "radius_m": 3.52,
+        "lat": 49.68530277777778,
+        "lon": -116.00069358974359,
+        "radius_m": 33.21,
         "photos": [
           "PXL_20260206_210406293.jpg",
           "PXL_20260206_210353142.jpg",
+          "PXL_20260206_210320684.jpg",
+          "PXL_20260206_210143951.jpg",
           "PXL_20260206_210400650.jpg",
           "PXL_20260206_210426708.jpg",
+          "PXL_20260206_210206531.jpg",
+          "PXL_20260206_210215404.jpg",
           "PXL_20260206_210413030.jpg",
-          "PXL_20260206_210409849.jpg"
+          "PXL_20260206_210124245.jpg",
+          "PXL_20260206_210409849.jpg",
+          "PXL_20260206_210154317.jpg",
+          "PXL_20260206_210150229.jpg"
         ]
       }
     },
@@ -1394,8 +1392,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -115.98464074074074,
-          49.665693518518516
+          -115.98482361111111,
+          49.665668518518515
         ]
       },
       "properties": {
@@ -1409,12 +1407,15 @@
         ],
         "winter": true,
         "ski_trails": true,
-        "lat": 49.665693518518516,
-        "lon": -115.98464074074074,
-        "radius_m": 6.73,
+        "lat": 49.665668518518515,
+        "lon": -115.98482361111111,
+        "radius_m": 17.09,
         "photos": [
           "PXL_20260206_223525276.jpg",
           "PXL_20260206_223545656.jpg",
+          "PXL_20260206_223444344.jpg",
+          "PXL_20260206_223456185.jpg",
+          "PXL_20260206_223440434.jpg",
           "PXL_20260206_223552394.jpg"
         ]
       }
@@ -1533,61 +1534,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -115.98496666666666,
-          49.66446736111111
-        ]
-      },
-      "properties": {
-        "cluster_id": "cluster_c2vd89",
-        "trail_count": 2,
-        "trail_names": [
-          "Edge Trail",
-          "Elbow"
-        ],
-        "winter": true,
-        "ski_trails": true,
-        "lat": 49.66446736111111,
-        "lon": -115.98496666666666,
-        "radius_m": 4.42,
-        "photos": [
-          "PXL_20260206_223720893.jpg",
-          "PXL_20260206_223715596.jpg",
-          "PXL_20260206_223704169.jpg",
-          "PXL_20260206_223725628.jpg"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -116.00067222222222,
-          49.685291666666664
-        ]
-      },
-      "properties": {
-        "cluster_id": "cluster_c2vd8k",
-        "trail_count": 2,
-        "trail_names": [
-          "Trickle Charge",
-          "Trickle Creek Outer Fatbike Loop"
-        ],
-        "winter": true,
-        "ski_trails": true,
-        "lat": 49.685291666666664,
-        "lon": -116.00067222222222,
-        "radius_m": 0,
-        "photos": [
-          "PXL_20260206_210320684.jpg"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -115.98777916666667,
           49.67498055555555
         ]
@@ -1614,39 +1560,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -116.00104259259261,
-          49.68515462962963
-        ]
-      },
-      "properties": {
-        "cluster_id": "cluster_c2vd8k",
-        "trail_count": 2,
-        "trail_names": [
-          "Trickle Charge",
-          "Trickle Creek Outer Fatbike Loop"
-        ],
-        "winter": true,
-        "ski_trails": true,
-        "lat": 49.68515462962963,
-        "lon": -116.00104259259261,
-        "radius_m": 9.15,
-        "photos": [
-          "PXL_20260206_210143951.jpg",
-          "PXL_20260206_210206531.jpg",
-          "PXL_20260206_210215404.jpg",
-          "PXL_20260206_210124245.jpg",
-          "PXL_20260206_210154317.jpg",
-          "PXL_20260206_210150229.jpg"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -115.98672037037038,
-          49.661072222222224
+          -115.98673222222222,
+          49.66113388888889
         ]
       },
       "properties": {
@@ -1659,12 +1574,14 @@
         ],
         "winter": true,
         "ski_trails": true,
-        "lat": 49.661072222222224,
-        "lon": -115.98672037037038,
-        "radius_m": 6.32,
+        "lat": 49.66113388888889,
+        "lon": -115.98673222222222,
+        "radius_m": 13.02,
         "photos": [
           "PXL_20260206_224848228.jpg",
           "PXL_20260206_224859850.jpg",
+          "PXL_20260206_224831454.jpg",
+          "PXL_20260206_224820666.jpg",
           "PXL_20260206_224912942.jpg"
         ]
       }
@@ -1674,8 +1591,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -115.9962388888889,
-          49.66980833333333
+          -115.99623555555556,
+          49.6698961111111
         ]
       },
       "properties": {
@@ -1686,11 +1603,15 @@
         ],
         "winter": true,
         "ski_trails": true,
-        "lat": 49.66980833333333,
-        "lon": -115.9962388888889,
-        "radius_m": 0,
+        "lat": 49.6698961111111,
+        "lon": -115.99623555555556,
+        "radius_m": 9.76,
         "photos": [
-          "PXL_20260206_193526952.jpg"
+          "PXL_20260206_193526952.jpg",
+          "PXL_20260206_193507173.jpg",
+          "PXL_20260206_193338285.jpg",
+          "PXL_20260206_193329983.jpg",
+          "PXL_20260206_193358922.jpg"
         ]
       }
     },
@@ -1729,8 +1650,9 @@
       },
       "properties": {
         "cluster_id": "cluster_c2vd2s",
-        "trail_count": 1,
+        "trail_count": 2,
         "trail_names": [
+          "Forest Crowne Through Road",
           "Forest Crowne Through Road Down"
         ],
         "winter": true,
@@ -1774,8 +1696,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -115.99902777777777,
-          49.68232916666666
+          -115.9991625,
+          49.68224305555555
         ]
       },
       "properties": {
@@ -1786,88 +1708,16 @@
         ],
         "winter": true,
         "ski_trails": true,
-        "lat": 49.68232916666666,
-        "lon": -115.99902777777777,
-        "radius_m": 1.66,
+        "lat": 49.68224305555555,
+        "lon": -115.9991625,
+        "radius_m": 14.51,
         "photos": [
           "PXL_20260206_211740453.jpg",
-          "PXL_20260206_211735699.jpg"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -116.00127222222223,
-          49.68328333333333
-        ]
-      },
-      "properties": {
-        "cluster_id": "cluster_c2vd8k",
-        "trail_count": 0,
-        "trail_names": [],
-        "winter": false,
-        "ski_trails": false,
-        "lat": 49.68328333333333,
-        "lon": -116.00127222222223,
-        "radius_m": 0,
-        "photos": [
-          "PXL_20260206_205814801.jpg"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -115.99491666666667,
-          49.67373611111111
-        ]
-      },
-      "properties": {
-        "cluster_id": "cluster_c2vd86",
-        "trail_count": 1,
-        "trail_names": [
-          "Trickle Creek Outer Fatbike Loop"
-        ],
-        "winter": true,
-        "ski_trails": true,
-        "lat": 49.67373611111111,
-        "lon": -115.99491666666667,
-        "radius_m": 1.72,
-        "photos": [
-          "PXL_20260206_213129340.jpg",
-          "PXL_20260206_213139722.jpg"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -115.98838194444446,
-          49.66983194444444
-        ]
-      },
-      "properties": {
-        "cluster_id": "cluster_c2vd8d",
-        "trail_count": 2,
-        "trail_names": [
-          "Lower Army Road (Trans Canada Trail)",
-          "Patterson Ridge"
-        ],
-        "winter": true,
-        "ski_trails": true,
-        "lat": 49.66983194444444,
-        "lon": -115.98838194444446,
-        "radius_m": 2.13,
-        "photos": [
-          "PXL_20260206_222727749.jpg",
-          "PXL_20260206_222734915.jpg"
+          "PXL_20260206_211841373.jpg",
+          "PXL_20260206_211846181.jpg",
+          "PXL_20260206_211807491.jpg",
+          "PXL_20260206_211735699.jpg",
+          "PXL_20260206_211819142.jpg"
         ]
       }
     },
@@ -1894,32 +1744,6 @@
         "photos": [
           "PXL_20260206_175125854.jpg",
           "PXL_20260206_175134325.jpg"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -115.98796527777777,
-          49.65392638888889
-        ]
-      },
-      "properties": {
-        "cluster_id": "cluster_c2vd2x",
-        "trail_count": 1,
-        "trail_names": [
-          "Skinku¢ / Coyote"
-        ],
-        "winter": true,
-        "ski_trails": false,
-        "lat": 49.65392638888889,
-        "lon": -115.98796527777777,
-        "radius_m": 0.47,
-        "photos": [
-          "PXL_20260206_225825669.jpg",
-          "PXL_20260206_225832600.jpg"
         ]
       }
     },
@@ -1955,34 +1779,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -115.9992298611111,
-          49.682199999999995
-        ]
-      },
-      "properties": {
-        "cluster_id": "cluster_c2vd8k",
-        "trail_count": 1,
-        "trail_names": [
-          "Trickle Creek Outer Fatbike Loop"
-        ],
-        "winter": true,
-        "ski_trails": true,
-        "lat": 49.682199999999995,
-        "lon": -115.9992298611111,
-        "radius_m": 2.22,
-        "photos": [
-          "PXL_20260206_211841373.jpg",
-          "PXL_20260206_211846181.jpg",
-          "PXL_20260206_211807491.jpg",
-          "PXL_20260206_211819142.jpg"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -115.98700694444445,
           49.66640833333333
         ]
@@ -2010,42 +1806,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -115.98675,
-          49.661226388888885
-        ]
-      },
-      "properties": {
-        "cluster_id": "cluster_c2vd88",
-        "trail_count": 3,
-        "trail_names": [
-          "Elbow",
-          "Skinku¢ / Coyote",
-          "Skinku¢ / Coyote Road"
-        ],
-        "winter": true,
-        "ski_trails": true,
-        "lat": 49.661226388888885,
-        "lon": -115.98675,
-        "radius_m": 2.66,
-        "photos": [
-          "PXL_20260206_224831454.jpg",
-          "PXL_20260206_224820666.jpg"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -115.982875,
           49.63837777777778
         ]
       },
       "properties": {
         "cluster_id": "cluster_c2vd2s",
-        "trail_count": 1,
+        "trail_count": 2,
         "trail_names": [
+          "Powerline",
           "Sunflower Hill"
         ],
         "winter": true,
@@ -2056,34 +1825,6 @@
         "photos": [
           "PXL_20260206_233150147.jpg",
           "PXL_20260206_233208687.jpg"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -115.99623472222223,
-          49.66991805555555
-        ]
-      },
-      "properties": {
-        "cluster_id": "cluster_c2vd86",
-        "trail_count": 1,
-        "trail_names": [
-          "Trickle Creek Outer Fatbike Loop"
-        ],
-        "winter": true,
-        "ski_trails": true,
-        "lat": 49.66991805555555,
-        "lon": -115.99623472222223,
-        "radius_m": 5.02,
-        "photos": [
-          "PXL_20260206_193507173.jpg",
-          "PXL_20260206_193338285.jpg",
-          "PXL_20260206_193329983.jpg",
-          "PXL_20260206_193358922.jpg"
         ]
       }
     },
@@ -2143,61 +1884,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -115.98188333333333,
-          49.64048888888889
-        ]
-      },
-      "properties": {
-        "cluster_id": "cluster_c2vd2u",
-        "trail_count": 1,
-        "trail_names": [
-          "Powerline"
-        ],
-        "winter": true,
-        "ski_trails": false,
-        "lat": 49.64048888888889,
-        "lon": -115.98188333333333,
-        "radius_m": 0,
-        "photos": [
-          "PXL_20260206_233436345.jpg"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -115.98500648148149,
-          49.665643518518515
-        ]
-      },
-      "properties": {
-        "cluster_id": "cluster_c2vd89",
-        "trail_count": 2,
-        "trail_names": [
-          "Eimer's Road",
-          "Eimers Ridge"
-        ],
-        "winter": true,
-        "ski_trails": true,
-        "lat": 49.665643518518515,
-        "lon": -115.98500648148149,
-        "radius_m": 6.18,
-        "photos": [
-          "PXL_20260206_223444344.jpg",
-          "PXL_20260206_223456185.jpg",
-          "PXL_20260206_223440434.jpg"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -115.998825,
-          49.643852777777774
+          -115.99879166666668,
+          49.64389305555555
         ]
       },
       "properties": {
@@ -2209,68 +1897,14 @@
         ],
         "winter": true,
         "ski_trails": false,
-        "lat": 49.643852777777774,
-        "lon": -115.998825,
-        "radius_m": 0,
+        "lat": 49.64389305555555,
+        "lon": -115.99879166666668,
+        "radius_m": 15.24,
         "photos": [
           "PXL_20260206_181007183.jpg",
           "PXL_20260206_181016820.jpg",
+          "PXL_20260206_180852857.jpg",
           "PXL_20260206_181022767.jpg"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -115.99857222222222,
-          49.662369444444444
-        ]
-      },
-      "properties": {
-        "cluster_id": "cluster_c2vd82",
-        "trail_count": 4,
-        "trail_names": [
-          "Army Road (Trans Canada Trail)",
-          "Lower Army Road (Trans Canada Trail)",
-          "Richardsons",
-          "Upper Army Road"
-        ],
-        "winter": true,
-        "ski_trails": true,
-        "lat": 49.662369444444444,
-        "lon": -115.99857222222222,
-        "radius_m": 0,
-        "photos": [
-          "PXL_20260206_191324215.jpg"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -115.98743333333333,
-          49.66991944444444
-        ]
-      },
-      "properties": {
-        "cluster_id": "cluster_c2vd8d",
-        "trail_count": 2,
-        "trail_names": [
-          "Eimers Ridge",
-          "Ponderosa Trail"
-        ],
-        "winter": true,
-        "ski_trails": false,
-        "lat": 49.66991944444444,
-        "lon": -115.98743333333333,
-        "radius_m": 0,
-        "photos": [
-          "PXL_20260206_221549540.jpg",
-          "PXL_20260206_221546176.jpg"
         ]
       }
     },
@@ -2342,136 +1976,6 @@
         "radius_m": 0,
         "photos": [
           "PXL_20260206_172856966.jpg"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -116.00127916666668,
-          49.683412499999996
-        ]
-      },
-      "properties": {
-        "cluster_id": "cluster_c2vd8k",
-        "trail_count": 1,
-        "trail_names": [
-          "Trickle Creek Outer Fatbike Loop"
-        ],
-        "winter": true,
-        "ski_trails": true,
-        "lat": 49.683412499999996,
-        "lon": -116.00127916666668,
-        "radius_m": 2.13,
-        "photos": [
-          "PXL_20260206_205838566.jpg",
-          "PXL_20260206_205826205.jpg"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -115.99869166666667,
-          49.644013888888885
-        ]
-      },
-      "properties": {
-        "cluster_id": "cluster_c2vd2m",
-        "trail_count": 2,
-        "trail_names": [
-          "Duck Pond",
-          "Skinku¢ / Coyote Spur"
-        ],
-        "winter": true,
-        "ski_trails": false,
-        "lat": 49.644013888888885,
-        "lon": -115.99869166666667,
-        "radius_m": 0,
-        "photos": [
-          "PXL_20260206_180852857.jpg"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -115.98812222222222,
-          49.66804166666667
-        ]
-      },
-      "properties": {
-        "cluster_id": "cluster_c2vd89",
-        "trail_count": 1,
-        "trail_names": [
-          "Eimer's Road"
-        ],
-        "winter": true,
-        "ski_trails": true,
-        "lat": 49.66804166666667,
-        "lon": -115.98812222222222,
-        "radius_m": 0,
-        "photos": [
-          "PXL_20260206_223138785.jpg"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -115.999175,
-          49.66222777777778
-        ]
-      },
-      "properties": {
-        "cluster_id": "cluster_c2vd82",
-        "trail_count": 2,
-        "trail_names": [
-          "Army Road (Trans Canada Trail)",
-          "Duck Pond"
-        ],
-        "winter": true,
-        "ski_trails": true,
-        "lat": 49.66222777777778,
-        "lon": -115.999175,
-        "radius_m": 0,
-        "photos": [
-          "PXL_20260206_191607262.jpg"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -115.99626388888889,
-          49.66894444444444
-        ]
-      },
-      "properties": {
-        "cluster_id": "cluster_c2vd83",
-        "trail_count": 3,
-        "trail_names": [
-          "Electric Avenue",
-          "Trickle Creek Outer Fatbike Loop",
-          "Upper Army Road"
-        ],
-        "winter": true,
-        "ski_trails": true,
-        "lat": 49.66894444444444,
-        "lon": -115.99626388888889,
-        "radius_m": 0,
-        "photos": [
-          "PXL_20260206_193104612.jpg"
         ]
       }
     },
