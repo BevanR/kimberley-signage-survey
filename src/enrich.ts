@@ -98,10 +98,17 @@ async function main() {
     ]);
   }
 
-  const geojson: FeatureCollection = { type: "FeatureCollection", features };
+  const sorted = features
+    .map((f, i) => ({ f, row: csvRows[i + 1] }))
+    .sort((a, b) => (b.f.properties?.trail_count ?? 0) - (a.f.properties?.trail_count ?? 0));
+
+  const sortedFeatures = sorted.map((s) => s.f);
+  const sortedCsvRows = [csvRows[0], ...sorted.map((s) => s.row)];
+
+  const geojson: FeatureCollection = { type: "FeatureCollection", features: sortedFeatures };
   await mkdir(dirname(config.intersections_geojson_path), { recursive: true });
   await writeFile(config.intersections_geojson_path, JSON.stringify(geojson, null, 2));
-  await writeFile(config.intersections_csv_path, csvRows.map((r) => r.map((c) => `"${c.replace(/"/g, '""')}"`).join(",")).join("\n"));
+  await writeFile(config.intersections_csv_path, sortedCsvRows.map((r) => r.map((c) => `"${c.replace(/"/g, '""')}"`).join(",")).join("\n"));
 
   console.log(`Wrote ${config.intersections_geojson_path}`);
   console.log(`Wrote ${config.intersections_csv_path}`);
