@@ -1,0 +1,21 @@
+{
+  "name": "kimberley-signage-survey",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "cluster": "bun run src/cluster.ts",
+    "fetch_trails": "bun run src/fetch_trails.ts",
+    "enrich": "bun run src/enrich.ts"
+  },
+  "dependencies": {
+    "@turf/distance": "^7.0.0",
+    "@turf/helpers": "^7.0.0",
+    "@turf/point-to-line-distance": "^7.0.0",
+    "exifreader": "^4.36.0",
+    "ngeohash": "^0.6.3",
+    "playwright": "^1.49.0"
+  },
+  "devDependencies": {
+    "@types/geojson": "^7946.0.16"
+  }
+}
