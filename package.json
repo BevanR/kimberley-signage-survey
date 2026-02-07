@@ -4,7 +4,6 @@
   "type": "module",
   "scripts": {
     "cluster": "bun run src/cluster.ts",
-    "fetch_trails": "bun run src/fetch_trails.ts",
     "har_to_trails": "bun run src/har_to_trails.ts",
     "enrich": "bun run src/enrich.ts"
   },
