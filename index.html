@@ -28,6 +28,7 @@
     .filter-section { margin-top: 8px; display: flex; flex-direction: column; gap: 4px; }
     .filter-section .section-label { font-size: 12px; font-weight: 500; }
     .filter-section .checkbox-label { font-size: 12px; display: flex; align-items: center; gap: 6px; }
+    .reset-btn { margin-top: 8px; font-size: 11px; padding: 4px 8px; cursor: pointer; }
   </style>
 </head>
 <body>
@@ -50,6 +51,7 @@
       <label class="checkbox-label"><input type="checkbox" id="show-ski"> Ski</label>
       <label class="checkbox-label"><input type="checkbox" id="show-summer"> Summer MTB</label>
     </div>
+    <button type="button" id="reset-filters" class="reset-btn">Reset filters</button>
   </div>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
   <script type="module" src="./src/map.js"></script>
