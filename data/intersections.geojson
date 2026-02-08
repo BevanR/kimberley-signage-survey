@@ -21,8 +21,8 @@
           "Trickledown",
           "Upper Army Road"
         ],
-        "winter": true,
-        "ski_trails": true,
+        "winter": false,
+        "ski_trails": false,
         "lat": 49.66873796296296,
         "lon": -115.99627361111112,
         "radius_m": 22.97,
@@ -61,8 +61,8 @@
           "Richardsons",
           "Upper Army Road"
         ],
-        "winter": true,
-        "ski_trails": true,
+        "winter": false,
+        "ski_trails": false,
         "lat": 49.66232837301586,
         "lon": -115.9988474206349,
         "radius_m": 26.1,
@@ -102,7 +102,7 @@
           "Skinku¢ / Coyote",
           "Skinku¢ / Coyote Road"
         ],
-        "winter": true,
+        "winter": false,
         "ski_trails": false,
         "lat": 49.65380674603174,
         "lon": -115.98806269841269,
@@ -136,8 +136,8 @@
           "Ponderosa",
           "Ponderosa Trail"
         ],
-        "winter": true,
-        "ski_trails": true,
+        "winter": false,
+        "ski_trails": false,
         "lat": 49.669740476190476,
         "lon": -115.98810793650793,
         "radius_m": 23.77,
@@ -170,8 +170,8 @@
           "Elbow",
           "Elbow"
         ],
-        "winter": true,
-        "ski_trails": true,
+        "winter": false,
+        "ski_trails": false,
         "lat": 49.665668518518515,
         "lon": -115.98482361111111,
         "radius_m": 17.09,
@@ -202,7 +202,7 @@
           "Edge Trail",
           "Keivers Way"
         ],
-        "winter": true,
+        "winter": false,
         "ski_trails": false,
         "lat": 49.654129166666664,
         "lon": -115.99127638888888,
@@ -230,8 +230,8 @@
           "Lower Army Road (Trans Canada Trail)",
           "Ponderosa"
         ],
-        "winter": true,
-        "ski_trails": true,
+        "winter": false,
+        "ski_trails": false,
         "lat": 49.66853796296295,
         "lon": -115.98869351851853,
         "radius_m": 7.15,
@@ -262,8 +262,8 @@
           "Lower Army Road (Trans Canada Trail)",
           "Residents' Choice"
         ],
-        "winter": true,
-        "ski_trails": true,
+        "winter": false,
+        "ski_trails": false,
         "lat": 49.675028125,
         "lon": -115.98611180555557,
         "radius_m": 10.89,
@@ -296,7 +296,7 @@
           "Romantic Ridge",
           "Trickledown"
         ],
-        "winter": true,
+        "winter": false,
         "ski_trails": false,
         "lat": 49.67106626984127,
         "lon": -115.99372976190476,
@@ -329,7 +329,7 @@
           "Patterson Ridge",
           "Trickledown"
         ],
-        "winter": true,
+        "winter": false,
         "ski_trails": false,
         "lat": 49.673245370370374,
         "lon": -115.99444722222222,
@@ -361,8 +361,8 @@
           "Ponderosa Trail",
           "Residents' Choice"
         ],
-        "winter": true,
-        "ski_trails": true,
+        "winter": false,
+        "ski_trails": false,
         "lat": 49.67505625,
         "lon": -115.98529375000001,
         "radius_m": 8.12,
@@ -391,8 +391,8 @@
           "Trickle Creek Outer Fatbike Loop",
           "Upper Army Road"
         ],
-        "winter": true,
-        "ski_trails": true,
+        "winter": false,
+        "ski_trails": false,
         "lat": 49.66945833333333,
         "lon": -115.99626944444445,
         "radius_m": 0,
@@ -418,7 +418,7 @@
           "Skinku¢ / Coyote",
           "Skinku¢ / Coyote Spur"
         ],
-        "winter": true,
+        "winter": false,
         "ski_trails": false,
         "lat": 49.643747222222224,
         "lon": -115.99711111111111,
@@ -447,8 +447,8 @@
           "Fall Line",
           "Lower Army Road (Trans Canada Trail)"
         ],
-        "winter": true,
-        "ski_trails": true,
+        "winter": false,
+        "ski_trails": false,
         "lat": 49.66803518518518,
         "lon": -115.9882875,
         "radius_m": 11.92,
@@ -479,7 +479,7 @@
           "Duck Pond",
           "Skinku¢ / Coyote"
         ],
-        "winter": true,
+        "winter": false,
         "ski_trails": false,
         "lat": 49.64468055555555,
         "lon": -115.99910555555557,
@@ -510,8 +510,8 @@
           "Skinku¢ / Coyote",
           "Skinku¢ / Coyote Road"
         ],
-        "winter": true,
-        "ski_trails": true,
+        "winter": false,
+        "ski_trails": false,
         "lat": 49.66113388888889,
         "lon": -115.98673222222222,
         "radius_m": 13.02,
@@ -540,8 +540,8 @@
           "Centennial",
           "Electric Avenue"
         ],
-        "winter": true,
-        "ski_trails": true,
+        "winter": false,
+        "ski_trails": false,
         "lat": 49.67992685185184,
         "lon": -116.00511574074075,
         "radius_m": 2.72,
@@ -568,8 +568,8 @@
           "Romantic Ridge",
           "Upper Army Road"
         ],
-        "winter": true,
-        "ski_trails": true,
+        "winter": false,
+        "ski_trails": false,
         "lat": 49.662625,
         "lon": -115.99689513888889,
         "radius_m": 7.7,
@@ -597,8 +597,8 @@
           "Forest Crowne Through Road",
           "Home Run"
         ],
-        "winter": true,
-        "ski_trails": true,
+        "winter": false,
+        "ski_trails": false,
         "lat": 49.64434166666667,
         "lon": -115.99260277777778,
         "radius_m": 0,
@@ -625,7 +625,7 @@
           "Levirs In a Dangerous time",
           "Residents' Choice"
         ],
-        "winter": true,
+        "winter": false,
         "ski_trails": false,
         "lat": 49.673697222222216,
         "lon": -115.99269722222225,
@@ -653,7 +653,7 @@
           "Duck Pond",
           "Skid Road"
         ],
-        "winter": true,
+        "winter": false,
         "ski_trails": false,
         "lat": 49.64669722222222,
         "lon": -116.00146666666667,
@@ -682,8 +682,8 @@
           "Not Keiver's Way",
           "Skinku¢ / Coyote"
         ],
-        "winter": true,
-        "ski_trails": true,
+        "winter": false,
+        "ski_trails": false,
         "lat": 49.65116111111111,
         "lon": -115.99124027777779,
         "radius_m": 2.51,
@@ -709,7 +709,7 @@
           "Duck Pond",
           "Edge Trail"
         ],
-        "winter": true,
+        "winter": false,
         "ski_trails": false,
         "lat": 49.654493333333335,
         "lon": -115.99427666666665,
@@ -739,8 +739,8 @@
           "Lower Army Road (Trans Canada Trail)",
           "Pat Morrow"
         ],
-        "winter": true,
-        "ski_trails": true,
+        "winter": false,
+        "ski_trails": false,
         "lat": 49.66456018518519,
         "lon": -115.99093703703704,
         "radius_m": 6.41,
@@ -767,8 +767,8 @@
           "Trickle Charge",
           "Trickle Creek Outer Fatbike Loop"
         ],
-        "winter": true,
-        "ski_trails": true,
+        "winter": false,
+        "ski_trails": false,
         "lat": 49.6834524691358,
         "lon": -116.00154228395064,
         "radius_m": 27.04,
@@ -801,7 +801,7 @@
           "Duck Pond",
           "Pat Morrow"
         ],
-        "winter": true,
+        "winter": false,
         "ski_trails": false,
         "lat": 49.661433333333335,
         "lon": -115.99881333333333,
@@ -831,8 +831,8 @@
           "Bench",
           "Elbow"
         ],
-        "winter": true,
-        "ski_trails": true,
+        "winter": false,
+        "ski_trails": false,
         "lat": 49.66255972222222,
         "lon": -115.98630069444445,
         "radius_m": 7.63,
@@ -860,8 +860,8 @@
           "Forest Crowne Through Road",
           "Run Home"
         ],
-        "winter": true,
-        "ski_trails": true,
+        "winter": false,
+        "ski_trails": false,
         "lat": 49.65323888888889,
         "lon": -115.98664305555556,
         "radius_m": 1.33,
@@ -887,7 +887,7 @@
           "Boulder Connector",
           "Electric Avenue"
         ],
-        "winter": true,
+        "winter": false,
         "ski_trails": false,
         "lat": 49.67100925925926,
         "lon": -115.99777222222224,
@@ -915,7 +915,7 @@
           "Eimers Ridge",
           "Ponderosa Trail"
         ],
-        "winter": true,
+        "winter": false,
         "ski_trails": false,
         "lat": 49.669946296296295,
         "lon": -115.98739814814815,
@@ -943,7 +943,7 @@
           "Skinku¢ / Coyote",
           "Skinku¢ / Coyote Road"
         ],
-        "winter": true,
+        "winter": false,
         "ski_trails": false,
         "lat": 49.66009861111111,
         "lon": -115.98678194444445,
@@ -970,8 +970,8 @@
           "Edge Trail",
           "Elbow"
         ],
-        "winter": true,
-        "ski_trails": true,
+        "winter": false,
+        "ski_trails": false,
         "lat": 49.66438452380952,
         "lon": -115.98497896825397,
         "radius_m": 14.96,
@@ -1002,8 +1002,8 @@
           "Not Keiver's Way",
           "Skinku¢ / Coyote"
         ],
-        "winter": true,
-        "ski_trails": true,
+        "winter": false,
+        "ski_trails": false,
         "lat": 49.65195,
         "lon": -115.9902951388889,
         "radius_m": 3.91,
@@ -1031,8 +1031,8 @@
           "Trickle Charge",
           "Trickle Creek Outer Fatbike Loop"
         ],
-        "winter": true,
-        "ski_trails": true,
+        "winter": false,
+        "ski_trails": false,
         "lat": 49.68530277777778,
         "lon": -116.00069358974359,
         "radius_m": 33.21,
@@ -1069,8 +1069,8 @@
           "Levirs In a Dangerous time",
           "Lower Army Road (Trans Canada Trail)"
         ],
-        "winter": true,
-        "ski_trails": true,
+        "winter": false,
+        "ski_trails": false,
         "lat": 49.676069444444444,
         "lon": -115.98421388888889,
         "radius_m": 0,
@@ -1095,7 +1095,7 @@
           "Home Run",
           "Skinku¢ / Coyote"
         ],
-        "winter": true,
+        "winter": false,
         "ski_trails": false,
         "lat": 49.64502777777778,
         "lon": -115.99298333333333,
@@ -1123,7 +1123,7 @@
           "Electric Avenue",
           "Trickle Charge"
         ],
-        "winter": true,
+        "winter": false,
         "ski_trails": false,
         "lat": 49.677344444444444,
         "lon": -116.00163402777778,
@@ -1152,8 +1152,8 @@
           "Forest Crowne Through Road",
           "Forest Crowne Through Road Down"
         ],
-        "winter": true,
-        "ski_trails": true,
+        "winter": false,
+        "ski_trails": false,
         "lat": 49.64032777777778,
         "lon": -115.99122083333333,
         "radius_m": 3.31,
@@ -1179,8 +1179,8 @@
           "Eimer's Lake Loop",
           "Eimer's Road"
         ],
-        "winter": true,
-        "ski_trails": true,
+        "winter": false,
+        "ski_trails": false,
         "lat": 49.66640833333333,
         "lon": -115.98700694444445,
         "radius_m": 1.7,
@@ -1206,7 +1206,7 @@
           "Powerline",
           "Sunflower Hill"
         ],
-        "winter": true,
+        "winter": false,
         "ski_trails": false,
         "lat": 49.63837777777778,
         "lon": -115.982875,
@@ -1233,7 +1233,7 @@
           "Duck Pond",
           "Skinku¢ / Coyote Spur"
         ],
-        "winter": true,
+        "winter": false,
         "ski_trails": false,
         "lat": 49.64389305555555,
         "lon": -115.99879166666668,
@@ -1261,8 +1261,8 @@
         "trail_names": [
           "Trickle Creek Outer Fatbike Loop"
         ],
-        "winter": true,
-        "ski_trails": true,
+        "winter": false,
+        "ski_trails": false,
         "lat": 49.68362314814815,
         "lon": -115.99781944444443,
         "radius_m": 5.49,
@@ -1288,7 +1288,7 @@
         "trail_names": [
           "Home Run"
         ],
-        "winter": true,
+        "winter": false,
         "ski_trails": false,
         "lat": 49.64406388888889,
         "lon": -115.99027777777778,
@@ -1316,8 +1316,8 @@
         "trail_names": [
           "Trickle Creek Outer Fatbike Loop"
         ],
-        "winter": true,
-        "ski_trails": true,
+        "winter": false,
+        "ski_trails": false,
         "lat": 49.673858796296294,
         "lon": -115.99489953703704,
         "radius_m": 15.07,
@@ -1346,7 +1346,7 @@
         "trail_names": [
           "Electric Avenue"
         ],
-        "winter": true,
+        "winter": false,
         "ski_trails": false,
         "lat": 49.67439861111111,
         "lon": -115.99935972222222,
@@ -1372,8 +1372,8 @@
         "trail_names": [
           "Forest Crowne Through Road Down"
         ],
-        "winter": true,
-        "ski_trails": true,
+        "winter": false,
+        "ski_trails": false,
         "lat": 49.64204907407407,
         "lon": -115.98241944444446,
         "radius_m": 4.09,
@@ -1399,8 +1399,8 @@
         "trail_names": [
           "Lower Army Road (Trans Canada Trail)"
         ],
-        "winter": true,
-        "ski_trails": true,
+        "winter": false,
+        "ski_trails": false,
         "lat": 49.672891666666665,
         "lon": -115.98774930555555,
         "radius_m": 2.89,
@@ -1427,7 +1427,7 @@
         "trail_names": [
           "Levirs In a Dangerous time"
         ],
-        "winter": true,
+        "winter": false,
         "ski_trails": false,
         "lat": 49.67375277777777,
         "lon": -115.98847129629628,
@@ -1454,7 +1454,7 @@
         "trail_names": [
           "Trickle Charge"
         ],
-        "winter": true,
+        "winter": false,
         "ski_trails": false,
         "lat": 49.67968472222222,
         "lon": -116.00279027777778,
@@ -1480,8 +1480,8 @@
         "trail_names": [
           "Forest Crowne Through Road Down"
         ],
-        "winter": true,
-        "ski_trails": true,
+        "winter": false,
+        "ski_trails": false,
         "lat": 49.64381944444444,
         "lon": -115.98588333333333,
         "radius_m": 2.7,
@@ -1507,7 +1507,7 @@
         "trail_names": [
           "Powerline"
         ],
-        "winter": true,
+        "winter": false,
         "ski_trails": false,
         "lat": 49.64042638888888,
         "lon": -115.98191666666666,
@@ -1533,7 +1533,7 @@
         "trail_names": [
           "Powerline"
         ],
-        "winter": true,
+        "winter": false,
         "ski_trails": false,
         "lat": 49.642718055555555,
         "lon": -115.98096527777778,
@@ -1559,8 +1559,8 @@
         "trail_names": [
           "Forest Crowne Through Road Down"
         ],
-        "winter": true,
-        "ski_trails": true,
+        "winter": false,
+        "ski_trails": false,
         "lat": 49.64225416666667,
         "lon": -115.98340416666667,
         "radius_m": 1.92,
@@ -1585,8 +1585,8 @@
         "trail_names": [
           "Trickle Creek Outer Fatbike Loop"
         ],
-        "winter": true,
-        "ski_trails": true,
+        "winter": false,
+        "ski_trails": false,
         "lat": 49.68537083333333,
         "lon": -115.99946111111112,
         "radius_m": 3.1,
@@ -1611,7 +1611,7 @@
         "trail_names": [
           "Levirs In a Dangerous time"
         ],
-        "winter": true,
+        "winter": false,
         "ski_trails": false,
         "lat": 49.67498055555555,
         "lon": -115.98777916666667,
@@ -1637,8 +1637,8 @@
         "trail_names": [
           "Trickle Creek Outer Fatbike Loop"
         ],
-        "winter": true,
-        "ski_trails": true,
+        "winter": false,
+        "ski_trails": false,
         "lat": 49.6698961111111,
         "lon": -115.99623555555556,
         "radius_m": 9.76,
@@ -1666,8 +1666,8 @@
         "trail_names": [
           "Trickle Creek Outer Fatbike Loop"
         ],
-        "winter": true,
-        "ski_trails": true,
+        "winter": false,
+        "ski_trails": false,
         "lat": 49.68224305555555,
         "lon": -115.9991625,
         "radius_m": 14.51,
@@ -1696,8 +1696,8 @@
         "trail_names": [
           "Forest Crowne Through Road"
         ],
-        "winter": true,
-        "ski_trails": true,
+        "winter": false,
+        "ski_trails": false,
         "lat": 49.64223055555556,
         "lon": -115.99337638888889,
         "radius_m": 0.1,
@@ -1722,8 +1722,8 @@
         "trail_names": [
           "Forest Crowne Through Road Down"
         ],
-        "winter": true,
-        "ski_trails": true,
+        "winter": false,
+        "ski_trails": false,
         "lat": 49.64085462962962,
         "lon": -115.98832407407407,
         "radius_m": 2.27,
@@ -1749,8 +1749,8 @@
         "trail_names": [
           "Trickle Creek Outer Fatbike Loop"
         ],
-        "winter": true,
-        "ski_trails": true,
+        "winter": false,
+        "ski_trails": false,
         "lat": 49.68432638888889,
         "lon": -116.00072222222222,
         "radius_m": 2.45,
@@ -1775,8 +1775,8 @@
         "trail_names": [
           "Trickle Creek Outer Fatbike Loop"
         ],
-        "winter": true,
-        "ski_trails": true,
+        "winter": false,
+        "ski_trails": false,
         "lat": 49.683775,
         "lon": -115.99572500000001,
         "radius_m": 0,
@@ -1800,8 +1800,8 @@
         "trail_names": [
           "Trickle Creek Outer Fatbike Loop"
         ],
-        "winter": true,
-        "ski_trails": true,
+        "winter": false,
+        "ski_trails": false,
         "lat": 49.68476111111111,
         "lon": -116.00074444444445,
         "radius_m": 0,
@@ -1825,8 +1825,8 @@
         "trail_names": [
           "Trickle Creek Outer Fatbike Loop"
         ],
-        "winter": true,
-        "ski_trails": true,
+        "winter": false,
+        "ski_trails": false,
         "lat": 49.67219166666666,
         "lon": -115.99522222222222,
         "radius_m": 0,
