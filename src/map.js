@@ -18,9 +18,10 @@ L.control.layers(baseLayers, null, { position: "bottomright" }).addTo(map);
 let trailsLayer = null;
 let intersectionsLayer = null;
 let allIntersections = null;
+let allTrails = null;
 
 function styleTrail(f) {
-  return { color: f?.properties?.color ?? "#333", weight: 2 };
+  return { color: f?.properties?.color ?? "#333", weight: 4 };
 }
 
 function filterIntersection(f) {
@@ -67,6 +68,27 @@ function applyFilters() {
   intersectionsLayer.addTo(map);
 }
 
+function filterTrail(f) {
+  const winter = f.properties?.winter ?? false;
+  const ski = f.properties?.ski_trails ?? false;
+  const summer = !winter && !ski;
+  const showWinter = document.getElementById("show-winter").checked;
+  const showSki = document.getElementById("show-ski").checked;
+  const showSummer = document.getElementById("show-summer").checked;
+  return (winter && showWinter) || (ski && showSki) || (summer && showSummer);
+}
+
+function applyTrailFilters() {
+  if (!allTrails) return;
+  const filtered = {
+    type: "FeatureCollection",
+    features: allTrails.features.filter(filterTrail),
+  };
+  if (trailsLayer) map.removeLayer(trailsLayer);
+  trailsLayer = L.geoJSON(filtered, { style: styleTrail });
+  trailsLayer.addTo(map);
+}
+
 async function main() {
   const [trailsRes, intersectionsRes] = await Promise.all([
     fetch("./data/trails.json"),
@@ -76,19 +98,18 @@ async function main() {
     console.error("Failed to load data");
     return;
   }
-  const trails = await trailsRes.json();
+  allTrails = await trailsRes.json();
   allIntersections = await intersectionsRes.json();
-
-  trailsLayer = L.geoJSON(trails, {
-    style: styleTrail,
-  });
-  trailsLayer.addTo(map);
 
   ["min-trail-count", "max-trail-count", "min-radius", "max-radius"].forEach((id) => {
     document.getElementById(id).addEventListener("input", applyFilters);
     document.getElementById(id).addEventListener("change", applyFilters);
   });
+  ["show-winter", "show-ski", "show-summer"].forEach((id) => {
+    document.getElementById(id).addEventListener("change", applyTrailFilters);
+  });
 
+  applyTrailFilters();
   applyFilters();
 
   const filteredForBounds = allIntersections.features.filter(filterIntersection);
