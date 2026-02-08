@@ -131,7 +131,7 @@ function applyFilters() {
             .join("")}</div></div>`
         : "";
       layer.bindPopup(
-        `<strong>${p.trail_count} trails</strong><br>${names}<br>Activities: ${activities || "—"}<br>Radius: ${p.radius_m?.toFixed(1) ?? "?"} m${photoGallery ? `<br>${photoGallery}` : ""}`
+        `Intersection ID: ${p.cluster_id ?? "—"}<br><strong>${p.trail_count} trails</strong><br>${names}<br>Activities: ${activities || "—"}<br>Radius: ${p.radius_m?.toFixed(1) ?? "?"} m${photoGallery ? `<br>${photoGallery}` : ""}`
       );
     },
   });
