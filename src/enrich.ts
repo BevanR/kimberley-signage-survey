@@ -12,7 +12,8 @@ type Cluster = {
   photos: { filename: string }[];
 };
 
-type TrailFeature = Feature<LineString, { name?: string; winter?: boolean; ski_trails?: boolean }>;
+type TrailProps = { name?: string; snowshoe?: boolean; nordic_ski?: boolean; winter_fat_bike?: boolean; summer_mtb?: boolean };
+type TrailFeature = Feature<LineString, TrailProps>;
 
 async function main() {
   let clustersData: { clusters: Cluster[] };
@@ -39,12 +40,12 @@ async function main() {
   const trailsWithCoords = trails.filter((t) => (t.geometry.coordinates?.length ?? 0) >= 2);
   if (trailsWithCoords.length === 0) {
     console.error("No trail geometry found. All trails have empty coordinates.");
-    console.error("Export a HAR from the Trailforks region page, save as data/www.trailforks.com.har, then run: bun run har_to_trails");
+    console.error("Capture HAR from the Trailforks region page with activity types: Snowshoe, Nordic ski, Winter fat bike, Summer MTB. Save as data/www.trailforks.com.har, then run: bun run har_to_trails");
     process.exit(1);
   }
 
   const features: Feature[] = [];
-  const csvRows: string[][] = [["cluster_id", "trail_count", "trail_names", "winter", "ski_trails", "lat", "lon", "radius_m", "photos"]];
+  const csvRows: string[][] = [["cluster_id", "trail_count", "trail_names", "snowshoe", "nordic_ski", "winter_fat_bike", "summer_mtb", "lat", "lon", "radius_m", "photos"]];
 
   for (const cluster of clustersData.clusters) {
     const bufferM = cluster.radius_m + config.intersection_buffer_m;
@@ -60,8 +61,10 @@ async function main() {
     }
 
     const trailNames = intersecting.map((t) => t.properties?.name || "Unknown").filter(Boolean);
-    const winter = intersecting.some((t) => t.properties?.winter === true);
-    const skiTrails = intersecting.some((t) => t.properties?.ski_trails === true);
+    const snowshoe = intersecting.some((t) => t.properties?.snowshoe === true);
+    const nordic_ski = intersecting.some((t) => t.properties?.nordic_ski === true);
+    const winter_fat_bike = intersecting.some((t) => t.properties?.winter_fat_bike === true);
+    const summer_mtb = intersecting.some((t) => t.properties?.summer_mtb === true);
 
     if (intersecting.length === 0) {
       console.warn(`Warning: cluster ${cluster.cluster_id} has no intersecting trails`);
@@ -76,8 +79,10 @@ async function main() {
         cluster_id: cluster.cluster_id,
         trail_count: intersecting.length,
         trail_names: trailNames,
-        winter,
-        ski_trails: skiTrails,
+        snowshoe,
+        nordic_ski,
+        winter_fat_bike,
+        summer_mtb,
         lat: cluster.center.lat,
         lon: cluster.center.lon,
         radius_m: cluster.radius_m,
@@ -89,8 +94,10 @@ async function main() {
       cluster.cluster_id,
       String(intersecting.length),
       trailNames.join("; "),
-      String(winter),
-      String(skiTrails),
+      String(snowshoe),
+      String(nordic_ski),
+      String(winter_fat_bike),
+      String(summer_mtb),
       String(cluster.center.lat),
       String(cluster.center.lon),
       String(cluster.radius_m),

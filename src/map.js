@@ -1,25 +1,28 @@
 const CENTER = [49.665, -115.99];
 const ZOOM = 13;
 
+const ACTIVITY_IDS = ["snowshoe", "nordic_ski", "winter_fat_bike", "summer_mtb"];
+
 function getStateFromUrl() {
   const p = new URLSearchParams(location.search);
   const z = p.get("z");
   const lat = p.get("lat");
   const lng = p.get("lng");
-  return {
+  const state = {
     zoom: z ? parseInt(z, 10) : null,
     center: lat && lng ? [parseFloat(lat), parseFloat(lng)] : null,
     minTc: p.get("minTc") ?? null,
     maxTc: p.get("maxTc") ?? null,
     minR: p.get("minR") ?? null,
     maxR: p.get("maxR") ?? null,
-    winter: p.get("winter") ?? null,
-    ski: p.get("ski") ?? null,
-    summer: p.get("summer") ?? null,
   };
+  for (const id of ACTIVITY_IDS) {
+    state[id] = p.get(id) ?? null;
+  }
+  return state;
 }
 
-const DEFAULTS = { minTc: "2", maxTc: "", minR: "", maxR: "", winter: "1", ski: "0", summer: "0" };
+const DEFAULTS = { minTc: "2", maxTc: "", minR: "", maxR: "", snowshoe: "1", nordic_ski: "1", winter_fat_bike: "1", summer_mtb: "0" };
 
 function pushStateToUrl() {
   const c = map.getCenter();
@@ -27,9 +30,6 @@ function pushStateToUrl() {
   const maxTc = document.getElementById("max-trail-count").value || "";
   const minR = document.getElementById("min-radius").value || "";
   const maxR = document.getElementById("max-radius").value || "";
-  const winter = document.getElementById("show-winter").checked ? "1" : "0";
-  const ski = document.getElementById("show-ski").checked ? "1" : "0";
-  const summer = document.getElementById("show-summer").checked ? "1" : "0";
 
   const p = new URLSearchParams({
     z: String(map.getZoom()),
@@ -40,9 +40,10 @@ function pushStateToUrl() {
   if (maxTc !== DEFAULTS.maxTc) p.set("maxTc", maxTc);
   if (minR !== DEFAULTS.minR) p.set("minR", minR);
   if (maxR !== DEFAULTS.maxR) p.set("maxR", maxR);
-  if (winter !== DEFAULTS.winter) p.set("winter", winter);
-  if (ski !== DEFAULTS.ski) p.set("ski", ski);
-  if (summer !== DEFAULTS.summer) p.set("summer", summer);
+  for (const id of ACTIVITY_IDS) {
+    const val = document.getElementById(`show-${id.replace(/_/g, "-")}`)?.checked ? "1" : "0";
+    if (val !== DEFAULTS[id]) p.set(id, val);
+  }
 
   const url = p.toString() ? `${location.pathname}?${p.toString()}` : location.pathname;
   history.replaceState(null, "", url);
@@ -117,8 +118,12 @@ function applyFilters() {
       const p = f.properties || {};
       const names = Array.isArray(p.trail_names) ? p.trail_names.join(", ") : p.trail_names || "";
       const photos = Array.isArray(p.photos) ? p.photos.length : 0;
+      const activities = ["snowshoe", "nordic_ski", "winter_fat_bike", "summer_mtb"]
+        .filter((k) => p[k])
+        .map((k) => k.replace(/_/g, " "))
+        .join(", ");
       layer.bindPopup(
-        `<strong>${p.trail_count} trails</strong><br>${names}<br>Radius: ${p.radius_m?.toFixed(1) ?? "?"} m<br>Photos: ${photos}`
+        `<strong>${p.trail_count} trails</strong><br>${names}<br>Activities: ${activities || "—"}<br>Radius: ${p.radius_m?.toFixed(1) ?? "?"} m<br>Photos: ${photos}`
       );
     },
   });
@@ -126,13 +131,11 @@ function applyFilters() {
 }
 
 function filterTrail(f) {
-  const winter = f.properties?.winter ?? false;
-  const ski = f.properties?.ski_trails ?? false;
-  const summer = !winter && !ski;
-  const showWinter = document.getElementById("show-winter").checked;
-  const showSki = document.getElementById("show-ski").checked;
-  const showSummer = document.getElementById("show-summer").checked;
-  return (winter && showWinter) || (ski && showSki) || (summer && showSummer);
+  for (const id of ACTIVITY_IDS) {
+    const el = document.getElementById(`show-${id.replace(/_/g, "-")}`);
+    if (el?.checked && f.properties?.[id] === true) return true;
+  }
+  return false;
 }
 
 function applyTrailFilters() {
@@ -142,7 +145,19 @@ function applyTrailFilters() {
     features: allTrails.features.filter(filterTrail),
   };
   if (trailsLayer) map.removeLayer(trailsLayer);
-  trailsLayer = L.geoJSON(filtered, { style: styleTrail });
+  trailsLayer = L.geoJSON(filtered, {
+    style: styleTrail,
+    onEachFeature: (f, layer) => {
+      const p = f.properties || {};
+      const activities = ACTIVITY_IDS.filter((id) => p[id])
+        .map((id) => id.replace(/_/g, " "))
+        .join(", ");
+      layer.bindTooltip(
+        `<strong>${p.name || "Unknown"}</strong>${activities ? `<br>${activities}` : ""}`,
+        { permanent: false, direction: "top", className: "trail-tooltip" }
+      );
+    },
+  });
   trailsLayer.addTo(map);
 }
 
@@ -166,16 +181,18 @@ async function main() {
   if (state.maxTc !== null && state.maxTc !== undefined) document.getElementById("max-trail-count").value = state.maxTc;
   if (state.minR !== null && state.minR !== undefined) document.getElementById("min-radius").value = state.minR;
   if (state.maxR !== null && state.maxR !== undefined) document.getElementById("max-radius").value = state.maxR;
-  if (state.winter !== null && state.winter !== undefined) document.getElementById("show-winter").checked = state.winter === "1";
-  if (state.ski !== null && state.ski !== undefined) document.getElementById("show-ski").checked = state.ski === "1";
-  if (state.summer !== null && state.summer !== undefined) document.getElementById("show-summer").checked = state.summer === "1";
+  for (const id of ACTIVITY_IDS) {
+    const el = document.getElementById(`show-${id.replace(/_/g, "-")}`);
+    if (el && state[id] !== null && state[id] !== undefined) el.checked = state[id] === "1";
+  }
 
   ["min-trail-count", "max-trail-count", "min-radius", "max-radius"].forEach((id) => {
     document.getElementById(id).addEventListener("input", () => { applyFilters(); pushStateToUrl(); });
     document.getElementById(id).addEventListener("change", () => { applyFilters(); pushStateToUrl(); });
   });
-  ["show-winter", "show-ski", "show-summer"].forEach((id) => {
-    document.getElementById(id).addEventListener("change", () => { applyTrailFilters(); pushStateToUrl(); });
+  ACTIVITY_IDS.forEach((id) => {
+    const el = document.getElementById(`show-${id.replace(/_/g, "-")}`);
+    if (el) el.addEventListener("change", () => { applyTrailFilters(); pushStateToUrl(); });
   });
 
   document.getElementById("reset-filters").addEventListener("click", () => {
@@ -183,9 +200,10 @@ async function main() {
     document.getElementById("max-trail-count").value = DEFAULTS.maxTc;
     document.getElementById("min-radius").value = DEFAULTS.minR;
     document.getElementById("max-radius").value = DEFAULTS.maxR;
-    document.getElementById("show-winter").checked = DEFAULTS.winter === "1";
-    document.getElementById("show-ski").checked = DEFAULTS.ski === "1";
-    document.getElementById("show-summer").checked = DEFAULTS.summer === "1";
+    for (const id of ACTIVITY_IDS) {
+      const el = document.getElementById(`show-${id.replace(/_/g, "-")}`);
+      if (el) el.checked = DEFAULTS[id] === "1";
+    }
     applyTrailFilters();
     applyFilters();
     pushStateToUrl();

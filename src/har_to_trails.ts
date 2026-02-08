@@ -1,6 +1,8 @@
 /**
- * Convert Trailforks RMS GeoJSON to trails.json format.
- * Input: data/rms_response.json (single response) or data/www.trailforks.com.har (full HAR).
+ * Convert Trailforks HAR (with multiple activity-type RMS responses) to trails.json.
+ * Activity support is derived from which RMS requests each trail appears in.
+ * Trailforks filters by activitytype in the URL (1=MTB, 10=snowshoe, 13=nordic ski, 17=winter fat bike).
+ * Requires: data/www.trailforks.com.har with RMS requests for snowshoe, nordic ski, winter fat bike, summer MTB.
  */
 
 import { readFile, writeFile, mkdir } from "fs/promises";
@@ -9,37 +11,37 @@ import { decode } from "@googlemaps/polyline-codec";
 import { config } from "./config";
 
 const DATA_DIR = join(import.meta.dir, "..", "data");
-const RMS_JSON_PATH = join(DATA_DIR, "rms_response.json");
 const HAR_PATH = join(DATA_DIR, "www.trailforks.com.har");
 
-const FAT_BIKE_IDS = [6, 17];
-const SKI_IDS = [11, 12, 13];
+type RmsEntry = {
+  data: { features?: Array<unknown> };
+  activityTypeFromUrl: number;
+};
 
-function parseActivityTypes(s: string | undefined): number[] {
-  if (!s) return [];
-  return s.split(",").map((x) => parseInt(x.trim(), 10)).filter((n) => !isNaN(n));
-}
-
-function parseRmsJson(data: unknown): unknown[] {
-  if (data && typeof data === "object" && "features" in data) return [data];
-  if (Array.isArray(data)) return data;
-  return [];
-}
-
-function extractFromHar(har: { log?: { entries?: Array<{ request?: { url?: string }; response?: { content?: { text?: string } } }> } }): unknown[] {
+function extractFromHar(har: {
+  log?: {
+    entries?: Array<{
+      request?: { url?: string };
+      response?: { content?: { text?: string } };
+    }>;
+  };
+}): RmsEntry[] {
   const entries = har.log?.entries ?? [];
-  const results: unknown[] = [];
+  const results: RmsEntry[] = [];
   for (const e of entries) {
     const url = e.request?.url ?? "";
-    if (url.includes("rms") && url.includes("format=geojson")) {
-      const text = e.response?.content?.text;
-      if (text) {
-        try {
-          results.push(JSON.parse(text));
-        } catch {
-          // skip
-        }
+    if (!url.includes("rms") || !url.includes("format=geojson")) continue;
+    const m = url.match(/activitytype=(\d+)/);
+    const activityTypeFromUrl = m ? parseInt(m[1], 10) : 0;
+    const text = e.response?.content?.text;
+    if (!text) continue;
+    try {
+      const data = JSON.parse(text);
+      if (data && typeof data === "object" && "features" in data) {
+        results.push({ data, activityTypeFromUrl });
       }
+    } catch {
+      // skip
     }
   }
   return results;
@@ -56,67 +58,93 @@ function decodeGeometry(geom: { encodedpath?: string; simplepath?: string }): [n
   }
 }
 
+type TrailRecord = {
+  id: number;
+  name: string;
+  geometry: { type: "LineString"; coordinates: [number, number][] };
+  difficulty?: number;
+  color: string;
+  snowshoe: boolean;
+  nordic_ski: boolean;
+  winter_fat_bike: boolean;
+  summer_mtb: boolean;
+};
+
 async function main() {
-  let allRms: unknown[];
+  let har: unknown;
   try {
-    const json = JSON.parse(await readFile(RMS_JSON_PATH, "utf-8"));
-    allRms = parseRmsJson(json);
+    har = JSON.parse(await readFile(HAR_PATH, "utf-8"));
   } catch {
-    try {
-      const har = JSON.parse(await readFile(HAR_PATH, "utf-8"));
-      allRms = extractFromHar(har);
-    } catch {
-      console.error("No input found. Either:\n  1. Save the RMS GeoJSON response to data/rms_response.json (DevTools → Network → rms?format=geojson → Copy response)\n  2. Or save HAR from the region page to data/www.trailforks.com.har");
-      process.exit(1);
-    }
-  }
-  if (allRms.length === 0) {
-    console.error("No valid RMS GeoJSON in input.");
+    console.error("No HAR found. Capture HAR from Trailforks region page with activity types: Snowshoe, Nordic ski, Winter fat bike, Summer MTB.\nSave as data/www.trailforks.com.har");
     process.exit(1);
   }
 
-  type RmsFeature = { properties?: { type?: string; id?: number; name?: string; activitytypes?: string; difficulty?: number; color?: string }; geometry?: { encodedpath?: string; simplepath?: string } };
-  const trailById = new Map<number, RmsFeature>();
-  for (const rms of allRms) {
-    if (typeof rms !== "object" || !("features" in rms)) continue;
-    const features = (rms as { features: RmsFeature[] }).features;
+  const allRms = extractFromHar(har as Parameters<typeof extractFromHar>[0]);
+  if (allRms.length === 0) {
+    console.error("No RMS GeoJSON found. Ensure HAR includes rms?format=geojson requests.");
+    process.exit(1);
+  }
+
+  const trailById = new Map<number, TrailRecord>();
+
+  for (const { data, activityTypeFromUrl } of allRms) {
+    const features = data.features ?? [];
+    const snowshoe = activityTypeFromUrl === 10;
+    const nordic_ski = activityTypeFromUrl === 13;
+    const winter_fat_bike = activityTypeFromUrl === 17;
+    const summer_mtb = activityTypeFromUrl === 1;
+
     for (const f of features) {
       if (f.properties?.type !== "trail") continue;
       const id = f.properties?.id;
-      if (id != null && !trailById.has(id)) trailById.set(id, f);
+      if (id == null) continue;
+
+      const coords = decodeGeometry(f.geometry ?? {});
+      if (!coords || coords.length < 2) continue;
+
+      let rec = trailById.get(id);
+      if (!rec) {
+        rec = {
+          id,
+          name: f.properties?.name ?? "Unknown",
+          geometry: { type: "LineString", coordinates: coords },
+          difficulty: f.properties?.difficulty,
+          color: f.properties?.color ?? "#333",
+          snowshoe: false,
+          nordic_ski: false,
+          winter_fat_bike: false,
+          summer_mtb: false,
+        };
+        trailById.set(id, rec);
+      }
+      rec.snowshoe = rec.snowshoe || snowshoe;
+      rec.nordic_ski = rec.nordic_ski || nordic_ski;
+      rec.winter_fat_bike = rec.winter_fat_bike || winter_fat_bike;
+      rec.summer_mtb = rec.summer_mtb || summer_mtb;
     }
   }
-  const trails = Array.from(trailById.values());
 
   const output = {
     type: "FeatureCollection" as const,
-    features: [] as Array<{ type: "Feature"; geometry: { type: "LineString"; coordinates: [number, number][] }; properties: { name: string; winter: boolean; ski_trails: boolean; difficulty?: number; color: string } }>,
-  };
-
-  for (const t of trails) {
-    const coords = decodeGeometry(t.geometry ?? {});
-    if (!coords || coords.length < 2) continue;
-
-    const act = parseActivityTypes(t.properties?.activitytypes);
-    const winter = act.some((id) => FAT_BIKE_IDS.includes(id));
-    const skiTrails = act.some((id) => SKI_IDS.includes(id));
-
-    output.features.push({
-      type: "Feature",
-      geometry: { type: "LineString", coordinates: coords },
+    features: Array.from(trailById.values()).map((t) => ({
+      type: "Feature" as const,
+      geometry: t.geometry,
       properties: {
-        name: t.properties?.name ?? "Unknown",
-        winter,
-        ski_trails: skiTrails,
-        difficulty: t.properties?.difficulty,
-        color: t.properties?.color ?? "#333",
+        name: t.name,
+        difficulty: t.difficulty,
+        color: t.color,
+        snowshoe: t.snowshoe,
+        nordic_ski: t.nordic_ski,
+        winter_fat_bike: t.winter_fat_bike,
+        summer_mtb: t.summer_mtb,
       },
-    });
-  }
+    })),
+  };
 
   await mkdir(dirname(config.trails_path), { recursive: true });
   await writeFile(config.trails_path, JSON.stringify(output, null, 2));
-  console.log(`Merged ${allRms.length} RMS response(s), wrote ${output.features.length} trails to ${config.trails_path}`);
+  const counts = { snowshoe: output.features.filter((f) => f.properties.snowshoe).length, nordic_ski: output.features.filter((f) => f.properties.nordic_ski).length, winter_fat_bike: output.features.filter((f) => f.properties.winter_fat_bike).length, summer_mtb: output.features.filter((f) => f.properties.summer_mtb).length };
+  console.log(`Merged ${allRms.length} RMS response(s), wrote ${output.features.length} trails (snowshoe: ${counts.snowshoe}, nordic_ski: ${counts.nordic_ski}, winter_fat_bike: ${counts.winter_fat_bike}, summer_mtb: ${counts.summer_mtb})`);
 }
 
 main().catch((err) => {

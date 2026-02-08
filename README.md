@@ -30,20 +30,15 @@ bun run cluster
 
 ### 2. Capture trail data
 
-Use the **All** activity type so all trails (MTB, Fat Bike, Ski, etc.) are included.
-
-**Option A — JSON only (simplest):**
+Capture HAR with **multiple activity types** so trail activity support is correct. Load the region with each activity selected (Snowshoe, Nordic ski, Winter fat bike, Summer MTB) so the corresponding RMS requests are captured.
 
 1. Open [Trailforks Kimberley region](https://www.trailforks.com/region/kimberley-3023/)
-2. Select **All** in the activity filter
-3. DevTools → Network → filter by "rms" or "geojson"
-4. Click the request with `format=geojson` in the URL
-5. Response tab → right-click → Copy value → save to `data/rms_response.json`
-
-**Option B — HAR:**
-
-1. Open the region with **All** selected
-2. DevTools → Network → Right-click → Save all as HAR → save as `data/www.trailforks.com.har`
+2. DevTools → Network → clear
+3. Select **Snowshoe**, wait for map to load
+4. Select **Nordic ski**, wait for map to load
+5. Select **Winter fat bike**, wait for map to load
+6. Select **Summer MTB**, wait for map to load
+7. Right-click in Network tab → Save all as HAR → save as `data/www.trailforks.com.har`
 
 ```bash
 bun run har_to_trails
