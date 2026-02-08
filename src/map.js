@@ -13,7 +13,7 @@ const baseLayers = {
 const map = L.map("map", { center: CENTER, zoom: ZOOM });
 baseLayers.topo.addTo(map);
 
-L.control.layers(baseLayers, null, { position: "topright" }).addTo(map);
+L.control.layers(baseLayers, null, { position: "bottomright" }).addTo(map);
 
 let trailsLayer = null;
 let intersectionsLayer = null;
