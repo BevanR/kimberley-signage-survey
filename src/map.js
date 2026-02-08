@@ -24,6 +24,14 @@ function styleTrail(f) {
   return { color: f?.properties?.color ?? "#333", weight: 4 };
 }
 
+function minRadiusMetersFor20px() {
+  const center = map.getCenter();
+  const p1 = map.latLngToContainerPoint(center);
+  const p2 = L.point(p1.x + 20, p1.y);
+  const latlng2 = map.containerPointToLatLng(p2);
+  return Math.max(2, map.distance(center, latlng2));
+}
+
 function filterIntersection(f) {
   const tc = f.properties?.trail_count ?? 0;
   const r = f.properties?.radius_m ?? 0;
@@ -46,10 +54,11 @@ function applyFilters() {
   if (intersectionsLayer) map.removeLayer(intersectionsLayer);
   intersectionsLayer = L.geoJSON(filtered, {
     pointToLayer: (f, latlng) => {
-      const tc = f.properties?.trail_count ?? 1;
-      const radius = Math.max(8, Math.min(24, tc * 4));
-      return L.circleMarker(latlng, {
-        radius,
+      const actualRadius = Math.max(2, f.properties?.radius_m ?? 5);
+      const minRadius = minRadiusMetersFor20px();
+      const radiusM = Math.max(actualRadius, minRadius);
+      return L.circle(latlng, {
+        radius: radiusM,
         fillColor: "#e74c3c",
         color: "#c0392b",
         weight: 1,
@@ -111,6 +120,8 @@ async function main() {
 
   applyTrailFilters();
   applyFilters();
+
+  map.on("zoomend", applyFilters);
 
   const filteredForBounds = allIntersections.features.filter(filterIntersection);
   if (filteredForBounds.length > 0) {
