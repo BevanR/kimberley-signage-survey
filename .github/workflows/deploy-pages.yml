@@ -29,6 +29,7 @@ jobs:
           cp index.html build/
           cp -r src build/
           cp data/trails.json data/intersections.geojson build/data/
+          cp -r photos build/ 2>/dev/null || true
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
