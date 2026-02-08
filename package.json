@@ -5,7 +5,8 @@
   "scripts": {
     "cluster": "bun run src/cluster.ts",
     "har_to_trails": "bun run src/har_to_trails.ts",
-    "enrich": "bun run src/enrich.ts"
+    "enrich": "bun run src/enrich.ts",
+    "serve": "bun run src/serve.ts"
   },
   "dependencies": {
     "@googlemaps/polyline-codec": "^1.0.28",
