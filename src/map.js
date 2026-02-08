@@ -1,6 +1,42 @@
 const CENTER = [49.665, -115.99];
 const ZOOM = 13;
 
+function getStateFromUrl() {
+  const p = new URLSearchParams(location.search);
+  const z = p.get("z");
+  const lat = p.get("lat");
+  const lng = p.get("lng");
+  return {
+    zoom: z ? parseInt(z, 10) : null,
+    center: lat && lng ? [parseFloat(lat), parseFloat(lng)] : null,
+    minTc: p.get("minTc") ?? null,
+    maxTc: p.get("maxTc") ?? null,
+    minR: p.get("minR") ?? null,
+    maxR: p.get("maxR") ?? null,
+    winter: p.get("winter") ?? null,
+    ski: p.get("ski") ?? null,
+    summer: p.get("summer") ?? null,
+  };
+}
+
+function pushStateToUrl() {
+  const c = map.getCenter();
+  const p = new URLSearchParams({
+    z: String(map.getZoom()),
+    lat: c.lat.toFixed(6),
+    lng: c.lng.toFixed(6),
+    minTc: document.getElementById("min-trail-count").value || "",
+    maxTc: document.getElementById("max-trail-count").value || "",
+    minR: document.getElementById("min-radius").value || "",
+    maxR: document.getElementById("max-radius").value || "",
+    winter: document.getElementById("show-winter").checked ? "1" : "0",
+    ski: document.getElementById("show-ski").checked ? "1" : "0",
+    summer: document.getElementById("show-summer").checked ? "1" : "0",
+  });
+  const url = `${location.pathname}?${p.toString()}`;
+  history.replaceState(null, "", url);
+}
+
 const baseLayers = {
   topo: L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png", {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
@@ -35,7 +71,8 @@ function minRadiusMetersFor20px() {
 function filterIntersection(f) {
   const tc = f.properties?.trail_count ?? 0;
   const r = f.properties?.radius_m ?? 0;
-  const minTc = parseInt(document.getElementById("min-trail-count").value, 10);
+  const minTcInput = document.getElementById("min-trail-count").value;
+  const minTc = minTcInput === "" ? -Infinity : parseInt(minTcInput, 10);
   const maxTcInput = document.getElementById("max-trail-count").value;
   const maxTc = maxTcInput === "" ? Infinity : parseInt(maxTcInput, 10);
   const minRInput = document.getElementById("min-radius").value;
@@ -110,23 +147,40 @@ async function main() {
   allTrails = await trailsRes.json();
   allIntersections = await intersectionsRes.json();
 
+  const state = getStateFromUrl();
+  if (state.center && state.zoom != null) {
+    map.setView(state.center, state.zoom);
+  }
+  if (state.minTc != null) document.getElementById("min-trail-count").value = state.minTc;
+  if (state.maxTc != null) document.getElementById("max-trail-count").value = state.maxTc;
+  if (state.minR != null) document.getElementById("min-radius").value = state.minR;
+  if (state.maxR != null) document.getElementById("max-radius").value = state.maxR;
+  if (state.winter != null) document.getElementById("show-winter").checked = state.winter === "1";
+  if (state.ski != null) document.getElementById("show-ski").checked = state.ski === "1";
+  if (state.summer != null) document.getElementById("show-summer").checked = state.summer === "1";
+
   ["min-trail-count", "max-trail-count", "min-radius", "max-radius"].forEach((id) => {
-    document.getElementById(id).addEventListener("input", applyFilters);
-    document.getElementById(id).addEventListener("change", applyFilters);
+    document.getElementById(id).addEventListener("input", () => { applyFilters(); pushStateToUrl(); });
+    document.getElementById(id).addEventListener("change", () => { applyFilters(); pushStateToUrl(); });
   });
   ["show-winter", "show-ski", "show-summer"].forEach((id) => {
-    document.getElementById(id).addEventListener("change", applyTrailFilters);
+    document.getElementById(id).addEventListener("change", () => { applyTrailFilters(); pushStateToUrl(); });
   });
 
   applyTrailFilters();
   applyFilters();
+  pushStateToUrl();
 
-  map.on("zoomend", applyFilters);
+  map.on("zoomend", () => { applyFilters(); pushStateToUrl(); });
+  map.on("moveend", pushStateToUrl);
 
-  const filteredForBounds = allIntersections.features.filter(filterIntersection);
-  if (filteredForBounds.length > 0) {
-    const bounds = L.geoJSON({ type: "FeatureCollection", features: filteredForBounds }).getBounds();
-    map.fitBounds(bounds, { padding: [20, 20], maxZoom: 14 });
+  if (!state.center || state.zoom == null) {
+    const filteredForBounds = allIntersections.features.filter(filterIntersection);
+    if (filteredForBounds.length > 0) {
+      const bounds = L.geoJSON({ type: "FeatureCollection", features: filteredForBounds }).getBounds();
+      map.fitBounds(bounds, { padding: [20, 20], maxZoom: 14 });
+      pushStateToUrl();
+    }
   }
 }
 
