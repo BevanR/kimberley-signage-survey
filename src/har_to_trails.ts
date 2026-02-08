@@ -1,8 +1,9 @@
 /**
  * Convert Trailforks HAR (with multiple activity-type RMS responses) to trails.json.
- * Activity support is derived from which RMS requests each trail appears in.
- * Trailforks filters by activitytype in the URL (1=MTB, 10=snowshoe, 13=nordic ski, 17=winter fat bike).
- * Requires: data/www.trailforks.com.har with RMS requests for snowshoe, nordic ski, winter fat bike, summer MTB.
+ * Activity flags: snowshoe/nordic_ski/summer_mtb from trail activitytypes; winter_fat_bike from
+ * activitytypes (17) or RMS activitytype=17 response when activitytypes lacks 17.
+ * Excludes downhill-ski-only trails (activitytypes "11" only). Trailforks metadata: 1=MTB, 10=snowshoe,
+ * 13=nordic ski, 17=winter fat bike, 11=downhill ski.
  */
 
 import { readFile, writeFile, mkdir } from "fs/promises";
@@ -10,13 +11,14 @@ import { join, dirname } from "path";
 import { decode } from "@googlemaps/polyline-codec";
 import { config } from "./config";
 
-const DATA_DIR = join(import.meta.dir, "..", "data");
-const HAR_PATH = join(DATA_DIR, "www.trailforks.com.har");
+const HAR_PATH = join(import.meta.dir, "..", "data", "www.trailforks.com.har");
 
-type RmsEntry = {
-  data: { features?: Array<unknown> };
-  activityTypeFromUrl: number;
-};
+const TARGET_ACTIVITIES = [1, 10, 13, 17];
+
+function parseActivityTypes(s: string | undefined): number[] {
+  if (!s) return [];
+  return s.split(",").map((x) => parseInt(x.trim(), 10)).filter((n) => !isNaN(n));
+}
 
 function extractFromHar(har: {
   log?: {
@@ -25,9 +27,9 @@ function extractFromHar(har: {
       response?: { content?: { text?: string } };
     }>;
   };
-}): RmsEntry[] {
+}): Array<{ data: { features?: Array<unknown> }; activityTypeFromUrl: number }> {
   const entries = har.log?.entries ?? [];
-  const results: RmsEntry[] = [];
+  const results: Array<{ data: { features?: Array<unknown> }; activityTypeFromUrl: number }> = [];
   for (const e of entries) {
     const url = e.request?.url ?? "";
     if (!url.includes("rms") || !url.includes("format=geojson")) continue;
@@ -64,10 +66,8 @@ type TrailRecord = {
   geometry: { type: "LineString"; coordinates: [number, number][] };
   difficulty?: number;
   color: string;
-  snowshoe: boolean;
-  nordic_ski: boolean;
-  winter_fat_bike: boolean;
-  summer_mtb: boolean;
+  activitytypes: number[];
+  inActivityType17: boolean;
 };
 
 async function main() {
@@ -88,12 +88,7 @@ async function main() {
   const trailById = new Map<number, TrailRecord>();
 
   for (const { data, activityTypeFromUrl } of allRms) {
-    const features = data.features ?? [];
-    const snowshoe = activityTypeFromUrl === 10;
-    const nordic_ski = activityTypeFromUrl === 13;
-    const winter_fat_bike = activityTypeFromUrl === 17;
-    const summer_mtb = activityTypeFromUrl === 1;
-
+    const features = (data.features ?? []) as Array<{ properties?: { type?: string; id?: number; name?: string; difficulty?: number; color?: string; activitytypes?: string }; geometry?: { encodedpath?: string; simplepath?: string } }>;
     for (const f of features) {
       if (f.properties?.type !== "trail") continue;
       const id = f.properties?.id;
@@ -101,6 +96,9 @@ async function main() {
 
       const coords = decodeGeometry(f.geometry ?? {});
       if (!coords || coords.length < 2) continue;
+
+      const act = parseActivityTypes(f.properties?.activitytypes);
+      const inActivityType17 = activityTypeFromUrl === 17;
 
       let rec = trailById.get(id);
       if (!rec) {
@@ -110,23 +108,41 @@ async function main() {
           geometry: { type: "LineString", coordinates: coords },
           difficulty: f.properties?.difficulty,
           color: f.properties?.color ?? "#333",
-          snowshoe: false,
-          nordic_ski: false,
-          winter_fat_bike: false,
-          summer_mtb: false,
+          activitytypes: act,
+          inActivityType17,
         };
         trailById.set(id, rec);
+      } else {
+        if (act.length > 0) rec.activitytypes = act;
+        rec.inActivityType17 = rec.inActivityType17 || inActivityType17;
       }
-      rec.snowshoe = rec.snowshoe || snowshoe;
-      rec.nordic_ski = rec.nordic_ski || nordic_ski;
-      rec.winter_fat_bike = rec.winter_fat_bike || winter_fat_bike;
-      rec.summer_mtb = rec.summer_mtb || summer_mtb;
     }
   }
 
+  const snowshoe = (act: number[]) => act.includes(10);
+  const nordic_ski = (act: number[]) => act.includes(13);
+  const summer_mtb = (act: number[]) => act.includes(1);
+  const downhillOnly = (act: number[]) => act.length > 0 && act.every((a) => a === 11);
+  const hasTarget = (act: number[]) => act.some((a) => TARGET_ACTIVITIES.includes(a));
+
+  const trails = Array.from(trailById.values())
+    .filter((t) => !downhillOnly(t.activitytypes))
+    .filter((t) => hasTarget(t.activitytypes) || t.inActivityType17)
+    .map((t) => {
+      const wfb = t.activitytypes.includes(17) || (t.inActivityType17 && !t.activitytypes.includes(11));
+      return {
+        ...t,
+        snowshoe: snowshoe(t.activitytypes),
+        nordic_ski: nordic_ski(t.activitytypes),
+        winter_fat_bike: wfb,
+        summer_mtb: summer_mtb(t.activitytypes),
+      };
+    })
+    .filter((t) => t.snowshoe || t.nordic_ski || t.winter_fat_bike || t.summer_mtb);
+
   const output = {
     type: "FeatureCollection" as const,
-    features: Array.from(trailById.values()).map((t) => ({
+    features: trails.map((t) => ({
       type: "Feature" as const,
       geometry: t.geometry,
       properties: {
