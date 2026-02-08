@@ -653,36 +653,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -115.99648796296295,
-          49.68229907407408
-        ]
-      },
-      "properties": {
-        "cluster_id": "cluster_c2vd8k",
-        "trail_count": 2,
-        "trail_names": [
-          "Hole 11",
-          "Trickle Creek Inner Fatbike Loop"
-        ],
-        "snowshoe": true,
-        "nordic_ski": true,
-        "winter_fat_bike": true,
-        "summer_mtb": true,
-        "lat": 49.68229907407408,
-        "lon": -115.99648796296295,
-        "radius_m": 19.65,
-        "photos": [
-          "PXL_20260206_211201703.jpg",
-          "PXL_20260206_211122206.jpg",
-          "PXL_20260206_211124831.jpg"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -115.99260277777778,
           49.64434166666667
         ]
@@ -1026,6 +996,35 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -115.99637638888889,
+          49.68235
+        ]
+      },
+      "properties": {
+        "cluster_id": "cluster_c2vd8k",
+        "trail_count": 2,
+        "trail_names": [
+          "Hole 11",
+          "Trickle Creek Inner Fatbike Loop"
+        ],
+        "snowshoe": true,
+        "nordic_ski": true,
+        "winter_fat_bike": true,
+        "summer_mtb": true,
+        "lat": 49.68235,
+        "lon": -115.99637638888889,
+        "radius_m": 0.1,
+        "photos": [
+          "PXL_20260206_211122206.jpg",
+          "PXL_20260206_211124831.jpg"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -115.99777222222224,
           49.67100925925926
         ]
@@ -1180,8 +1179,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -116.00069358974359,
-          49.68530277777778
+          -116.00034814814815,
+          49.685452777777776
         ]
       },
       "properties": {
@@ -1195,23 +1194,16 @@
         "nordic_ski": true,
         "winter_fat_bike": true,
         "summer_mtb": true,
-        "lat": 49.68530277777778,
-        "lon": -116.00069358974359,
-        "radius_m": 33.21,
+        "lat": 49.685452777777776,
+        "lon": -116.00034814814815,
+        "radius_m": 3.52,
         "photos": [
           "PXL_20260206_210406293.jpg",
           "PXL_20260206_210353142.jpg",
-          "PXL_20260206_210320684.jpg",
-          "PXL_20260206_210143951.jpg",
           "PXL_20260206_210400650.jpg",
           "PXL_20260206_210426708.jpg",
-          "PXL_20260206_210206531.jpg",
-          "PXL_20260206_210215404.jpg",
           "PXL_20260206_210413030.jpg",
-          "PXL_20260206_210124245.jpg",
-          "PXL_20260206_210409849.jpg",
-          "PXL_20260206_210154317.jpg",
-          "PXL_20260206_210150229.jpg"
+          "PXL_20260206_210409849.jpg"
         ]
       }
     },
@@ -1301,6 +1293,40 @@
           "PXL_20260206_194911883.jpg",
           "PXL_20260206_194824862.jpg",
           "PXL_20260206_194837616.jpg"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.0009896825397,
+          49.6851742063492
+        ]
+      },
+      "properties": {
+        "cluster_id": "cluster_c2vd8k",
+        "trail_count": 2,
+        "trail_names": [
+          "Trickle Charge",
+          "Trickle Creek Outer Fatbike Loop"
+        ],
+        "snowshoe": true,
+        "nordic_ski": true,
+        "winter_fat_bike": true,
+        "summer_mtb": true,
+        "lat": 49.6851742063492,
+        "lon": -116.0009896825397,
+        "radius_m": 26.31,
+        "photos": [
+          "PXL_20260206_210320684.jpg",
+          "PXL_20260206_210143951.jpg",
+          "PXL_20260206_210206531.jpg",
+          "PXL_20260206_210215404.jpg",
+          "PXL_20260206_210124245.jpg",
+          "PXL_20260206_210154317.jpg",
+          "PXL_20260206_210150229.jpg"
         ]
       }
     },
@@ -1447,6 +1473,33 @@
           "PXL_20260206_181016820.jpg",
           "PXL_20260206_180852857.jpg",
           "PXL_20260206_181022767.jpg"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -115.99671111111111,
+          49.68219722222222
+        ]
+      },
+      "properties": {
+        "cluster_id": "cluster_c2vd8k",
+        "trail_count": 1,
+        "trail_names": [
+          "Trickle Creek Inner Fatbike Loop"
+        ],
+        "snowshoe": true,
+        "nordic_ski": true,
+        "winter_fat_bike": true,
+        "summer_mtb": true,
+        "lat": 49.68219722222222,
+        "lon": -115.99671111111111,
+        "radius_m": 0,
+        "photos": [
+          "PXL_20260206_211201703.jpg"
         ]
       }
     },
