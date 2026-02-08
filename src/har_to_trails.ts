@@ -55,13 +55,13 @@ async function main() {
     process.exit(1);
   }
 
-  type RmsFeature = { properties?: { type?: string; name?: string; activitytypes?: string }; geometry?: { encodedpath?: string; simplepath?: string } };
+  type RmsFeature = { properties?: { type?: string; name?: string; activitytypes?: string; difficulty?: number; color?: string }; geometry?: { encodedpath?: string; simplepath?: string } };
   const features = (rms as { features: RmsFeature[] }).features;
   const trails = features.filter((f) => f.properties?.type === "trail");
 
   const output = {
     type: "FeatureCollection" as const,
-    features: [] as Array<{ type: "Feature"; geometry: { type: "LineString"; coordinates: [number, number][] }; properties: { name: string; winter: boolean; ski_trails: boolean } }>,
+    features: [] as Array<{ type: "Feature"; geometry: { type: "LineString"; coordinates: [number, number][] }; properties: { name: string; winter: boolean; ski_trails: boolean; difficulty?: number; color: string } }>,
   };
 
   for (const t of trails) {
@@ -79,6 +79,8 @@ async function main() {
         name: t.properties?.name ?? "Unknown",
         winter,
         ski_trails: skiTrails,
+        difficulty: t.properties?.difficulty,
+        color: t.properties?.color ?? "#333",
       },
     });
   }

@@ -395,7 +395,9 @@
       "properties": {
         "name": "401",
         "winter": true,
-        "ski_trails": true
+        "ski_trails": true,
+        "difficulty": 3,
+        "color": "#46b414"
       }
     },
     {
@@ -560,7 +562,9 @@
       "properties": {
         "name": "A-Frame Trail",
         "winter": true,
-        "ski_trails": true
+        "ski_trails": true,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -625,7 +629,9 @@
       "properties": {
         "name": "A Little Bit",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -698,7 +704,9 @@
       "properties": {
         "name": "A Little Bit",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -819,7 +827,9 @@
       "properties": {
         "name": "A Little Bit",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 3,
+        "color": "#46b414"
       }
     },
     {
@@ -852,7 +862,9 @@
       "properties": {
         "name": "A Little Bit Connector",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -901,7 +913,9 @@
       "properties": {
         "name": "A Little Bit Connector",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -1030,7 +1044,9 @@
       "properties": {
         "name": "Access",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 7,
+        "color": "#ae83ae"
       }
     },
     {
@@ -1295,7 +1311,9 @@
       "properties": {
         "name": "Amps Go Marching (Short Circuit Cross Country Loop)",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -1528,7 +1546,9 @@
       "properties": {
         "name": "Army Road (Trans Canada Trail)",
         "winter": true,
-        "ski_trails": true
+        "ski_trails": true,
+        "difficulty": 3,
+        "color": "#46b414"
       }
     },
     {
@@ -1573,7 +1593,9 @@
       "properties": {
         "name": "Atlas/Purple connector",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -2234,7 +2256,9 @@
       "properties": {
         "name": "Atlas Shrugged",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 5,
+        "color": "#000000"
       }
     },
     {
@@ -2291,7 +2315,9 @@
       "properties": {
         "name": "Atlas to Pinch Connector",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 5,
+        "color": "#000000"
       }
     },
     {
@@ -2336,7 +2362,9 @@
       "properties": {
         "name": "Avery Road Public Access",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#8a8679"
       }
     },
     {
@@ -2585,7 +2613,9 @@
       "properties": {
         "name": "Barts",
         "winter": true,
-        "ski_trails": true
+        "ski_trails": true,
+        "difficulty": 3,
+        "color": "#46b414"
       }
     },
     {
@@ -2862,7 +2892,9 @@
       "properties": {
         "name": "Bear",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -2919,7 +2951,9 @@
       "properties": {
         "name": "Bear Hill Lookout",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -2972,7 +3006,9 @@
       "properties": {
         "name": "Bench",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -3105,7 +3141,9 @@
       "properties": {
         "name": "Bench",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -3342,7 +3380,9 @@
       "properties": {
         "name": "Bench",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 3,
+        "color": "#46b414"
       }
     },
     {
@@ -3383,7 +3423,9 @@
       "properties": {
         "name": "Bench",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 3,
+        "color": "#46b414"
       }
     },
     {
@@ -3432,7 +3474,9 @@
       "properties": {
         "name": "Big Tree Low Point Green Trail Connector",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 3,
+        "color": "#46b414"
       }
     },
     {
@@ -3865,7 +3909,9 @@
       "properties": {
         "name": "Blake's Single Track",
         "winter": false,
-        "ski_trails": true
+        "ski_trails": true,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -3902,7 +3948,9 @@
       "properties": {
         "name": "Blakes to Totem Connector",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 3,
+        "color": "#46b414"
       }
     },
     {
@@ -5943,7 +5991,9 @@
       "properties": {
         "name": "Bootleg Road",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 1,
+        "color": "#854e85"
       }
     },
     {
@@ -6012,7 +6062,9 @@
       "properties": {
         "name": "Bootridge Access",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 7,
+        "color": "#ae83ae"
       }
     },
     {
@@ -6565,7 +6617,9 @@
       "properties": {
         "name": "Bootridge Access Road",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 1,
+        "color": "#854e85"
       }
     },
     {
@@ -6706,7 +6760,9 @@
       "properties": {
         "name": "Bootridge Branch",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 7,
+        "color": "#b9a978"
       }
     },
     {
@@ -6783,7 +6839,9 @@
       "properties": {
         "name": "Border Line",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 5,
+        "color": "#000000"
       }
     },
     {
@@ -6992,7 +7050,9 @@
       "properties": {
         "name": "Boulder",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -7069,7 +7129,9 @@
       "properties": {
         "name": "Boulder Connector",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -7150,7 +7212,9 @@
       "properties": {
         "name": "Bullfrog Hill",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 3,
+        "color": "#46b414"
       }
     },
     {
@@ -7275,7 +7339,9 @@
       "properties": {
         "name": "Burnt",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -7984,7 +8050,9 @@
       "properties": {
         "name": "Cabin Trail",
         "winter": false,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -8073,7 +8141,9 @@
       "properties": {
         "name": "Cabin Trail",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -8126,7 +8196,9 @@
       "properties": {
         "name": "Campground Trail (The Great Trail)",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -8223,7 +8295,9 @@
       "properties": {
         "name": "Centennial",
         "winter": true,
-        "ski_trails": true
+        "ski_trails": true,
+        "difficulty": 2,
+        "color": "#8dea62"
       }
     },
     {
@@ -8316,7 +8390,9 @@
       "properties": {
         "name": "Centennial 2",
         "winter": false,
-        "ski_trails": true
+        "ski_trails": true,
+        "difficulty": 2,
+        "color": "#8dea62"
       }
     },
     {
@@ -8385,7 +8461,9 @@
       "properties": {
         "name": "Chicken",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -8410,7 +8488,9 @@
       "properties": {
         "name": "Connector",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 3,
+        "color": "#46b414"
       }
     },
     {
@@ -8563,7 +8643,9 @@
       "properties": {
         "name": "Connie's Way",
         "winter": true,
-        "ski_trails": true
+        "ski_trails": true,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -8884,7 +8966,9 @@
       "properties": {
         "name": "Coral Route",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 5,
+        "color": "#000000"
       }
     },
     {
@@ -8953,7 +9037,9 @@
       "properties": {
         "name": "Cougar",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 5,
+        "color": "#000000"
       }
     },
     {
@@ -9066,7 +9152,9 @@
       "properties": {
         "name": "Cougar Connector",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 5,
+        "color": "#000000"
       }
     },
     {
@@ -9171,7 +9259,9 @@
       "properties": {
         "name": "Creek",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 5,
+        "color": "#000000"
       }
     },
     {
@@ -9412,7 +9502,9 @@
       "properties": {
         "name": "Cutting Edge",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -9525,7 +9617,9 @@
       "properties": {
         "name": "Daisy Trail",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 3,
+        "color": "#46b414"
       }
     },
     {
@@ -9634,7 +9728,9 @@
       "properties": {
         "name": "Deep Bark Forest",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -9707,7 +9803,9 @@
       "properties": {
         "name": "Dipper Lake",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -9744,7 +9842,9 @@
       "properties": {
         "name": "Discovery",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -9813,7 +9913,9 @@
       "properties": {
         "name": "Discovery",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -10022,7 +10124,9 @@
       "properties": {
         "name": "Discovery",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -10319,7 +10423,9 @@
       "properties": {
         "name": "Discovery",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 3,
+        "color": "#46b414"
       }
     },
     {
@@ -10372,7 +10478,9 @@
       "properties": {
         "name": "Discovery East",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -10625,7 +10733,9 @@
       "properties": {
         "name": "Discovery East",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -10674,7 +10784,9 @@
       "properties": {
         "name": "Discovery East Connector",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -10723,7 +10835,9 @@
       "properties": {
         "name": "Discovery East Connector",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 5,
+        "color": "#000000"
       }
     },
     {
@@ -11036,7 +11150,9 @@
       "properties": {
         "name": "Duck Pond",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -11173,7 +11289,9 @@
       "properties": {
         "name": "Duck Pond",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -12134,7 +12252,9 @@
       "properties": {
         "name": "E61 (Cross Country)",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -12203,7 +12323,9 @@
       "properties": {
         "name": "E61 Connector",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 1,
+        "color": "#854e85"
       }
     },
     {
@@ -12708,7 +12830,9 @@
       "properties": {
         "name": "Edge Trail",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -12833,7 +12957,9 @@
       "properties": {
         "name": "Eimer's Lake Loop",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 2,
+        "color": "#8a8679"
       }
     },
     {
@@ -12998,7 +13124,9 @@
       "properties": {
         "name": "Eimer's Road",
         "winter": true,
-        "ski_trails": true
+        "ski_trails": true,
+        "difficulty": 3,
+        "color": "#46b414"
       }
     },
     {
@@ -13179,7 +13307,9 @@
       "properties": {
         "name": "Eimers Ridge",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -13200,7 +13330,9 @@
       "properties": {
         "name": "Elbow",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 3,
+        "color": "#46b414"
       }
     },
     {
@@ -13441,7 +13573,9 @@
       "properties": {
         "name": "Elbow",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -13550,7 +13684,9 @@
       "properties": {
         "name": "Elbow",
         "winter": true,
-        "ski_trails": true
+        "ski_trails": true,
+        "difficulty": 3,
+        "color": "#46b414"
       }
     },
     {
@@ -13999,7 +14135,9 @@
       "properties": {
         "name": "Electric Avenue",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 3,
+        "color": "#46b414"
       }
     },
     {
@@ -14076,7 +14214,9 @@
       "properties": {
         "name": "Fall Line",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -14193,7 +14333,9 @@
       "properties": {
         "name": "Finnegan's Bluff",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 3,
+        "color": "#46b414"
       }
     },
     {
@@ -14402,7 +14544,9 @@
       "properties": {
         "name": "Florences's Gully",
         "winter": true,
-        "ski_trails": true
+        "ski_trails": true,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -14451,7 +14595,9 @@
       "properties": {
         "name": "Flume",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 5,
+        "color": "#000000"
       }
     },
     {
@@ -14636,7 +14782,9 @@
       "properties": {
         "name": "Force Main",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -14901,7 +15049,9 @@
       "properties": {
         "name": "Forest Crowne Through Road",
         "winter": true,
-        "ski_trails": true
+        "ski_trails": true,
+        "difficulty": 1,
+        "color": "#854e85"
       }
     },
     {
@@ -14966,7 +15116,9 @@
       "properties": {
         "name": "Forest Crowne Through Road Down",
         "winter": true,
-        "ski_trails": true
+        "ski_trails": true,
+        "difficulty": 3,
+        "color": "#46b414"
       }
     },
     {
@@ -15087,7 +15239,9 @@
       "properties": {
         "name": "Former Summer Slide",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#8a8679"
       }
     },
     {
@@ -15164,7 +15318,9 @@
       "properties": {
         "name": "Former Summer Slide",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#8a8679"
       }
     },
     {
@@ -15213,7 +15369,9 @@
       "properties": {
         "name": "Former Summer Slide",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#8a8679"
       }
     },
     {
@@ -15346,7 +15504,9 @@
       "properties": {
         "name": "Front Boulevard",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 3,
+        "color": "#46b414"
       }
     },
     {
@@ -18131,7 +18291,9 @@
       "properties": {
         "name": "Gray Creek Pass East (The Great Trail)",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 1,
+        "color": "#854e85"
       }
     },
     {
@@ -18308,7 +18470,9 @@
       "properties": {
         "name": "Hans Up",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -18777,7 +18941,9 @@
       "properties": {
         "name": "Happy Hans Loop",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 3,
+        "color": "#46b414"
       }
     },
     {
@@ -18846,7 +19012,9 @@
       "properties": {
         "name": "Hard Butte Trail",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 3,
+        "color": "#8a8679"
       }
     },
     {
@@ -18883,7 +19051,9 @@
       "properties": {
         "name": "Hard Butte Trail",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 3,
+        "color": "#46b414"
       }
     },
     {
@@ -19072,7 +19242,9 @@
       "properties": {
         "name": "Hee Haw East",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -19453,7 +19625,9 @@
       "properties": {
         "name": "Hertz So Good",
         "winter": false,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -19658,7 +19832,9 @@
       "properties": {
         "name": "Higgins Hill",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -19755,7 +19931,9 @@
       "properties": {
         "name": "Hillside",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -20348,7 +20526,9 @@
       "properties": {
         "name": "Home Run",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -20669,7 +20849,9 @@
       "properties": {
         "name": "Hoodoo Trail",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#8a8679"
       }
     },
     {
@@ -20990,7 +21172,9 @@
       "properties": {
         "name": "Hoodoo Trail",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#8a8679"
       }
     },
     {
@@ -21459,7 +21643,9 @@
       "properties": {
         "name": "Hoodoo Trail",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#8a8679"
       }
     },
     {
@@ -21648,7 +21834,9 @@
       "properties": {
         "name": "Hoodoo View",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -21761,7 +21949,9 @@
       "properties": {
         "name": "Horse Trail",
         "winter": true,
-        "ski_trails": true
+        "ski_trails": true,
+        "difficulty": 3,
+        "color": "#46b414"
       }
     },
     {
@@ -21802,7 +21992,9 @@
       "properties": {
         "name": "I.C.E. Screamer",
         "winter": false,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 5,
+        "color": "#000000"
       }
     },
     {
@@ -21855,7 +22047,9 @@
       "properties": {
         "name": "I Know What You Did Last Winter",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -22128,7 +22322,9 @@
       "properties": {
         "name": "James Ritchie Trail",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -22449,7 +22645,9 @@
       "properties": {
         "name": "Jimmy Russell Road",
         "winter": true,
-        "ski_trails": true
+        "ski_trails": true,
+        "difficulty": 3,
+        "color": "#46b414"
       }
     },
     {
@@ -22606,7 +22804,9 @@
       "properties": {
         "name": "John Swift River Loop",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -22987,7 +23187,9 @@
       "properties": {
         "name": "John Travoltage",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -23056,7 +23258,9 @@
       "properties": {
         "name": "Karsten's Trail",
         "winter": true,
-        "ski_trails": true
+        "ski_trails": true,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -23129,7 +23333,9 @@
       "properties": {
         "name": "Keivers Way",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -23190,7 +23396,9 @@
       "properties": {
         "name": "Krista's Hill",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -23351,7 +23559,9 @@
       "properties": {
         "name": "Legion Ridge",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -23788,7 +23998,9 @@
       "properties": {
         "name": "Levirs In a Dangerous time",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 3,
+        "color": "#46b414"
       }
     },
     {
@@ -23857,7 +24069,9 @@
       "properties": {
         "name": "Loop D Loop",
         "winter": true,
-        "ski_trails": true
+        "ski_trails": true,
+        "difficulty": 3,
+        "color": "#46b414"
       }
     },
     {
@@ -24122,7 +24336,9 @@
       "properties": {
         "name": "Lower Army Road (Trans Canada Trail)",
         "winter": true,
-        "ski_trails": true
+        "ski_trails": true,
+        "difficulty": 3,
+        "color": "#46b414"
       }
     },
     {
@@ -24155,7 +24371,9 @@
       "properties": {
         "name": "Lower Road Connector",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 7,
+        "color": "#b9a978"
       }
     },
     {
@@ -24200,7 +24418,9 @@
       "properties": {
         "name": "Lower Thunder Turkey (Trans Canada Trail)",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -24341,7 +24561,9 @@
       "properties": {
         "name": "Mark Creek Ridge Trail",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 3,
+        "color": "#46b414"
       }
     },
     {
@@ -24514,7 +24736,9 @@
       "properties": {
         "name": "Mark Creek Ridge Trail",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 3,
+        "color": "#46b414"
       }
     },
     {
@@ -24691,7 +24915,9 @@
       "properties": {
         "name": "Mark Creek Ridge Trail",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 3,
+        "color": "#46b414"
       }
     },
     {
@@ -24844,7 +25070,9 @@
       "properties": {
         "name": "Mark Creek Trail",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 3,
+        "color": "#46b414"
       }
     },
     {
@@ -25201,7 +25429,9 @@
       "properties": {
         "name": "Mark Creek Trail / Lion's Way",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 3,
+        "color": "#46b414"
       }
     },
     {
@@ -25402,7 +25632,9 @@
       "properties": {
         "name": "McGINTY TRAIL FROM HIGHWAY",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 3,
+        "color": "#46b414"
       }
     },
     {
@@ -25647,7 +25879,9 @@
       "properties": {
         "name": "McGinty Trail",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 3,
+        "color": "#46b414"
       }
     },
     {
@@ -25996,7 +26230,9 @@
       "properties": {
         "name": "Meadowbrook X Country Trail",
         "winter": false,
-        "ski_trails": true
+        "ski_trails": true,
+        "difficulty": 3,
+        "color": "#8a8679"
       }
     },
     {
@@ -26405,7 +26641,9 @@
       "properties": {
         "name": "Meadowbrook X Country Trail",
         "winter": false,
-        "ski_trails": true
+        "ski_trails": true,
+        "difficulty": 3,
+        "color": "#8a8679"
       }
     },
     {
@@ -26722,7 +26960,9 @@
       "properties": {
         "name": "Meadowbrook X Country Trail",
         "winter": false,
-        "ski_trails": true
+        "ski_trails": true,
+        "difficulty": 3,
+        "color": "#8a8679"
       }
     },
     {
@@ -26983,7 +27223,9 @@
       "properties": {
         "name": "Meadowbrook X Country Trail",
         "winter": false,
-        "ski_trails": true
+        "ski_trails": true,
+        "difficulty": 3,
+        "color": "#8a8679"
       }
     },
     {
@@ -27088,7 +27330,9 @@
       "properties": {
         "name": "Midpoint Green Trail Connector",
         "winter": false,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 3,
+        "color": "#46b414"
       }
     },
     {
@@ -27445,7 +27689,9 @@
       "properties": {
         "name": "Misdirection - Magic Line 3 Original Climb",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -27714,7 +27960,9 @@
       "properties": {
         "name": "Moe's Canyon",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 5,
+        "color": "#000000"
       }
     },
     {
@@ -27759,7 +28007,9 @@
       "properties": {
         "name": "Moe Magic Moe Problems",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -28020,7 +28270,9 @@
       "properties": {
         "name": "Mojo",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -28117,7 +28369,9 @@
       "properties": {
         "name": "Mom's Trail",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#8a8679"
       }
     },
     {
@@ -28218,7 +28472,9 @@
       "properties": {
         "name": "Moose Pasture",
         "winter": false,
-        "ski_trails": true
+        "ski_trails": true,
+        "difficulty": 3,
+        "color": "#8a8679"
       }
     },
     {
@@ -28539,7 +28795,9 @@
       "properties": {
         "name": "Mountain Mine (Climb)",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -29292,7 +29550,9 @@
       "properties": {
         "name": "Mr. Toad",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 5,
+        "color": "#000000"
       }
     },
     {
@@ -29377,7 +29637,9 @@
       "properties": {
         "name": "Mussers",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 3,
+        "color": "#46b414"
       }
     },
     {
@@ -29890,7 +30152,9 @@
       "properties": {
         "name": "Mussers Plateau",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 5,
+        "color": "#000000"
       }
     },
     {
@@ -30219,7 +30483,9 @@
       "properties": {
         "name": "NIMBY",
         "winter": false,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -31444,7 +31710,9 @@
       "properties": {
         "name": "Northstar Rails to Trails",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 2,
+        "color": "#8dea62"
       }
     },
     {
@@ -31549,7 +31817,9 @@
       "properties": {
         "name": "Not Keiver's Way",
         "winter": true,
-        "ski_trails": true
+        "ski_trails": true,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -31714,7 +31984,9 @@
       "properties": {
         "name": "Nurses Trail",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 3,
+        "color": "#46b414"
       }
     },
     {
@@ -32011,7 +32283,9 @@
       "properties": {
         "name": "Nuts and Volts (Short Circuit Cross Country Loop)",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 3,
+        "color": "#46b414"
       }
     },
     {
@@ -32552,7 +32826,9 @@
       "properties": {
         "name": "Ohm My (Short Circuit Cross Country Loop)",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -32641,7 +32917,9 @@
       "properties": {
         "name": "Old Haul Road Winter Nordic Route",
         "winter": false,
-        "ski_trails": true
+        "ski_trails": true,
+        "difficulty": 3,
+        "color": "#46b414"
       }
     },
     {
@@ -32718,7 +32996,9 @@
       "properties": {
         "name": "Parallel Park",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 5,
+        "color": "#000000"
       }
     },
     {
@@ -32891,7 +33171,9 @@
       "properties": {
         "name": "Parks 'n Wreck",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 5,
+        "color": "#000000"
       }
     },
     {
@@ -32944,7 +33226,9 @@
       "properties": {
         "name": "Parks 'n Wreck Connector",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 3,
+        "color": "#46b414"
       }
     },
     {
@@ -33057,7 +33341,9 @@
       "properties": {
         "name": "Pat Morrow",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -33178,7 +33464,9 @@
       "properties": {
         "name": "Patterson Ridge",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -33503,7 +33791,9 @@
       "properties": {
         "name": "Penelope's Cruise",
         "winter": false,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 5,
+        "color": "#000000"
       }
     },
     {
@@ -33748,7 +34038,9 @@
       "properties": {
         "name": "Perry Creek Trail",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#8a8679"
       }
     },
     {
@@ -34173,7 +34465,9 @@
       "properties": {
         "name": "Pinch and Roll",
         "winter": false,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 5,
+        "color": "#000000"
       }
     },
     {
@@ -34414,7 +34708,9 @@
       "properties": {
         "name": "Pinch and Roll (Matt's)",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 5,
+        "color": "#000000"
       }
     },
     {
@@ -34687,7 +34983,9 @@
       "properties": {
         "name": "Platzl - Swan St. (The Great Trail)",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 1,
+        "color": "#854e85"
       }
     },
     {
@@ -34876,7 +35174,9 @@
       "properties": {
         "name": "Platzl to NorthStar R2T Connector (The Great Trail)",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 3,
+        "color": "#46b414"
       }
     },
     {
@@ -35461,7 +35761,9 @@
       "properties": {
         "name": "Platzl to Peak Trail",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 1,
+        "color": "#854e85"
       }
     },
     {
@@ -35514,7 +35816,9 @@
       "properties": {
         "name": "Ponderosa",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -35651,7 +35955,9 @@
       "properties": {
         "name": "Ponderosa Trail",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -35824,7 +36130,9 @@
       "properties": {
         "name": "Power Down",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 3,
+        "color": "#46b414"
       }
     },
     {
@@ -35929,7 +36237,9 @@
       "properties": {
         "name": "Power Line",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#8a8679"
       }
     },
     {
@@ -35990,7 +36300,9 @@
       "properties": {
         "name": "Power Line",
         "winter": true,
-        "ski_trails": true
+        "ski_trails": true,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -36083,7 +36395,9 @@
       "properties": {
         "name": "Power Plateau",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 3,
+        "color": "#46b414"
       }
     },
     {
@@ -36152,7 +36466,9 @@
       "properties": {
         "name": "Power Up",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 3,
+        "color": "#46b414"
       }
     },
     {
@@ -36377,7 +36693,9 @@
       "properties": {
         "name": "Powerline",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 1,
+        "color": "#854e85"
       }
     },
     {
@@ -36762,7 +37080,9 @@
       "properties": {
         "name": "Purple People Pleaser",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -38095,7 +38415,9 @@
       "properties": {
         "name": "RTM Twist",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -38260,7 +38582,9 @@
       "properties": {
         "name": "Rainbow Rock Rodeo",
         "winter": false,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -38417,7 +38741,9 @@
       "properties": {
         "name": "Residents' Choice",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -38534,7 +38860,9 @@
       "properties": {
         "name": "Richardsons",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -38603,7 +38931,9 @@
       "properties": {
         "name": "Ridge Connection",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -38640,7 +38970,9 @@
       "properties": {
         "name": "Road Access to Area 5",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 7,
+        "color": "#b9a978"
       }
     },
     {
@@ -38697,7 +39029,9 @@
       "properties": {
         "name": "Road Access to Area 6",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 7,
+        "color": "#b9a978"
       }
     },
     {
@@ -38826,7 +39160,9 @@
       "properties": {
         "name": "Road Access to Campground Sites 1-8",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 7,
+        "color": "#b9a978"
       }
     },
     {
@@ -38923,7 +39259,9 @@
       "properties": {
         "name": "Road Access to Campground Sites 9-16",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 7,
+        "color": "#b9a978"
       }
     },
     {
@@ -38996,7 +39334,9 @@
       "properties": {
         "name": "Road Access to Campground Sites 17-20",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 7,
+        "color": "#b9a978"
       }
     },
     {
@@ -39057,7 +39397,9 @@
       "properties": {
         "name": "Road Access to Lower Level",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 7,
+        "color": "#b9a978"
       }
     },
     {
@@ -39178,7 +39520,9 @@
       "properties": {
         "name": "Road Access to Lower Level",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 7,
+        "color": "#b9a978"
       }
     },
     {
@@ -39303,7 +39647,9 @@
       "properties": {
         "name": "Road Access to Upper Level",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 7,
+        "color": "#b9a978"
       }
     },
     {
@@ -39452,7 +39798,9 @@
       "properties": {
         "name": "Rock Slide",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 5,
+        "color": "#000000"
       }
     },
     {
@@ -39577,7 +39925,9 @@
       "properties": {
         "name": "Roller Coaster",
         "winter": false,
-        "ski_trails": true
+        "ski_trails": true,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -39754,7 +40104,9 @@
       "properties": {
         "name": "Romantic Ridge",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -40971,7 +41323,9 @@
       "properties": {
         "name": "Round The Mountain",
         "winter": true,
-        "ski_trails": true
+        "ski_trails": true,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -41096,7 +41450,9 @@
       "properties": {
         "name": "Roy's Cut",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 3,
+        "color": "#46b414"
       }
     },
     {
@@ -41257,7 +41613,9 @@
       "properties": {
         "name": "Run Home",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -41554,7 +41912,9 @@
       "properties": {
         "name": "SW Passage",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -41615,7 +41975,9 @@
       "properties": {
         "name": "SW Passage",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -41672,7 +42034,9 @@
       "properties": {
         "name": "SW Passage Viewpoint",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -41737,7 +42101,9 @@
       "properties": {
         "name": "Shannon Trail",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -42102,7 +42468,9 @@
       "properties": {
         "name": "Shapeshifter",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -42371,7 +42739,9 @@
       "properties": {
         "name": "Shoodilley-Waddliley-Diddley-Doddley Diddly Waddiley Shoodilley Diddly Hoh-Oh-Ohh (Here I Come)",
         "winter": false,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 5,
+        "color": "#000000"
       }
     },
     {
@@ -42564,7 +42934,9 @@
       "properties": {
         "name": "Showmanship - Magic Line 2 Climb",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -42713,7 +43085,9 @@
       "properties": {
         "name": "Sidecut",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -43186,7 +43560,9 @@
       "properties": {
         "name": "Ski Hill Climb",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -43295,7 +43671,9 @@
       "properties": {
         "name": "Skid Road",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -43356,7 +43734,9 @@
       "properties": {
         "name": "Skid Trail",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 3,
+        "color": "#46b414"
       }
     },
     {
@@ -43677,7 +44057,9 @@
       "properties": {
         "name": "Skinku¢ / Coyote",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -43782,7 +44164,9 @@
       "properties": {
         "name": "Skinku¢ / Coyote Road",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 1,
+        "color": "#854e85"
       }
     },
     {
@@ -43819,7 +44203,9 @@
       "properties": {
         "name": "Skinku¢ / Coyote Spur",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -44108,7 +44494,9 @@
       "properties": {
         "name": "Sleight of Hand - Magic Line 1 Climb",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -44437,7 +44825,9 @@
       "properties": {
         "name": "Snow Bird",
         "winter": false,
-        "ski_trails": true
+        "ski_trails": true,
+        "difficulty": 4,
+        "color": "#8a8679"
       }
     },
     {
@@ -44922,7 +45312,9 @@
       "properties": {
         "name": "Snow Mexican",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 5,
+        "color": "#000000"
       }
     },
     {
@@ -44959,7 +45351,9 @@
       "properties": {
         "name": "Snow White Connector",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 5,
+        "color": "#000000"
       }
     },
     {
@@ -45448,7 +45842,9 @@
       "properties": {
         "name": "Snow White and the Seven Wasps",
         "winter": false,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 5,
+        "color": "#000000"
       }
     },
     {
@@ -45997,7 +46393,9 @@
       "properties": {
         "name": "Snowbird",
         "winter": true,
-        "ski_trails": true
+        "ski_trails": true,
+        "difficulty": 2,
+        "color": "#8dea62"
       }
     },
     {
@@ -46418,7 +46816,9 @@
       "properties": {
         "name": "Spicy Kitty",
         "winter": false,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 3,
+        "color": "#46b414"
       }
     },
     {
@@ -46499,7 +46899,9 @@
       "properties": {
         "name": "Splendid Cowboy",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -46688,7 +47090,9 @@
       "properties": {
         "name": "Spruce",
         "winter": true,
-        "ski_trails": true
+        "ski_trails": true,
+        "difficulty": 2,
+        "color": "#8dea62"
       }
     },
     {
@@ -46797,7 +47201,9 @@
       "properties": {
         "name": "Squirrely",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 5,
+        "color": "#000000"
       }
     },
     {
@@ -47270,7 +47676,9 @@
       "properties": {
         "name": "St Mary Lake Road (The Great Trail)",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 1,
+        "color": "#854e85"
       }
     },
     {
@@ -47319,7 +47727,9 @@
       "properties": {
         "name": "Straight Edge",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -47440,7 +47850,9 @@
       "properties": {
         "name": "Stump",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -47605,7 +48017,9 @@
       "properties": {
         "name": "Summer",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -47914,7 +48328,9 @@
       "properties": {
         "name": "Summer Sub",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 3,
+        "color": "#46b414"
       }
     },
     {
@@ -48271,7 +48687,9 @@
       "properties": {
         "name": "Sunflower Hill",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 3,
+        "color": "#46b414"
       }
     },
     {
@@ -48508,7 +48926,9 @@
       "properties": {
         "name": "Talus Trail",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -48657,7 +49077,9 @@
       "properties": {
         "name": "The Boneyard",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -48834,7 +49256,9 @@
       "properties": {
         "name": "The Chute",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -48987,7 +49411,9 @@
       "properties": {
         "name": "The Intermission - Magic Line 3 Connector",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -49180,7 +49606,9 @@
       "properties": {
         "name": "The Pledge - Magic Line 1 Descent",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -49537,7 +49965,9 @@
       "properties": {
         "name": "The Prestige - Magic Line 3 Descent",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -49706,7 +50136,9 @@
       "properties": {
         "name": "The Turn - Magic Line 2 Descent",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -49999,7 +50431,9 @@
       "properties": {
         "name": "Tighty Whitey",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -50028,7 +50462,9 @@
       "properties": {
         "name": "Tiny",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 1,
+        "color": "#854e85"
       }
     },
     {
@@ -50061,7 +50497,9 @@
       "properties": {
         "name": "To Blake's Singletrack",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 3,
+        "color": "#46b414"
       }
     },
     {
@@ -50206,7 +50644,9 @@
       "properties": {
         "name": "Tora Bora",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -50663,7 +51103,9 @@
       "properties": {
         "name": "Tora Bora Ridge",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -50868,7 +51310,9 @@
       "properties": {
         "name": "Totem",
         "winter": true,
-        "ski_trails": true
+        "ski_trails": true,
+        "difficulty": 3,
+        "color": "#46b414"
       }
     },
     {
@@ -50989,7 +51433,9 @@
       "properties": {
         "name": "Trail",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#8a8679"
       }
     },
     {
@@ -51062,7 +51508,9 @@
       "properties": {
         "name": "Trapline",
         "winter": true,
-        "ski_trails": true
+        "ski_trails": true,
+        "difficulty": 2,
+        "color": "#8dea62"
       }
     },
     {
@@ -51139,7 +51587,9 @@
       "properties": {
         "name": "Trapline",
         "winter": false,
-        "ski_trails": true
+        "ski_trails": true,
+        "difficulty": 3,
+        "color": "#8a8679"
       }
     },
     {
@@ -51448,7 +51898,9 @@
       "properties": {
         "name": "Trickle Charge",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 3,
+        "color": "#46b414"
       }
     },
     {
@@ -52497,7 +52949,9 @@
       "properties": {
         "name": "Trickle Creek Outer Fatbike Loop",
         "winter": true,
-        "ski_trails": true
+        "ski_trails": true,
+        "difficulty": 3,
+        "color": "#46b414"
       }
     },
     {
@@ -52670,7 +53124,9 @@
       "properties": {
         "name": "Trickledown",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -54203,7 +54659,9 @@
       "properties": {
         "name": "Unicorn Hunting (Bootleg Climb Trail)",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -54284,7 +54742,9 @@
       "properties": {
         "name": "Unruly",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 5,
+        "color": "#000000"
       }
     },
     {
@@ -54369,7 +54829,9 @@
       "properties": {
         "name": "Upper Army Road",
         "winter": true,
-        "ski_trails": true
+        "ski_trails": true,
+        "difficulty": 3,
+        "color": "#46b414"
       }
     },
     {
@@ -54822,7 +55284,9 @@
       "properties": {
         "name": "Upper Hee Haw",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -55427,7 +55891,9 @@
       "properties": {
         "name": "Upper Thunder Turkey",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -55628,7 +56094,9 @@
       "properties": {
         "name": "Uppercut",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -55693,7 +56161,9 @@
       "properties": {
         "name": "Venison Trail",
         "winter": true,
-        "ski_trails": true
+        "ski_trails": true,
+        "difficulty": 3,
+        "color": "#46b414"
       }
     },
     {
@@ -55722,7 +56192,9 @@
       "properties": {
         "name": "Volksmarch Trail",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 3,
+        "color": "#46b414"
       }
     },
     {
@@ -55795,7 +56267,9 @@
       "properties": {
         "name": "Volksmarch Trail",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 3,
+        "color": "#46b414"
       }
     },
     {
@@ -56284,7 +56758,9 @@
       "properties": {
         "name": "Volksmarch Trail",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 3,
+        "color": "#46b414"
       }
     },
     {
@@ -56745,7 +57221,9 @@
       "properties": {
         "name": "Watts Up?",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -56890,7 +57368,9 @@
       "properties": {
         "name": "Wax Tester",
         "winter": true,
-        "ski_trails": true
+        "ski_trails": true,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -57163,7 +57643,9 @@
       "properties": {
         "name": "White Lightning",
         "winter": false,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 5,
+        "color": "#000000"
       }
     },
     {
@@ -57336,7 +57818,9 @@
       "properties": {
         "name": "White Lightning Climb",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     },
     {
@@ -57377,7 +57861,9 @@
       "properties": {
         "name": "Wycliffe Regional Park Access Road",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 7,
+        "color": "#b9a978"
       }
     },
     {
@@ -57414,7 +57900,9 @@
       "properties": {
         "name": "Wycliffe Regional Park Access Road",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 7,
+        "color": "#b9a978"
       }
     },
     {
@@ -57447,7 +57935,9 @@
       "properties": {
         "name": "Wycliffe Regional Park Access Road",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 7,
+        "color": "#b9a978"
       }
     },
     {
@@ -57800,7 +58290,9 @@
       "properties": {
         "name": "Yiiikes!",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 5,
+        "color": "#000000"
       }
     },
     {
@@ -58797,7 +59289,9 @@
       "properties": {
         "name": "haǂaʔ¢u swaʔ (Sneaking Cougar -Trans Canada Trail)",
         "winter": true,
-        "ski_trails": false
+        "ski_trails": false,
+        "difficulty": 4,
+        "color": "#148cf0"
       }
     }
   ]

@@ -19,8 +19,8 @@ let trailsLayer = null;
 let intersectionsLayer = null;
 let allIntersections = null;
 
-function styleTrail() {
-  return { color: "#333", weight: 2 };
+function styleTrail(f) {
+  return { color: f?.properties?.color ?? "#333", weight: 2 };
 }
 
 function filterIntersection(f) {
@@ -91,11 +91,11 @@ async function main() {
 
   applyFilters();
 
-  const bounds = L.latLngBounds(
-    trailsLayer.getBounds(),
-    L.geoJSON(allIntersections).getBounds()
-  );
-  map.fitBounds(bounds, { padding: [20, 20] });
+  const filteredForBounds = allIntersections.features.filter(filterIntersection);
+  if (filteredForBounds.length > 0) {
+    const bounds = L.geoJSON({ type: "FeatureCollection", features: filteredForBounds }).getBounds();
+    map.fitBounds(bounds, { padding: [20, 20], maxZoom: 14 });
+  }
 }
 
 main().catch(console.error);
