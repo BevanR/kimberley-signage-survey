@@ -117,13 +117,21 @@ function applyFilters() {
     onEachFeature: (f, layer) => {
       const p = f.properties || {};
       const names = Array.isArray(p.trail_names) ? p.trail_names.join(", ") : p.trail_names || "";
-      const photos = Array.isArray(p.photos) ? p.photos.length : 0;
       const activities = ["snowshoe", "nordic_ski", "winter_fat_bike", "summer_mtb"]
         .filter((k) => p[k])
         .map((k) => k.replace(/_/g, " "))
         .join(", ");
+      const photoList = Array.isArray(p.photos) ? p.photos : [];
+      const photoGallery = photoList.length
+        ? `<div class="intersection-photos"><div class="intersection-photos-scroll">${photoList
+            .map(
+              (fn) =>
+                `<a href="./photos/${fn}" target="_blank" rel="noopener"><img src="./photos/${fn}" alt="${fn}"></a>`
+            )
+            .join("")}</div></div>`
+        : "";
       layer.bindPopup(
-        `<strong>${p.trail_count} trails</strong><br>${names}<br>Activities: ${activities || "—"}<br>Radius: ${p.radius_m?.toFixed(1) ?? "?"} m<br>Photos: ${photos}`
+        `<strong>${p.trail_count} trails</strong><br>${names}<br>Activities: ${activities || "—"}<br>Radius: ${p.radius_m?.toFixed(1) ?? "?"} m${photoGallery ? `<br>${photoGallery}` : ""}`
       );
     },
   });
@@ -145,8 +153,9 @@ function applyTrailFilters() {
     features: allTrails.features.filter(filterTrail),
   };
   if (trailsLayer) map.removeLayer(trailsLayer);
-  trailsLayer = L.geoJSON(filtered, {
-    style: styleTrail,
+  const visibleLayer = L.geoJSON(filtered, { style: styleTrail });
+  const hoverLayer = L.geoJSON(filtered, {
+    style: () => ({ color: "transparent", weight: 14 }),
     onEachFeature: (f, layer) => {
       const p = f.properties || {};
       const activities = ACTIVITY_IDS.filter((id) => p[id])
@@ -158,6 +167,7 @@ function applyTrailFilters() {
       );
     },
   });
+  trailsLayer = L.layerGroup([visibleLayer, hoverLayer]);
   trailsLayer.addTo(map);
 }
 
