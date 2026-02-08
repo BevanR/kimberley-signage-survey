@@ -63,6 +63,38 @@ baseLayers.topo.addTo(map);
 
 L.control.layers(baseLayers, null, { position: "bottomright" }).addTo(map);
 
+let scaleImperial = false;
+
+function formatDistance(m) {
+  if (scaleImperial) {
+    const mi = m / 1609.344;
+    if (mi >= 0.1) return `${mi.toFixed(mi < 1 ? 1 : 0)} mi`;
+    return `${Math.round(m * 3.28084)} ft`;
+  }
+  if (m >= 1000) return `${(m / 1000).toFixed(m < 10000 ? 1 : 0)} km`;
+  return `${Math.round(m)} m`;
+}
+
+function updateScaleBar() {
+  const container = document.getElementById("map-container");
+  const scaleBar = document.getElementById("scale-bar");
+  const barWidth = scaleBar.offsetWidth;
+  const center = map.getCenter();
+  const centerY = container.offsetHeight / 2;
+  const centerX = container.offsetWidth / 2;
+  const left = map.containerPointToLatLng([centerX - barWidth / 2, centerY]);
+  const right = map.containerPointToLatLng([centerX + barWidth / 2, centerY]);
+  const distM = map.distance(left, right);
+
+  document.getElementById("scale-bar-label").textContent = formatDistance(distM);
+  document.getElementById("scale-bar-label-left").textContent = "0";
+}
+
+document.getElementById("scale-bar").addEventListener("click", () => {
+  scaleImperial = !scaleImperial;
+  updateScaleBar();
+});
+
 let trailsLayer = null;
 let intersectionsLayer = null;
 let allIntersections = null;
@@ -223,8 +255,10 @@ async function main() {
   applyFilters();
   pushStateToUrl();
 
-  map.on("zoomend", () => { applyFilters(); pushStateToUrl(); });
-  map.on("moveend", pushStateToUrl);
+  map.on("zoomend", () => { applyFilters(); pushStateToUrl(); updateScaleBar(); });
+  map.on("moveend", () => { pushStateToUrl(); updateScaleBar(); });
+  map.whenReady(updateScaleBar);
+  window.addEventListener("resize", updateScaleBar);
 
   if (!state.center || state.zoom == null) {
     const filteredForBounds = allIntersections.features.filter(filterIntersection);
