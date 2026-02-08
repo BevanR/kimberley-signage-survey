@@ -69,8 +69,8 @@ function applyFilters() {
 
 async function main() {
   const [trailsRes, intersectionsRes] = await Promise.all([
-    fetch("/data/trails.json"),
-    fetch("/data/intersections.geojson"),
+    fetch("./data/trails.json"),
+    fetch("./data/intersections.geojson"),
   ]);
   if (!trailsRes.ok || !intersectionsRes.ok) {
     console.error("Failed to load data");
