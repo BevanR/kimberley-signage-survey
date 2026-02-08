@@ -1567,7 +1567,7 @@
         "color": "#46b414",
         "snowshoe": true,
         "nordic_ski": true,
-        "winter_fat_bike": true,
+        "winter_fat_bike": false,
         "summer_mtb": true
       }
     },
@@ -3372,7 +3372,7 @@
         "color": "#46b414",
         "snowshoe": false,
         "nordic_ski": false,
-        "winter_fat_bike": true,
+        "winter_fat_bike": false,
         "summer_mtb": true
       }
     },
@@ -3417,7 +3417,7 @@
         "color": "#46b414",
         "snowshoe": false,
         "nordic_ski": false,
-        "winter_fat_bike": true,
+        "winter_fat_bike": false,
         "summer_mtb": true
       }
     },
@@ -3907,7 +3907,7 @@
         "color": "#148cf0",
         "snowshoe": true,
         "nordic_ski": true,
-        "winter_fat_bike": true,
+        "winter_fat_bike": false,
         "summer_mtb": true
       }
     },
@@ -8321,7 +8321,7 @@
         "color": "#8dea62",
         "snowshoe": false,
         "nordic_ski": true,
-        "winter_fat_bike": true,
+        "winter_fat_bike": false,
         "summer_mtb": true
       }
     },
@@ -8418,7 +8418,7 @@
         "color": "#8dea62",
         "snowshoe": true,
         "nordic_ski": true,
-        "winter_fat_bike": true,
+        "winter_fat_bike": false,
         "summer_mtb": true
       }
     },
@@ -8520,7 +8520,7 @@
         "color": "#46b414",
         "snowshoe": false,
         "nordic_ski": false,
-        "winter_fat_bike": true,
+        "winter_fat_bike": false,
         "summer_mtb": true
       }
     },
@@ -8677,7 +8677,7 @@
         "color": "#148cf0",
         "snowshoe": true,
         "nordic_ski": true,
-        "winter_fat_bike": true,
+        "winter_fat_bike": false,
         "summer_mtb": true
       }
     },
@@ -11359,7 +11359,7 @@
         "color": "#148cf0",
         "snowshoe": true,
         "nordic_ski": false,
-        "winter_fat_bike": true,
+        "winter_fat_bike": false,
         "summer_mtb": true
       }
     },
@@ -14096,7 +14096,7 @@
         "color": "#46b414",
         "snowshoe": true,
         "nordic_ski": false,
-        "winter_fat_bike": true,
+        "winter_fat_bike": false,
         "summer_mtb": true
       }
     },
@@ -15022,7 +15022,7 @@
         "color": "#854e85",
         "snowshoe": false,
         "nordic_ski": true,
-        "winter_fat_bike": true,
+        "winter_fat_bike": false,
         "summer_mtb": true
       }
     },
@@ -15091,7 +15091,7 @@
         "color": "#46b414",
         "snowshoe": true,
         "nordic_ski": true,
-        "winter_fat_bike": true,
+        "winter_fat_bike": false,
         "summer_mtb": true
       }
     },
@@ -20507,7 +20507,7 @@
         "color": "#46b414",
         "snowshoe": false,
         "nordic_ski": true,
-        "winter_fat_bike": true,
+        "winter_fat_bike": false,
         "summer_mtb": true
       }
     },
@@ -21211,7 +21211,7 @@
         "color": "#46b414",
         "snowshoe": true,
         "nordic_ski": true,
-        "winter_fat_bike": true,
+        "winter_fat_bike": false,
         "summer_mtb": true
       }
     },
@@ -22651,7 +22651,7 @@
         "color": "#46b414",
         "snowshoe": false,
         "nordic_ski": true,
-        "winter_fat_bike": true,
+        "winter_fat_bike": false,
         "summer_mtb": true
       }
     },
@@ -24834,7 +24834,7 @@
         "color": "#8a8679",
         "snowshoe": false,
         "nordic_ski": true,
-        "winter_fat_bike": true,
+        "winter_fat_bike": false,
         "summer_mtb": false
       }
     },
@@ -25247,7 +25247,7 @@
         "color": "#8a8679",
         "snowshoe": false,
         "nordic_ski": true,
-        "winter_fat_bike": true,
+        "winter_fat_bike": false,
         "summer_mtb": false
       }
     },
@@ -25568,7 +25568,7 @@
         "color": "#8a8679",
         "snowshoe": false,
         "nordic_ski": true,
-        "winter_fat_bike": true,
+        "winter_fat_bike": false,
         "summer_mtb": false
       }
     },
@@ -25833,7 +25833,7 @@
         "color": "#8a8679",
         "snowshoe": false,
         "nordic_ski": true,
-        "winter_fat_bike": true,
+        "winter_fat_bike": false,
         "summer_mtb": false
       }
     },
@@ -26995,7 +26995,7 @@
         "color": "#8a8679",
         "snowshoe": true,
         "nordic_ski": true,
-        "winter_fat_bike": true,
+        "winter_fat_bike": false,
         "summer_mtb": false
       }
     },
@@ -31462,7 +31462,7 @@
         "color": "#46b414",
         "snowshoe": false,
         "nordic_ski": true,
-        "winter_fat_bike": true,
+        "winter_fat_bike": false,
         "summer_mtb": true
       }
     },
@@ -37170,7 +37170,7 @@
         "color": "#148cf0",
         "snowshoe": false,
         "nordic_ski": false,
-        "winter_fat_bike": true,
+        "winter_fat_bike": false,
         "summer_mtb": true
       }
     },
@@ -37405,7 +37405,7 @@
         "color": "#b9a978",
         "snowshoe": true,
         "nordic_ski": false,
-        "winter_fat_bike": true,
+        "winter_fat_bike": false,
         "summer_mtb": true
       }
     },
@@ -37506,7 +37506,7 @@
         "color": "#b9a978",
         "snowshoe": false,
         "nordic_ski": false,
-        "winter_fat_bike": true,
+        "winter_fat_bike": false,
         "summer_mtb": true
       }
     },
@@ -37583,7 +37583,7 @@
         "color": "#b9a978",
         "snowshoe": false,
         "nordic_ski": false,
-        "winter_fat_bike": true,
+        "winter_fat_bike": false,
         "summer_mtb": true
       }
     },
@@ -37773,7 +37773,7 @@
         "color": "#b9a978",
         "snowshoe": true,
         "nordic_ski": false,
-        "winter_fat_bike": true,
+        "winter_fat_bike": false,
         "summer_mtb": true
       }
     },
@@ -37902,7 +37902,7 @@
         "color": "#b9a978",
         "snowshoe": true,
         "nordic_ski": false,
-        "winter_fat_bike": true,
+        "winter_fat_bike": false,
         "summer_mtb": true
       }
     },
@@ -38184,7 +38184,7 @@
         "color": "#148cf0",
         "snowshoe": true,
         "nordic_ski": true,
-        "winter_fat_bike": true,
+        "winter_fat_bike": false,
         "summer_mtb": true
       }
     },
@@ -39586,7 +39586,7 @@
         "color": "#148cf0",
         "snowshoe": false,
         "nordic_ski": true,
-        "winter_fat_bike": true,
+        "winter_fat_bike": false,
         "summer_mtb": true
       }
     },
@@ -42023,7 +42023,7 @@
         "color": "#46b414",
         "snowshoe": false,
         "nordic_ski": false,
-        "winter_fat_bike": true,
+        "winter_fat_bike": false,
         "summer_mtb": true
       }
     },
@@ -43124,7 +43124,7 @@
         "color": "#8a8679",
         "snowshoe": true,
         "nordic_ski": true,
-        "winter_fat_bike": true,
+        "winter_fat_bike": false,
         "summer_mtb": false
       }
     },
@@ -44700,7 +44700,7 @@
         "color": "#8dea62",
         "snowshoe": false,
         "nordic_ski": true,
-        "winter_fat_bike": true,
+        "winter_fat_bike": false,
         "summer_mtb": true
       }
     },
@@ -45403,7 +45403,7 @@
         "color": "#8dea62",
         "snowshoe": false,
         "nordic_ski": true,
-        "winter_fat_bike": true,
+        "winter_fat_bike": false,
         "summer_mtb": true
       }
     },
@@ -47255,7 +47255,7 @@
         "color": "#148cf0",
         "snowshoe": false,
         "nordic_ski": false,
-        "winter_fat_bike": true,
+        "winter_fat_bike": false,
         "summer_mtb": true
       }
     },
@@ -48807,7 +48807,7 @@
         "color": "#854e85",
         "snowshoe": false,
         "nordic_ski": false,
-        "winter_fat_bike": true,
+        "winter_fat_bike": false,
         "summer_mtb": true
       }
     },
@@ -49740,7 +49740,7 @@
         "color": "#8dea62",
         "snowshoe": false,
         "nordic_ski": true,
-        "winter_fat_bike": true,
+        "winter_fat_bike": false,
         "summer_mtb": true
       }
     },
@@ -52986,7 +52986,7 @@
         "color": "#000000",
         "snowshoe": true,
         "nordic_ski": false,
-        "winter_fat_bike": true,
+        "winter_fat_bike": false,
         "summer_mtb": true
       }
     },
@@ -54415,7 +54415,7 @@
         "color": "#46b414",
         "snowshoe": false,
         "nordic_ski": true,
-        "winter_fat_bike": true,
+        "winter_fat_bike": false,
         "summer_mtb": true
       }
     },
@@ -55632,7 +55632,7 @@
         "color": "#148cf0",
         "snowshoe": false,
         "nordic_ski": true,
-        "winter_fat_bike": true,
+        "winter_fat_bike": false,
         "summer_mtb": true
       }
     },
@@ -56131,7 +56131,7 @@
         "color": "#b9a978",
         "snowshoe": false,
         "nordic_ski": false,
-        "winter_fat_bike": true,
+        "winter_fat_bike": false,
         "summer_mtb": true
       }
     },
@@ -56172,7 +56172,7 @@
         "color": "#b9a978",
         "snowshoe": false,
         "nordic_ski": false,
-        "winter_fat_bike": true,
+        "winter_fat_bike": false,
         "summer_mtb": true
       }
     },
@@ -56209,7 +56209,7 @@
         "color": "#b9a978",
         "snowshoe": false,
         "nordic_ski": false,
-        "winter_fat_bike": true,
+        "winter_fat_bike": false,
         "summer_mtb": true
       }
     },
@@ -57933,7 +57933,7 @@
         "color": "#8a8679",
         "snowshoe": true,
         "nordic_ski": true,
-        "winter_fat_bike": true,
+        "winter_fat_bike": false,
         "summer_mtb": false
       }
     },
@@ -58500,31 +58500,6 @@
         "color": "#8a8679",
         "snowshoe": true,
         "nordic_ski": true,
-        "winter_fat_bike": true,
-        "summer_mtb": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -116.03637,
-            49.68773
-          ],
-          [
-            -116.04763,
-            49.68307
-          ]
-        ]
-      },
-      "properties": {
-        "name": "Easter Triple Chair",
-        "difficulty": 12,
-        "color": "#8a8679",
-        "snowshoe": true,
-        "nordic_ski": true,
         "winter_fat_bike": false,
         "summer_mtb": false
       }
@@ -58739,7 +58714,7 @@
         "color": "#8a8679",
         "snowshoe": true,
         "nordic_ski": true,
-        "winter_fat_bike": true,
+        "winter_fat_bike": false,
         "summer_mtb": false
       }
     },
@@ -58961,7 +58936,7 @@
         "color": "#8a8679",
         "snowshoe": true,
         "nordic_ski": true,
-        "winter_fat_bike": true,
+        "winter_fat_bike": false,
         "summer_mtb": false
       }
     },
@@ -59222,7 +59197,7 @@
         "color": "#8a8679",
         "snowshoe": true,
         "nordic_ski": true,
-        "winter_fat_bike": true,
+        "winter_fat_bike": false,
         "summer_mtb": false
       }
     },
@@ -59467,7 +59442,7 @@
         "color": "#8a8679",
         "snowshoe": true,
         "nordic_ski": true,
-        "winter_fat_bike": true,
+        "winter_fat_bike": false,
         "summer_mtb": false
       }
     },
@@ -59701,7 +59676,7 @@
         "color": "#8a8679",
         "snowshoe": true,
         "nordic_ski": true,
-        "winter_fat_bike": true,
+        "winter_fat_bike": false,
         "summer_mtb": false
       }
     },
@@ -60046,7 +60021,7 @@
         "color": "#8a8679",
         "snowshoe": true,
         "nordic_ski": true,
-        "winter_fat_bike": true,
+        "winter_fat_bike": false,
         "summer_mtb": false
       }
     },
@@ -60363,7 +60338,7 @@
         "color": "#8a8679",
         "snowshoe": true,
         "nordic_ski": true,
-        "winter_fat_bike": true,
+        "winter_fat_bike": false,
         "summer_mtb": false
       }
     },
@@ -60477,56 +60452,6 @@
       "properties": {
         "name": "Meadow Trail",
         "difficulty": 3,
-        "color": "#8a8679",
-        "snowshoe": true,
-        "nordic_ski": true,
-        "winter_fat_bike": true,
-        "summer_mtb": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -116.00557,
-            49.68872
-          ],
-          [
-            -116.03386,
-            49.67909
-          ]
-        ]
-      },
-      "properties": {
-        "name": "North Star Express High Speed Quad",
-        "difficulty": 12,
-        "color": "#8a8679",
-        "snowshoe": true,
-        "nordic_ski": true,
-        "winter_fat_bike": false,
-        "summer_mtb": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -116.00577,
-            49.68966
-          ],
-          [
-            -116.00863,
-            49.69041
-          ]
-        ]
-      },
-      "properties": {
-        "name": "Owl T-Bar",
-        "difficulty": 12,
         "color": "#8a8679",
         "snowshoe": true,
         "nordic_ski": true,
@@ -61244,7 +61169,7 @@
         "color": "#8a8679",
         "snowshoe": true,
         "nordic_ski": true,
-        "winter_fat_bike": true,
+        "winter_fat_bike": false,
         "summer_mtb": false
       }
     },
@@ -61320,31 +61245,6 @@
         "difficulty": 4,
         "color": "#8a8679",
         "snowshoe": false,
-        "nordic_ski": true,
-        "winter_fat_bike": true,
-        "summer_mtb": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -116.03124,
-            49.69374
-          ],
-          [
-            -116.03158,
-            49.68438
-          ]
-        ]
-      },
-      "properties": {
-        "name": "Tamarack Double Chair",
-        "difficulty": 12,
-        "color": "#8a8679",
-        "snowshoe": true,
         "nordic_ski": true,
         "winter_fat_bike": false,
         "summer_mtb": false

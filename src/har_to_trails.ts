@@ -1,9 +1,9 @@
 /**
  * Convert Trailforks HAR (with multiple activity-type RMS responses) to trails.json.
  * Activity flags: snowshoe/nordic_ski/summer_mtb from trail activitytypes; winter_fat_bike from
- * activitytypes (17) or RMS activitytype=17 response when activitytypes lacks 17.
- * Excludes downhill-ski-only trails (activitytypes "11" only). Trailforks metadata: 1=MTB, 10=snowshoe,
- * 13=nordic ski, 17=winter fat bike, 11=downhill ski.
+ * activitytypes (17) or, when Trailforks omits 17, from activitytype=17 RMS response where the trail
+ * has full opacity and non-grey color (grey/dim = not fat bike).
+ * Excludes: difficulty 12 (chairlifts/gondolas), downhill-ski-only (activitytypes "11" only).
  */
 
 import { readFile, writeFile, mkdir } from "fs/promises";
@@ -14,6 +14,15 @@ import { config } from "./config";
 const HAR_PATH = join(import.meta.dir, "..", "data", "www.trailforks.com.har");
 
 const TARGET_ACTIVITIES = [1, 10, 13, 17];
+
+const GREY_COLORS = ["#8a8679", "#999999", "#cccccc", "#888888", "#666666", "#333333"];
+
+function isFatBikePrimaryInRms(props: { color?: string; opacity?: number }): boolean {
+  const opacity = props.opacity ?? 1;
+  const color = (props.color ?? "").toLowerCase();
+  if (opacity < 0.9) return false;
+  return !GREY_COLORS.some((g) => color === g.toLowerCase());
+}
 
 function parseActivityTypes(s: string | undefined): number[] {
   if (!s) return [];
@@ -67,7 +76,7 @@ type TrailRecord = {
   difficulty?: number;
   color: string;
   activitytypes: number[];
-  inActivityType17: boolean;
+  inActivityType17Primary: boolean;
 };
 
 async function main() {
@@ -88,9 +97,10 @@ async function main() {
   const trailById = new Map<number, TrailRecord>();
 
   for (const { data, activityTypeFromUrl } of allRms) {
-    const features = (data.features ?? []) as Array<{ properties?: { type?: string; id?: number; name?: string; difficulty?: number; color?: string; activitytypes?: string }; geometry?: { encodedpath?: string; simplepath?: string } }>;
+    const features = (data.features ?? []) as Array<{ properties?: { type?: string; id?: number; name?: string; difficulty?: number; color?: string; activitytypes?: string; opacity?: number }; geometry?: { encodedpath?: string; simplepath?: string } }>;
     for (const f of features) {
       if (f.properties?.type !== "trail") continue;
+      if (f.properties?.difficulty === 12) continue; // chairlifts/gondolas
       const id = f.properties?.id;
       if (id == null) continue;
 
@@ -98,7 +108,8 @@ async function main() {
       if (!coords || coords.length < 2) continue;
 
       const act = parseActivityTypes(f.properties?.activitytypes);
-      const inActivityType17 = activityTypeFromUrl === 17;
+      const inActivityType17Primary =
+        activityTypeFromUrl === 17 && isFatBikePrimaryInRms(f.properties ?? {});
 
       let rec = trailById.get(id);
       if (!rec) {
@@ -109,12 +120,12 @@ async function main() {
           difficulty: f.properties?.difficulty,
           color: f.properties?.color ?? "#333",
           activitytypes: act,
-          inActivityType17,
+          inActivityType17Primary,
         };
         trailById.set(id, rec);
       } else {
         if (act.length > 0) rec.activitytypes = act;
-        rec.inActivityType17 = rec.inActivityType17 || inActivityType17;
+        rec.inActivityType17Primary = rec.inActivityType17Primary || inActivityType17Primary;
       }
     }
   }
@@ -127,9 +138,9 @@ async function main() {
 
   const trails = Array.from(trailById.values())
     .filter((t) => !downhillOnly(t.activitytypes))
-    .filter((t) => hasTarget(t.activitytypes) || t.inActivityType17)
+    .filter((t) => hasTarget(t.activitytypes) || t.inActivityType17Primary)
     .map((t) => {
-      const wfb = t.activitytypes.includes(17) || (t.inActivityType17 && !t.activitytypes.includes(11));
+      const wfb = t.activitytypes.includes(17) || t.inActivityType17Primary;
       return {
         ...t,
         snowshoe: snowshoe(t.activitytypes),
